@@ -58,12 +58,13 @@ class BasicBlock(BaseModule):
 
     @property
     def norm1(self):
-        """nn.Module: normalization layer after the first convolution layer"""
+        """nn.Module: normalization layer after the first convolution layer."""
         return getattr(self, self.norm1_name)
 
     @property
     def norm2(self):
-        """nn.Module: normalization layer after the second convolution layer"""
+        """nn.Module: normalization layer after the second convolution
+        layer."""
         return getattr(self, self.norm2_name)
 
     def forward(self, x):
@@ -220,7 +221,7 @@ class Bottleneck(BaseModule):
                 planes * self.expansion, self.after_conv3_plugins)
 
     def make_block_plugins(self, in_channels, plugins):
-        """make plugins for block.
+        """Make plugins for block.
 
         Args:
             in_channels (int): Input channels of plugin.
@@ -251,17 +252,18 @@ class Bottleneck(BaseModule):
 
     @property
     def norm1(self):
-        """nn.Module: normalization layer after the first convolution layer"""
+        """nn.Module: normalization layer after the first convolution layer."""
         return getattr(self, self.norm1_name)
 
     @property
     def norm2(self):
-        """nn.Module: normalization layer after the second convolution layer"""
+        """nn.Module: normalization layer after the second convolution
+        layer."""
         return getattr(self, self.norm2_name)
 
     @property
     def norm3(self):
-        """nn.Module: normalization layer after the third convolution layer"""
+        """nn.Module: normalization layer after the third convolution layer."""
         return getattr(self, self.norm3_name)
 
     def forward(self, x):
@@ -527,7 +529,7 @@ class ResNet(BaseModule):
             len(self.stage_blocks) - 1)
 
     def make_stage_plugins(self, plugins, stage_idx):
-        """make plugins for ResNet 'stage_idx'th stage .
+        """Make plugins for ResNet 'stage_idx'th stage .
 
         Currently we support to insert 'context_block',
         'empirical_attention_block', 'nonlocal_block' into the backbone like
@@ -585,7 +587,7 @@ class ResNet(BaseModule):
 
     @property
     def norm1(self):
-        """nn.Module: the normalization layer named "norm1" """
+        """nn.Module: the normalization layer named "norm1"."""
         return getattr(self, self.norm1_name)
 
     def _make_stem_layer(self, in_channels, stem_channels):
@@ -691,7 +693,7 @@ class ResNetV1c(ResNet):
 
     Compared with default ResNet(ResNetV1b), ResNetV1c replaces the 7x7 conv in
     the input stem with three 3x3 convs. For more details please refer to `Bag
-    of Tricks for Image Classification with Convolutional Neural Networks
+    of Tricks for Image Classification with Convolutional Neural Networks \
     <https://arxiv.org/abs/1812.01187>`_.
     """
 

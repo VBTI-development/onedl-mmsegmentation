@@ -10,7 +10,7 @@ MMSegmentation 1.x depends on some new packages, you can prepare a new clean env
 
 Or install the below packages manually.
 
-1. [MMEngine](https://github.com/open-mmlab/mmengine): MMEngine is the core the OpenMMLab 2.0 architecture, and we splited many compentents unrelated to computer vision from MMCV to MMEngine.
+1. [MMEngine](https://github.com/open-mmlab/mmengine): MMEngine is the core the OpenMMLab 2.0 architecture, and we split many compentents unrelated to computer vision from MMCV to MMEngine.
 
 2. [MMCV](https://github.com/open-mmlab/mmcv): The computer vision package of OpenMMLab. This is not a new dependency, but you need to upgrade it to **2.0.0** version or above.
 

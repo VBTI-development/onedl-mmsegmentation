@@ -42,7 +42,7 @@ def test_pidnet_backbone():
     imgs = torch.randn(batch_size, 3, 64, 128)
     feats = model(imgs)
 
-    assert type(feats) == torch.Tensor
+    assert isinstance(feats, torch.Tensor)
     assert feats.shape == torch.Size([batch_size, 128, 8, 16])
 
     # Test train mode

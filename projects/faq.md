@@ -4,7 +4,7 @@ Implementing new models and features into OpenMMLab's algorithm libraries could 
 
 Q2: Why should there be a checklist for a project?
 
-This checkelist is crucial not only for this project's developers but the entire community, since there might be some other contributors joining this project and deciding their starting point from this list. It also helps maintainers accurately estimate time and effort on further code polishing, if needed.
+This checklist is crucial not only for this project's developers but the entire community, since there might be some other contributors joining this project and deciding their starting point from this list. It also helps maintainers accurately estimate time and effort on further code polishing, if needed.
 
 Q3: What kind of PR will be merged?
 

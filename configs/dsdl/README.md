@@ -68,7 +68,7 @@ To overcome such difficulties, we develop **Data Set Description Language (DSDL)
     cd ../../
     ```
 
-- change traning config
+- change training config
 
   open the [voc config file](voc.py) and set some file paths as below:
 

@@ -17,7 +17,7 @@ RESULTS_LUT = ['mIoU', 'mAcc', 'aAcc']
 
 
 def calculate_file_sha256(file_path):
-    """calculate file sha256 hash code."""
+    """Calculate file sha256 hash code."""
     with open(file_path, 'rb') as fp:
         sha256_cal = hashlib.sha256()
         sha256_cal.update(fp.read())

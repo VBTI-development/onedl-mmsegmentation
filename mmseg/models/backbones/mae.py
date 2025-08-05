@@ -152,7 +152,9 @@ class MAE(BEiT):
     def fix_init_weight(self):
         """Rescale the initialization according to layer id.
 
-        This function is copied from  https://github.com/microsoft/unilm/blob/master/beit/modeling_pretrain.py. # noqa: E501
+        This function is copied from
+        https://github.com/microsoft/unilm/blob/master/beit/modeling_pretrain.py.
+        # noqa: E501
         Copyright (c) Microsoft Corporation
         Licensed under the MIT License
         """

@@ -113,7 +113,7 @@ def pytorch2libtorch(model,
 
     imgs = mm_inputs.pop('imgs')
 
-    # replace the original forword with forward_dummy
+    # replace the original forward with forward_dummy
     model.forward = model.forward_dummy
     model.eval()
     traced_model = torch.jit.trace(

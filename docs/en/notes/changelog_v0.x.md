@@ -139,7 +139,7 @@
 
 **Improvements**
 
-- Refactor 4 decoder heads (ASPP, FCN, PSP, UPer): Split forward function into `_forward_feature` and `cls_seg`. ([#1299](https://github.com/open-mmlab/mmsegmentation/pull/1299))
+- Refactor 4 decoder heads (ASPP, FCN, PSP, UPer): Split forward function into `_forward_feature` and `cls_seg`. ([#1299](https://github.com/open-mmlab/mmsegmentation/pull/1299))  # codespell:ignore
 - Add `min_size` arg in `Resize` to keep the shape after resize bigger than slide window. ([#1318](https://github.com/open-mmlab/mmsegmentation/pull/1318))
 - Revise pre-commit-hooks. ([#1315](https://github.com/open-mmlab/mmsegmentation/pull/1315))
 - Add win-ci. ([#1296](https://github.com/open-mmlab/mmsegmentation/pull/1296))

@@ -34,8 +34,9 @@ class SegTTAModel(BaseTTAModel):
                     logits += seg_logit.sigmoid()
             logits /= len(data_samples)
             if self.module.out_channels == 1:
-                seg_pred = (logits > self.module.decode_head.threshold
-                            ).to(logits).squeeze(1)
+                seg_pred = (
+                    logits
+                    > self.module.decode_head.threshold).to(logits).squeeze(1)
             else:
                 seg_pred = logits.argmax(dim=0)
             data_sample.set_data({'pred_sem_seg': PixelData(data=seg_pred)})

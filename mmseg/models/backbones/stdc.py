@@ -243,10 +243,10 @@ class STDCNet(BaseModule):
         super().__init__(init_cfg=init_cfg)
         assert stdc_type in self.arch_settings, \
             f'invalid structure {stdc_type} for STDCNet.'
-        assert bottleneck_type in ['add', 'cat'],\
+        assert bottleneck_type in ['add', 'cat'], \
             f'bottleneck_type must be `add` or `cat`, got {bottleneck_type}'
 
-        assert len(channels) == 5,\
+        assert len(channels) == 5, \
             f'invalid channels length {len(channels)} for STDCNet.'
 
         self.in_channels = in_channels

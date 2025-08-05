@@ -115,7 +115,7 @@ class DeconvModule(nn.Module):
         super().__init__()
 
         assert (kernel_size - scale_factor >= 0) and\
-               (kernel_size - scale_factor) % 2 == 0,\
+               (kernel_size - scale_factor) % 2 == 0, \
                f'kernel_size should be greater than or equal to scale_factor '\
                f'and (kernel_size - scale_factor) should be even numbers, '\
                f'while the kernel size is {kernel_size} and scale_factor is '\
@@ -429,7 +429,7 @@ class UNet(BaseModule):
             if self.strides[i] == 2 or self.downsamples[i - 1]:
                 whole_downsample_rate *= 2
         assert (h % whole_downsample_rate == 0) \
-            and (w % whole_downsample_rate == 0),\
+            and (w % whole_downsample_rate == 0), \
             f'The input image size {(h, w)} should be divisible by the whole '\
             f'downsample rate {whole_downsample_rate}, when num_stages is '\
             f'{self.num_stages}, strides is {self.strides}, and downsamples '\

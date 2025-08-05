@@ -63,15 +63,15 @@ class STDCHead(FCNHead):
         boundary_targets_x2_up = F.interpolate(
             boundary_targets_x2, boundary_targets.shape[2:], mode='nearest')
 
-        boundary_targets_x2_up[
-            boundary_targets_x2_up > self.boundary_threshold] = 1
-        boundary_targets_x2_up[
-            boundary_targets_x2_up <= self.boundary_threshold] = 0
+        boundary_targets_x2_up[boundary_targets_x2_up >
+                               self.boundary_threshold] = 1
+        boundary_targets_x2_up[boundary_targets_x2_up <=
+                               self.boundary_threshold] = 0
 
-        boundary_targets_x4_up[
-            boundary_targets_x4_up > self.boundary_threshold] = 1
-        boundary_targets_x4_up[
-            boundary_targets_x4_up <= self.boundary_threshold] = 0
+        boundary_targets_x4_up[boundary_targets_x4_up >
+                               self.boundary_threshold] = 1
+        boundary_targets_x4_up[boundary_targets_x4_up <=
+                               self.boundary_threshold] = 0
 
         boundary_targets_pyramids = torch.stack(
             (boundary_targets, boundary_targets_x2_up, boundary_targets_x4_up),
@@ -81,10 +81,10 @@ class STDCHead(FCNHead):
         boudary_targets_pyramid = F.conv2d(boundary_targets_pyramids,
                                            self.fusion_kernel)
 
-        boudary_targets_pyramid[
-            boudary_targets_pyramid > self.boundary_threshold] = 1
-        boudary_targets_pyramid[
-            boudary_targets_pyramid <= self.boundary_threshold] = 0
+        boudary_targets_pyramid[boudary_targets_pyramid >
+                                self.boundary_threshold] = 1
+        boudary_targets_pyramid[boudary_targets_pyramid <=
+                                self.boundary_threshold] = 0
 
         seg_labels = boudary_targets_pyramid.long()
         batch_sample_list = []

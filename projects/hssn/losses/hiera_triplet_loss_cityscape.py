@@ -211,8 +211,9 @@ class HieraTripletLossCityscape(nn.Module):
         if torch.distributed.get_world_size() == torch.nonzero(
                 class_counts, as_tuple=False).size(0):
             factor = 1 / 4 * (1 + torch.cos(
-                torch.tensor((step.item() - 80000) / 80000 *
-                             math.pi))) if step.item() < 80000 else 0.5
+                torch.tensor(
+                    (step.item() - 80000) / 80000 * math.pi))) if step.item(
+                    ) < 80000 else 0.5
             loss += factor * loss_triplet
 
         return loss * self.loss_weight

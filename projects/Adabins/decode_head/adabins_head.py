@@ -10,7 +10,7 @@ from mmseg.registry import MODELS
 
 
 class PatchTransformerEncoder(nn.Module):
-    """the Patch Transformer Encoder.
+    """The Patch Transformer Encoder.
 
     Args:
         in_channels (int): the channels of input
@@ -54,7 +54,7 @@ class PatchTransformerEncoder(nn.Module):
 
 
 class PixelWiseDotProduct(nn.Module):
-    """the pixel wise dot product."""
+    """The pixel wise dot product."""
 
     def __init__(self):
         super().__init__()
@@ -72,7 +72,7 @@ class PixelWiseDotProduct(nn.Module):
 
 @MODELS.register_module()
 class AdabinsHead(nn.Module):
-    """the head of the adabins,include mViT.
+    """The head of the adabins,include mViT.
 
     Args:
         in_channels (int):the channels of the input

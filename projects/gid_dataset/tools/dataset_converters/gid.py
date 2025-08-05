@@ -72,11 +72,10 @@ def clip_big_image(image_path, clip_save_dir, args, to_label=False):
     """Original image of GID dataset is very large, thus pre-processing of them
     is adopted.
 
-    Given fixed clip size and stride size to generate
-    clipped image, the intersection　of width and height is determined.
-    For example, given one 6800 x 7200 original image, the clip size is
-    256 and stride size is 256, thus it would generate 29 x 27 = 783 images
-    whose size are all 256 x 256.
+    Given fixed clip size and stride size to generate clipped image, the
+    intersection　of width and height is determined. For example, given one 6800
+    x 7200 original image, the clip size is 256 and stride size is 256, thus it
+    would generate 29 x 27 = 783 images whose size are all 256 x 256.
     """
 
     image = mmcv.imread(image_path, channel_order='rgb')

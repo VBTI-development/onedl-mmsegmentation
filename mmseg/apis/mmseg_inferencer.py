@@ -49,7 +49,7 @@ class MMSegInferencer(BaseInferencer):
             not defined, visualizer will take `cityscapes` palette by default.
             Defaults to None.
         dataset_name (str, optional): `Dataset name or alias <https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317>`_
-            visulizer will use the meta information of the dataset i.e. classes
+            visualizer will use the meta information of the dataset i.e. classes
             and palette, but the `classes` and `palette` have higher priority.
             Defaults to None.
         device (str, optional): Device to run inference. If None, the available

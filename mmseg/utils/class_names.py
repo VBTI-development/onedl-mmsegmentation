@@ -127,7 +127,7 @@ def vaihingen_classes():
 
 
 def isaid_classes():
-    """iSAID class names for external use."""
+    """ISAID class names for external use."""
     return [
         'background', 'ship', 'store_tank', 'baseball_diamond', 'tennis_court',
         'basketball_court', 'Ground_Track_Field', 'Bridge', 'Large_Vehicle',
@@ -137,7 +137,7 @@ def isaid_classes():
 
 
 def stare_classes():
-    """stare class names for external use."""
+    """Stare class names for external use."""
     return ['background', 'vessel']
 
 
@@ -406,7 +406,7 @@ def vaihingen_palette():
 
 
 def isaid_palette():
-    """iSAID palette for external use."""
+    """ISAID palette for external use."""
     return [[0, 0, 0], [0, 0, 63], [0, 63, 63], [0, 63, 0], [0, 63, 127],
             [0, 63, 191], [0, 63, 255], [0, 127, 63], [0, 127,
                                                        127], [0, 0, 127],
@@ -465,7 +465,7 @@ def bdd100k_classes():
 
 
 def bdd100k_palette():
-    """bdd100k palette for external use(same with cityscapes)"""
+    """Bdd100k palette for external use(same with cityscapes)"""
     return [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156],
             [190, 153, 153], [153, 153, 153], [250, 170, 30], [220, 220, 0],
             [107, 142, 35], [152, 251, 152], [70, 130, 180], [220, 20, 60],

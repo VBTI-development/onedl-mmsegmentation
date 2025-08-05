@@ -52,20 +52,20 @@ TRANSFORMS = Registry(
     parent=MMENGINE_TRANSFORMS,
     locations=['mmseg.datasets.transforms'])
 
-# mangage all kinds of modules inheriting `nn.Module`
+# manage all kinds of modules inheriting `nn.Module`
 MODELS = Registry('model', parent=MMENGINE_MODELS, locations=['mmseg.models'])
-# mangage all kinds of model wrappers like 'MMDistributedDataParallel'
+# manage all kinds of model wrappers like 'MMDistributedDataParallel'
 MODEL_WRAPPERS = Registry(
     'model_wrapper',
     parent=MMENGINE_MODEL_WRAPPERS,
     locations=['mmseg.models'])
-# mangage all kinds of weight initialization modules like `Uniform`
+# manage all kinds of weight initialization modules like `Uniform`
 WEIGHT_INITIALIZERS = Registry(
     'weight initializer',
     parent=MMENGINE_WEIGHT_INITIALIZERS,
     locations=['mmseg.models'])
 
-# mangage all kinds of optimizers like `SGD` and `Adam`
+# manage all kinds of optimizers like `SGD` and `Adam`
 OPTIMIZERS = Registry(
     'optimizer',
     parent=MMENGINE_OPTIMIZERS,
@@ -80,7 +80,7 @@ OPTIM_WRAPPER_CONSTRUCTORS = Registry(
     'optimizer wrapper constructor',
     parent=MMENGINE_OPTIM_WRAPPER_CONSTRUCTORS,
     locations=['mmseg.engine.optimizers'])
-# mangage all kinds of parameter schedulers like `MultiStepLR`
+# manage all kinds of parameter schedulers like `MultiStepLR`
 PARAM_SCHEDULERS = Registry(
     'parameter scheduler',
     parent=MMENGINE_PARAM_SCHEDULERS,

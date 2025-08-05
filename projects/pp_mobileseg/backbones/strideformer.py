@@ -25,7 +25,7 @@ class StrideFormer(BaseModule):
         channels(list): The input channels for each MobileNetV3 block.
         embed_dims(list): The channels of the features input to the sea
             attention block.
-        key_dims(list, optional): The embeding dims for each head in
+        key_dims(list, optional): The embedding dims for each head in
             attention.
         depths(list, optional): describes the depth of the attention block.
             i,e: M,N.
@@ -430,7 +430,7 @@ class BasicLayer(nn.Module):
 
 
 class Block(nn.Module):
-    """the block of the transformer basic layer.
+    """The block of the transformer basic layer.
 
     Args:
         dim (int): The feature dimension.
@@ -490,7 +490,7 @@ class Block(nn.Module):
 
 
 class SqueezeAxialPositionalEmbedding(nn.Module):
-    """the Squeeze Axial Positional Embedding.
+    """The Squeeze Axial Positional Embedding.
 
     Args:
         dim (int): The feature dimension.
@@ -669,7 +669,7 @@ class SeaAttention(nn.Module):
 
 
 class MLP(nn.Module):
-    """the Multilayer Perceptron.
+    """The Multilayer Perceptron.
 
     Args:
         in_features (int): the input feature.
@@ -790,7 +790,7 @@ class FusionBlock(nn.Module):
 
 
 class InjectionMultiSumallmultiallsum(nn.Module):
-    """the Aggregate Attention Module.
+    """The Aggregate Attention Module.
 
     Args:
         in_channels (tuple): the input channel.
@@ -860,7 +860,7 @@ class InjectionMultiSumallmultiallsum(nn.Module):
 
 
 class InjectionMultiSumallmultiallsumSimpx8(nn.Module):
-    """the Aggregate Attention Module.
+    """The Aggregate Attention Module.
 
     Args:
         in_channels (tuple): the input channel.
@@ -938,7 +938,7 @@ def _make_divisible(v, divisor=8, min_value=None):
 
 @MODELS.register_module()
 class Hardsigmoid(nn.Module):
-    """the hardsigmoid activation.
+    """The hardsigmoid activation.
 
     Args:
         slope (float, optional): The slope of hardsigmoid function.

@@ -12,7 +12,7 @@ from mmseg.registry import MODELS
 
 @MODELS.register_module()
 class PPMobileSegHead(nn.Module):
-    """the segmentation head.
+    """The segmentation head.
 
     Args:
         num_classes (int): the classes num.
