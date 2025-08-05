@@ -137,7 +137,7 @@ known_third_party = [
     "ts"
 ]
 no_lines_before = ["STDLIB", "LOCALFOLDER"]
-default_section = "THIRDPARTY"
+default_section = "THIRDPARTY"  # codespell:ignore
 
 [tool.codespell]
 skip = "*.po,*.ts,*.ipynb"

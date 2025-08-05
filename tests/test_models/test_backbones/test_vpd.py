@@ -9,7 +9,8 @@ import mmseg
 from mmseg.models.backbones import VPD
 from mmseg.models.backbones.vpd import has_ldm
 
-@skipIf(not has_ldm, "Not all packages are installed for VPD")
+
+@skipIf(not has_ldm, 'Not all packages are installed for VPD')
 class TestVPD(TestCase):
 
     def setUp(self) -> None:

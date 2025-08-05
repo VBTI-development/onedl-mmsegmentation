@@ -70,8 +70,8 @@ It is not recommended for users to modify the default hook priorities. Please re
 
 The following are the default hooks used in MMSegmentation:
 
-|                                                          Hook                                                          |                                                          Function                                                          |     Priority      |
-| :--------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: | :---------------: |
+|                                                                Hook                                                                |                                                          Function                                                          |     Priority      |
+| :--------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: | :---------------: |
 |          [IterTimerHook](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/hooks/iter_timer_hook.py)           |                                          Record the time spent on each iteration.                                          |    NORMAL (50)    |
 |              [LoggerHook](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/hooks/logger_hook.py)              | Collect log records from different components in `Runner` and output them to terminal, JSON file, tensorboard, wandb, etc. | BELOW_NORMAL (60) |
 |     [ParamSchedulerHook](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/hooks/param_scheduler_hook.py)      |                       Update some hyperparameters in the optimizer, such as learning rate momentum.                        |     LOW (70)      |
@@ -133,8 +133,8 @@ Custom hooks are defined in the configuration through `custom_hooks`, and `Runne
 
 The priority of custom hooks needs to be set in the configuration file; if not, it will be set to `NORMAL` by default. The following are some custom hooks implemented in MMEngine:
 
-|                                                  Hook                                                  |                                                               Usage                                                                |
-| :----------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
+|                                                        Hook                                                        |                                                               Usage                                                                |
+| :----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
 |         [EMAHook](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/hooks/ema_hook.py)         |                                    Use Exponential Moving Average (EMA) during model training.                                     |
 | [EmptyCacheHook](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/hooks/empty_cache_hook.py)  |                                  Release all GPU memory not occupied by the cache during training                                  |
 | [SyncBuffersHook](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/hooks/sync_buffer_hook.py) | Synchronize the parameters in the model buffer, such as `running_mean` and `running_var` in BN, at the end of each training epoch. |

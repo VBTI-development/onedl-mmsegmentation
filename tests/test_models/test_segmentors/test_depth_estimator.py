@@ -8,11 +8,12 @@ from mmengine import Config, ConfigDict
 from mmengine.structures import PixelData
 
 import mmseg
+from mmseg.models.backbones.vpd import has_ldm
 from mmseg.models.segmentors import DepthEstimator
 from mmseg.structures import SegDataSample
-from mmseg.models.backbones.vpd import has_ldm
 
-@skipIf(not has_ldm, "Not all packages are installed for VPD")
+
+@skipIf(not has_ldm, 'Not all packages are installed for VPD')
 class TestDepthEstimator(TestCase):
 
     def setUp(self) -> None:

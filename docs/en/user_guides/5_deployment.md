@@ -208,8 +208,8 @@ Besides python API, mmdeploy SDK also provides other FFI (Foreign Function Inter
 
 ## Supported models
 
-| Model                                                                                                     | TorchScript | OnnxRuntime | TensorRT | ncnn | PPLNN | OpenVino |
-| :-------------------------------------------------------------------------------------------------------- | :---------: | :---------: | :------: | :--: | :---: | :------: |
+| Model                                                                                                                 | TorchScript | OnnxRuntime | TensorRT | ncnn | PPLNN | OpenVino |
+| :-------------------------------------------------------------------------------------------------------------------- | :---------: | :---------: | :------: | :--: | :---: | :------: |
 | [FCN](https://github.com/vbti-development/onedl-mmsegmentation/tree/main/configs/fcn)                                 |      Y      |      Y      |    Y     |  Y   |   Y   |    Y     |
 | [PSPNet](https://github.com/vbti-development/onedl-mmsegmentation/tree/main/configs/pspnet)[\*](#static_shape)        |      Y      |      Y      |    Y     |  Y   |   Y   |    Y     |
 | [DeepLabV3](https://github.com/vbti-development/onedl-mmsegmentation/tree/main/configs/deeplabv3)                     |      Y      |      Y      |    Y     |  Y   |   Y   |    Y     |

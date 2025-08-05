@@ -89,7 +89,8 @@ html_theme_options = {
             'name':
             'Tutorial',
             'url':
-            'https://github.com/vbti-development/onedl-mmsegmentation/blob/master/'
+            'https://github.com/vbti-development/onedl-mmsegmentation'
+            '/blob/master/'
             'demo/MMSegmentation_Tutorial.ipynb'
         },
         {

@@ -176,7 +176,7 @@ The training speed is reported as followed, in terms of second per iter (s/iter)
 
 | Implementation                                                              | PSPNet (s/iter) | DeepLabV3+ (s/iter) |
 | --------------------------------------------------------------------------- | --------------- | ------------------- |
-| [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation)              | **0.83**        | **0.85**            |
+| [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation)  | **0.83**        | **0.85**            |
 | [SegmenTron](https://github.com/LikeLy-Journey/SegmenTron)                  | 0.84            | 0.85                |
 | [CASILVision](https://github.com/CSAILVision/semantic-segmentation-pytorch) | 1.15            | N/A                 |
 | [vedaseg](https://github.com/Media-Smart/vedaseg)                           | 0.95            | 1.25                |
