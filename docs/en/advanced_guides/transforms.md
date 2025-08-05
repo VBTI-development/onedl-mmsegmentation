@@ -12,9 +12,9 @@ The structure of this guide is as follows:
 
 ## Design of Data pipelines
 
-Following typical conventions, we use `Dataset` and `DataLoader` for data loading with multiple workers. `Dataset` returns a dict of data items corresponding the arguments of models' forward method. Since the data in semantic segmentation may not be the same size, we introduce a new `DataContainer` type in MMCV to help collect and distribute data of different size. See [here](https://github.com/open-mmlab/mmcv/blob/master/mmcv/parallel/data_container.py) for more details.
+Following typical conventions, we use `Dataset` and `DataLoader` for data loading with multiple workers. `Dataset` returns a dict of data items corresponding the arguments of models' forward method. Since the data in semantic segmentation may not be the same size, we introduce a new `DataContainer` type in MMCV to help collect and distribute data of different size. See [here](https://github.com/vbti-development/onedl-mmcv/blob/master/mmcv/parallel/data_container.py) for more details.
 
-In 1.x version of MMSegmentation, all data transformations are inherited from [`BaseTransform`](https://github.com/open-mmlab/mmcv/blob/2.x/mmcv/transforms/base.py#L6).
+In 1.x version of MMSegmentation, all data transformations are inherited from [`BaseTransform`](https://github.com/vbti-development/onedl-mmcv/blob/2.x/mmcv/transforms/base.py#L6).
 
 The input and output types of transformations are both dict. A simple example is as follows:
 

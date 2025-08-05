@@ -240,7 +240,7 @@ mim download mmsegmentation --dataset ade20k
 The data could be found [here](https://www.cityscapes-dataset.com/downloads/) after registration.
 
 By convention, `**labelTrainIds.png` are used for cityscapes training.
-We provided a [script](https://github.com/open-mmlab/mmsegmentation/blob/1.x/tools/dataset_converters/cityscapes.py) based on [cityscapesscripts](https://github.com/mcordts/cityscapesScripts)to generate `**labelTrainIds.png`.
+We provided a [script](https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/tools/dataset_converters/cityscapes.py) based on [cityscapesscripts](https://github.com/mcordts/cityscapesScripts)to generate `**labelTrainIds.png`.
 
 ```shell
 # --nproc means 8 process for conversion, which could be omitted as well.
@@ -677,7 +677,7 @@ It includes 400 images for training, 400 images for validation and 400 images fo
   ```
 
 - You could set Datasets version with `MapillaryDataset_v1` and `MapillaryDataset_v2` in your configs.
-  View the Mapillary Vistas Datasets config file here [V1.2](https://github.com/open-mmlab/mmsegmentation/blob/main/configs/_base_/datasets/mapillary_v1.py) and [V2.0](https://github.com/open-mmlab/mmsegmentation/blob/main/configs/_base_/datasets/mapillary_v2.py)
+  View the Mapillary Vistas Datasets config file here [V1.2](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/configs/_base_/datasets/mapillary_v1.py) and [V2.0](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/configs/_base_/datasets/mapillary_v2.py)
 
 ## LEVIR-CD
 

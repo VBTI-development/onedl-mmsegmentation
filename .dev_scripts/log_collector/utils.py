@@ -1,5 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-# modified from https://github.dev/open-mmlab/mmcv
+# modified from https://github.dev/vbti-development/onedl-mmcv
 import os.path as osp
 import sys
 from importlib import import_module

@@ -179,7 +179,7 @@ test_evaluator = val_evaluator
 
 ```python
 # optimizer
-optimizer = dict(type='SGD', # Type of optimizers, refer to https://github.com/open-mmlab/mmengine/blob/main/mmengine/optim/optimizer/default_constructor.py for more details
+optimizer = dict(type='SGD', # Type of optimizers, refer to https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/optim/optimizer/default_constructor.py for more details
                 lr=0.01,  # Learning rate of optimizers, see detail usages of the parameters in the documentation of PyTorch
                 momentum=0.9,  # Momentum
                 weight_decay=0.0005)  # Weight decay of SGD
@@ -189,7 +189,7 @@ optim_wrapper = dict(type='OptimWrapper',  # Optimizer wrapper provides a common
 # learning policy
 param_scheduler = [
     dict(
-        type='PolyLR',  # The policy of scheduler, also support Step, CosineAnnealing, Cyclic, etc. Refer to details of supported LrUpdater from https://github.com/open-mmlab/mmengine/blob/main/mmengine/optim/scheduler/lr_scheduler.py
+        type='PolyLR',  # The policy of scheduler, also support Step, CosineAnnealing, Cyclic, etc. Refer to details of supported LrUpdater from https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/optim/scheduler/lr_scheduler.py
         eta_min=1e-4,  # Minimum learning rate at the end of scheduling.
         power=0.9,  # The power of polynomial decay.
         begin=0,  # Step at which to start updating the parameters.
@@ -226,7 +226,7 @@ load_from = None  # Load checkpoint from file.
 resume = False  # Whether to resume from existed model.
 ```
 
-These are all the configs for training and testing PSPNet, to load and parse them, we can use [Config](https://mmengine.readthedocs.io/en/latest/tutorials/config.html) implemented in [MMEngine](https://github.com/open-mmlab/mmengine)
+These are all the configs for training and testing PSPNet, to load and parse them, we can use [Config](https://mmengine.readthedocs.io/en/latest/tutorials/config.html) implemented in [MMEngine](https://github.com/vbti-development/onedl-mmengine)
 
 ```python
 from mmengine.config import Config
@@ -256,14 +256,14 @@ print(cfg.train_dataloader)
    {'type': 'PackSegInputs'}]}}
 ```
 
-`cfg` is an instance of `mmengine.config.Config`, its interface is the same as a dict object and also allows access config values as attributes. See [config tutorial](https://mmengine.readthedocs.io/en/latest/tutorials/config.html) in [MMEngine](https://github.com/open-mmlab/mmengine) for more information.
+`cfg` is an instance of `mmengine.config.Config`, its interface is the same as a dict object and also allows access config values as attributes. See [config tutorial](https://mmengine.readthedocs.io/en/latest/tutorials/config.html) in [MMEngine](https://github.com/vbti-development/onedl-mmengine) for more information.
 
 ## FAQ
 
 ### Ignore some fields in the base configs
 
 Sometimes, you may set `_delete_=True` to ignore some of the fields in base configs.
-See [config tutorial](https://mmengine.readthedocs.io/en/latest/tutorials/config.html) in [MMEngine](https://github.com/open-mmlab/mmengine) for simple illustration.
+See [config tutorial](https://mmengine.readthedocs.io/en/latest/tutorials/config.html) in [MMEngine](https://github.com/vbti-development/onedl-mmengine) for simple illustration.
 
 In MMSegmentation, for example, if you would like to modify the backbone of PSPNet with the following config file `pspnet.py`:
 
@@ -483,7 +483,7 @@ model = dict(
 
 ## Modify config through script arguments
 
-In the [training script](https://github.com/open-mmlab/mmsegmentation/blob/1.x/tools/train.py) and the [testing script](https://github.com/open-mmlab/mmsegmentation/blob/1.x/tools/test.py), we support the script argument `--cfg-options`, it may help users override some settings in the used config, the key-value pair in `xxx=yyy` format will be merged into config file.
+In the [training script](https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/tools/train.py) and the [testing script](https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/tools/test.py), we support the script argument `--cfg-options`, it may help users override some settings in the used config, the key-value pair in `xxx=yyy` format will be merged into config file.
 
 For example, this is a simplified script `demo_script.py`:
 

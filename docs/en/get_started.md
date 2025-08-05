@@ -38,7 +38,7 @@ We recommend that users follow our best practices to install MMSegmentation. How
 
 ### Best Practices
 
-**Step 0.** Install [MMCV](https://github.com/open-mmlab/mmcv) using [MIM](https://github.com/open-mmlab/mim).
+**Step 0.** Install [MMCV](https://github.com/vbti-development/onedl-mmcv) using [MIM](https://github.com/open-mmlab/mim).
 
 ```shell
 pip install -U openmim
@@ -51,7 +51,7 @@ mim install "mmcv>=2.0.0"
 Case a: If you develop and run mmseg directly, install it from source:
 
 ```shell
-git clone -b main https://github.com/open-mmlab/mmsegmentation.git
+git clone -b main https://github.com/vbti-development/onedl-mmsegmentation.git
 cd mmsegmentation
 pip install -v -e .
 # '-v' means verbose, or more output
@@ -151,7 +151,7 @@ MMSegmentation can be built for CPU only environment. In CPU mode you can train 
 [Google Colab](https://research.google.com/) usually has PyTorch installed,
 thus we only need to install MMCV and MMSegmentation with the following commands.
 
-**Step 1.** Install [MMCV](https://github.com/open-mmlab/mmcv) using [MIM](https://github.com/open-mmlab/mim).
+**Step 1.** Install [MMCV](https://github.com/vbti-development/onedl-mmcv) using [MIM](https://github.com/open-mmlab/mim).
 
 ```shell
 !pip3 install openmim
@@ -162,7 +162,7 @@ thus we only need to install MMCV and MMSegmentation with the following commands
 **Step 2.** Install MMSegmentation from the source.
 
 ```shell
-!git clone https://github.com/open-mmlab/mmsegmentation.git
+!git clone https://github.com/vbti-development/onedl-mmsegmentation.git
 %cd mmsegmentation
 !git checkout main
 !pip install -e .
@@ -181,7 +181,7 @@ Within Jupyter, the exclamation mark `!` is used to call external executables an
 
 ### Using MMSegmentation with Docker
 
-We provide a [Dockerfile](https://github.com/open-mmlab/mmsegmentation/blob/main/docker/Dockerfile) to build an image. Ensure that your [docker version](https://docs.docker.com/engine/install/) >=19.03.
+We provide a [Dockerfile](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docker/Dockerfile) to build an image. Ensure that your [docker version](https://docs.docker.com/engine/install/) >=19.03.
 
 ```shell
 # build an image with PyTorch 1.11, CUDA 11.3
@@ -208,4 +208,4 @@ conda install GDAL
 ## Trouble shooting
 
 If you have some issues during the installation, please first view the [FAQ](notes/faq.md) page.
-You may [open an issue](https://github.com/open-mmlab/mmsegmentation/issues/new/choose) on GitHub if no solution is found.
+You may [open an issue](https://github.com/vbti-development/onedl-mmsegmentation/issues/new/choose) on GitHub if no solution is found.

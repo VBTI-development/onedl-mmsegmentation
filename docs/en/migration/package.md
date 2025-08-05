@@ -74,7 +74,7 @@ We moved registry implementations for all kinds of modules in MMSegmentation in 
 
 ### `mmseg.apis`
 
-OpenMMLab 2.0 tries to support unified interface for multitasking of Computer Vision, and releases much stronger [`Runner`](https://github.com/open-mmlab/mmengine/blob/main/docs/en/design/runner.md), so MMSeg 1.x removed modules in `train.py` and `test.py` renamed `init_segmentor` to `init_model` and `inference_segmentor` to `inference_model`.
+OpenMMLab 2.0 tries to support unified interface for multitasking of Computer Vision, and releases much stronger [`Runner`](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/design/runner.md), so MMSeg 1.x removed modules in `train.py` and `test.py` renamed `init_segmentor` to `init_model` and `inference_segmentor` to `inference_model`.
 
 Here is the changes of `mmseg.apis`:
 

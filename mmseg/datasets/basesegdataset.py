@@ -206,7 +206,7 @@ class BaseSegDataset(BaseDataset):
             # random state later.
             # It will prevent loss of randomness, as the palette
             # may be different in each iteration if not specified.
-            # See: https://github.com/open-mmlab/mmdetection/issues/5844
+            # See: https://github.com/vbti-development/onedl-mmdetection/issues/5844
             state = np.random.get_state()
             np.random.seed(42)
             # random palette
@@ -477,7 +477,7 @@ class BaseCDDataset(BaseDataset):
             # random state later.
             # It will prevent loss of randomness, as the palette
             # may be different in each iteration if not specified.
-            # See: https://github.com/open-mmlab/mmdetection/issues/5844
+            # See: https://github.com/vbti-development/onedl-mmdetection/issues/5844
             state = np.random.get_state()
             np.random.seed(42)
             # random palette

@@ -33,7 +33,7 @@ class SegLocalVisualizer(Visualizer):
             `cityscapes` classes by default. Defaults to None.
         palette (list, optional): Input palette for result rendering, which is
             a list of color palette responding to the classes. Defaults to None.
-        dataset_name (str, optional): `Dataset name or alias <https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317>`_
+        dataset_name (str, optional): `Dataset name or alias <https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317>`_
             visualizer will use the meta information of the dataset i.e. classes
             and palette, but the `classes` and `palette` have higher priority.
             Defaults to None.
@@ -236,7 +236,7 @@ class SegLocalVisualizer(Visualizer):
             palette (list, optional): Input palette for result rendering, which
                 is a list of color palette responding to the classes.
                 Defaults to None.
-            dataset_name (str, optional): `Dataset name or alias <https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317>`_
+            dataset_name (str, optional): `Dataset name or alias <https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317>`_
                 visualizer will use the meta information of the dataset i.e.
                 classes and palette, but the `classes` and `palette` have
                 higher priority. Defaults to None.
