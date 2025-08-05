@@ -103,8 +103,8 @@ build-backend = "setuptools.build_meta"
 include-package-data = true
 
 [tool.setuptools.packages.find]
-include = ["mmseg*"]
-exclude = ["tests", "docs", "configs", "tools", "demo"]
+include = ["mmseg", "mmseg.*"]
+exclude = ["tests", "docs", "configs", "tools", "demo", "src"]
 namespaces = false
 
 [tool.yapf]
