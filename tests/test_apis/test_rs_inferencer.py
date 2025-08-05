@@ -1,6 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
-from unittest import TestCase
+from unittest import TestCase, SkipTest
 
 import numpy as np
 from mmengine import ConfigDict, init_default_scope
@@ -9,6 +9,10 @@ from utils import *  # noqa: F401, F403
 from mmseg.apis import RSImage, RSInferencer
 from mmseg.registry import MODELS
 
+try:
+    from osgeo import gdal_array
+except ImportError:
+    raise SkipTest("Problem with gdal")
 
 class TestRSImage(TestCase):
 

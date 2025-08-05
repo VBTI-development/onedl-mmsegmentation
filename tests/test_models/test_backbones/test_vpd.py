@@ -1,14 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from os.path import dirname, join
-from unittest import TestCase
+from unittest import TestCase, skipIf
 
 import torch
 from mmengine import Config
 
 import mmseg
 from mmseg.models.backbones import VPD
+from mmseg.models.backbones.vpd import has_ldm
 
-
+@skipIf(not has_ldm, "Not all packages are installed for VPD")
 class TestVPD(TestCase):
 
     def setUp(self) -> None:

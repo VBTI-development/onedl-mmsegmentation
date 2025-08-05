@@ -89,17 +89,16 @@ MMSegmentation v1.x brings remarkable improvements over the 0.x release, offerin
 
 ## What's New
 
-v1.2.0 was released on 10/12/2023, from 1.1.0 to 1.2.0, we have added or updated the following features:
+The VBTI development team is reviving MMLabs code, making it work with
+newer pytorch versions and fixing bugs. We are only a small team, so your help
+is appreciated.
+
+v1.3.0 was released in August 2025, from 1.2.0 to 1.3.0, we have added or updated the following features:
 
 ### Highlights
 
-- Support for the open-vocabulary semantic segmentation algorithm [SAN](configs/san/README.md)
-
-- Support monocular depth estimation task, please refer to [VPD](configs/vpd/README.md) and [Adabins](projects/Adabins/README.md) for more details.
-
-  ![depth estimation](https://github.com/open-mmlab/mmsegmentation/assets/15952744/07afd0e9-8ace-4a00-aa1e-5bf0ca92dcbc)
-
-- Add new projects: open-vocabulary semantic segmentation algorithm [CAT-Seg](projects/CAT-Seg/README.md), real-time semantic segmentation algofithm [PP-MobileSeg](projects/pp_mobileseg/README.md)
+- Disabled tests on RS_inferencer due to difficulties installing gdal
+- Disabled tests on VPD Model due to the latent-diffusion needing to be installed in editable mode. This is not playing nice with uv.
 
 ## Installation
 

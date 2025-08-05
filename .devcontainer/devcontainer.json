@@ -18,7 +18,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y libgl1",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y libgl1 gdal-bin libgdal-dev python3-gdal",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

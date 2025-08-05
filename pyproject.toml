@@ -1,4 +1,3 @@
-
 [project]
 name = "onedl-mmsegmentation"
 version = "1.3.0-rc.0"
@@ -34,6 +33,8 @@ tests = [
     "pytest",
     "regex",
     "xdoctest>=0.10.0",
+    "onedl-mmpretrain",
+    "onedl-mmdetection @ git+https://github.com/VBTI-development/onedl-mmdetection.git@lauriebax/update-onedl-mmdetection",
 ]
 docs = [
     "docutils==0.16.0",
@@ -66,24 +67,26 @@ multimodal = [
 ]
 optional  = [
     "cityscapesscripts",
-    "CLIP @ git+https://github.com/openai/CLIP.git@main#egg=clip",
-    "diffusers",
-    "einops==0.3.0",
-    "imageio==2.9.0",
-    "imageio-ffmpeg==0.4.2",
-    "invisible-watermark",
-    "kornia==0.6",
-    "latent-diffusion @ git+https://github.com/CompVis/stable-diffusion@21f890f#egg=latent-diffusion",
-    "nibabel",
-    "omegaconf==2.1.1",
-    "pudb==2019.2",
-    "pytorch-lightning==1.4.2",
-    "streamlit>0.73.1",
-    "test-tube>=0.7.5",
-    "timm",
-    "torch-fidelity==0.3.0",
-    "torchmetrics==0.6.0",
-    "transformers==4.19.2",
+    "clip @ git+https://github.com/openai/CLIP.git@main",
+    # # for vpd model
+    # "diffusers",
+    # "einops==0.3.0",
+    # "imageio==2.9.0",
+    # "imageio-ffmpeg==0.4.2",
+    # "invisible-watermark",
+    # "kornia==0.6",
+    # "latent-diffusion @ git+https://github.com/CompVis/latent-diffusion",
+    # "nibabel",
+    # "omegaconf==2.1.1",
+    # "pudb==2019.2",
+    # "pytorch-lightning==1.4.2",
+    # "streamlit>0.73.1",
+    # "taming-transformers @ git+https://github.com/CompVis/taming-transformers.git@master",
+    # "test-tube>=0.7.5",
+    # "timm",
+    # "torch-fidelity==0.3.0",
+    # "torchmetrics==0.6.0",
+    # "transformers==4.19.2",
 ]
 torch = [ "torch<2.6", "torchvision" ]
 
@@ -96,10 +99,13 @@ Documentation = "https://onedl-mmsegmentation.readthedocs.io/"
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+include-package-data = true
+
 [tool.setuptools.packages.find]
 include = ["mmseg*"]
 exclude = ["tests", "docs", "configs", "tools", "demo"]
-include-package-data = true
+namespaces = false
 
 [tool.yapf]
 based_on_style = "pep8"
@@ -138,3 +144,8 @@ skip = "*.po,*.ts,*.ipynb"
 count = true
 quiet-level = 3
 ignore-words-list = "formating,sur,hist,dota,warmup,damon,hsi"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--ignore=src"
+]
