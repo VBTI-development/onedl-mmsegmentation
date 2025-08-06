@@ -50,11 +50,6 @@ Welcome to MMSegmentation's documentation!
 
    device/npu.md
 
-.. toctree::
-   :caption: Switch Language
-
-   switch_language.md
-
 
 Indices and tables
 ==================

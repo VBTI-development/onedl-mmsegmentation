@@ -167,7 +167,7 @@ class VisionTransformer(BaseModule):
         final_norm (bool): Whether to add a additional layer to normalize
             final feature map. Default: False.
         interpolate_mode (str): Select the interpolate mode for position
-            embeding vector resize. Default: bicubic.
+            embedding vector resize. Default: bicubic.
         num_fcs (int): The number of fully-connected layers for FFNs.
             Default: 2.
         norm_eval (bool): Whether to set norm layers to eval mode, namely,
@@ -382,7 +382,7 @@ class VisionTransformer(BaseModule):
                 param.requires_grad = False
 
     def _pos_embeding(self, patched_img, hw_shape, pos_embed):
-        """Positioning embeding method.
+        """Positioning embedding method.
 
         Resize the pos_embed, if the input image size doesn't match
             the training size.

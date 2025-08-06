@@ -280,7 +280,7 @@ class RecWithAttnbias(nn.Module):
             chosen from  ["cls_token", "learnable_token", "pos_embedding"].
             Default: 'cls_token'.
         sos_token_num (int): Number of sos token. It should be equal to
-            the number of quries. Default: 100.
+            the number of queries. Default: 100.
         num_layers (int): Number of rest CLIP layers for mask recognition.
             Default: 3.
         cross_attn (bool): Whether use cross attention to update sos token.
@@ -447,7 +447,9 @@ class RecWithAttnbias(nn.Module):
                     sos_token = cross_attn_layer(
                         block,
                         sos_token,
-                        x[1:, ],
+                        x[
+                            1:,
+                        ],
                         attn_biases[i],
                     )
                     if i < len(self.layers) - 1:

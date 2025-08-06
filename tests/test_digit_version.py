@@ -1,5 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmseg import digit_version
+from mmengine import digit_version
 
 
 def test_digit_version():

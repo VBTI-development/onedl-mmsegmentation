@@ -17,5 +17,5 @@ Useful Tools
 
    visualization.md
    useful_tools.md
-   deployment.md
+   5_deployment.md
    visualization_feature_map.md

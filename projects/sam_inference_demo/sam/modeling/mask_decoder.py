@@ -30,7 +30,7 @@ class MaskDecoder(nn.Module):
         iou_head_hidden_dim: int = 256,
     ) -> None:
         """Predicts masks given an image and prompt embeddings, using a
-        tranformer architecture.
+        transformer architecture.
 
         Borrowed from https://github.com/facebookresearch/segment-anything
 

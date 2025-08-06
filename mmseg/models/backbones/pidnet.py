@@ -59,8 +59,8 @@ class PagFM(BaseModule):
         """Forward function.
 
         Args:
-            x_p (Tensor): The featrue map from P branch.
-            x_i (Tensor): The featrue map from I branch.
+            x_p (Tensor): The feature map from P branch.
+            x_i (Tensor): The feature map from I branch.
 
         Returns:
             Tensor: The feature map with pixel-attention-guided fusion.
@@ -134,9 +134,9 @@ class Bag(BaseModule):
         """Forward function.
 
         Args:
-            x_p (Tensor): The featrue map from P branch.
-            x_i (Tensor): The featrue map from I branch.
-            x_d (Tensor): The featrue map from D branch.
+            x_p (Tensor): The feature map from P branch.
+            x_i (Tensor): The feature map from I branch.
+            x_d (Tensor): The feature map from D branch.
 
         Returns:
             Tensor: The feature map with boundary-attention-guided fusion.
@@ -180,9 +180,9 @@ class LightBag(BaseModule):
     def forward(self, x_p: Tensor, x_i: Tensor, x_d: Tensor) -> Tensor:
         """Forward function.
         Args:
-            x_p (Tensor): The featrue map from P branch.
-            x_i (Tensor): The featrue map from I branch.
-            x_d (Tensor): The featrue map from D branch.
+            x_p (Tensor): The feature map from P branch.
+            x_i (Tensor): The feature map from I branch.
+            x_d (Tensor): The feature map from D branch.
 
         Returns:
             Tensor: The feature map with light boundary-attention-guided

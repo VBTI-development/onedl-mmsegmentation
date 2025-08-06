@@ -1,65 +1,40 @@
 <div align="center">
-  <img src="resources/mmseg-logo.png" width="600"/>
+  <img width="600" alt="onedl-mmsegmentation" src="https://raw.githubusercontent.com/VBTI-development/onedl-mmsegmentation/main/resources/onedl-mmseg-logo.png"/>
   <div>&nbsp;</div>
   <div align="center">
-    <b><font size="5">OpenMMLab website</font></b>
-    <sup>
-      <a href="https://openmmlab.com">
-        <i><font size="4">HOT</font></i>
-      </a>
-    </sup>
+    <a href="https://vbti.ai">
+      <b><font size="5">VBTI Website</font></b>
+    </a>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <b><font size="5">OpenMMLab platform</font></b>
-    <sup>
-      <a href="https://platform.openmmlab.com">
-        <i><font size="4">TRY IT OUT</font></i>
-      </a>
-    </sup>
+    <a href="https://onedl.ai">
+      <b><font size="5">OneDL platform</font></b>
+    </a>
   </div>
-  <div>&nbsp;</div>
+<div>&nbsp;</div>
 
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mmsegmentation)](https://pypi.org/project/mmsegmentation/)
-[![PyPI](https://img.shields.io/pypi/v/mmsegmentation)](https://pypi.org/project/mmsegmentation)
-[![docs](https://img.shields.io/badge/docs-latest-blue)](https://mmsegmentation.readthedocs.io/en/latest/)
-[![badge](https://github.com/open-mmlab/mmsegmentation/workflows/build/badge.svg)](https://github.com/open-mmlab/mmsegmentation/actions)
-[![codecov](https://codecov.io/gh/open-mmlab/mmsegmentation/branch/master/graph/badge.svg)](https://codecov.io/gh/open-mmlab/mmsegmentation)
-[![license](https://img.shields.io/github/license/open-mmlab/mmsegmentation.svg)](https://github.com/open-mmlab/mmsegmentation/blob/main/LICENSE)
-[![issue resolution](https://isitmaintained.com/badge/resolution/open-mmlab/mmsegmentation.svg)](https://github.com/open-mmlab/mmsegmentation/issues)
-[![open issues](https://isitmaintained.com/badge/open/open-mmlab/mmsegmentation.svg)](https://github.com/open-mmlab/mmsegmentation/issues)
-[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_demo.svg)](https://openxlab.org.cn/apps?search=mmseg)
+[![Docs](https://img.shields.io/badge/docs-latest-blue)](https://onedl-mmsegmentation.readthedocs.io/en/latest/)
+[![license](https://img.shields.io/github/license/VBTI-development/onedl-mmsegmentation.svg)](https://github.com/VBTI-development/onedl-mmdetmmsegmentationection/blob/main/LICENSE)
 
-Documentation: <https://mmsegmentation.readthedocs.io/en/latest/>
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/onedl-mmsegmentation)](https://pypi.org/project/onedl-mmsegmentation/)
+[![PyPI](https://img.shields.io/pypi/v/onedl-mmsegmentation)](https://pypi.org/project/onedl-mmsegmentation)
 
-English | [简体中文](README_zh-CN.md)
+[![Build Status](https://github.com/VBTI-development/onedl-mmsegmentation/actions/workflows/merge_stage_test.yml/badge.svg)](https://github.com/VBTI-development/onedl-mmsegmentation/actions/workflows/merge_stage_test.yml)
+[![open issues](https://isitmaintained.com/badge/open/VBTI-development/onedl-mmsegmentation.svg)](https://github.com/VBTI-development/onedl-mmsegmentation/issues)
+[![issue resolution](https://isitmaintained.com/badge/resolution/VBTI-development/onedl-mmsegmentation.svg)](https://github.com/VBTI-development/onedl-mmsegmentation/issues)
 
-</div>
-
-<div align="center">
-  <a href="https://openmmlab.medium.com/" style="text-decoration:none;">
-    <img src="https://user-images.githubusercontent.com/25839884/219255827-67c1a27f-f8c5-46a9-811d-5e57448c61d1.png" width="3%" alt="" /></a>
-  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
-  <a href="https://discord.gg/raweFPmdzG" style="text-decoration:none;">
-    <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a>
-  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
-  <a href="https://twitter.com/OpenMMLab" style="text-decoration:none;">
-    <img src="https://user-images.githubusercontent.com/25839884/218346637-d30c8a0f-3eba-4699-8131-512fb06d46db.png" width="3%" alt="" /></a>
-  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
-  <a href="https://www.youtube.com/openmmlab" style="text-decoration:none;">
-    <img src="https://user-images.githubusercontent.com/25839884/218346691-ceb2116a-465a-40af-8424-9f30d2348ca9.png" width="3%" alt="" /></a>
-  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
-  <a href="https://space.bilibili.com/1293512903" style="text-decoration:none;">
-    <img src="https://user-images.githubusercontent.com/25839884/219026751-d7d14cce-a7c9-4e82-9942-8375fca65b99.png" width="3%" alt="" /></a>
-  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
-  <a href="https://www.zhihu.com/people/openmmlab" style="text-decoration:none;">
-    <img src="https://user-images.githubusercontent.com/25839884/219026120-ba71e48b-6e94-4bd4-b4e9-b7d175b5e362.png" width="3%" alt="" /></a>
-</div>
+[📘 Documentation](https://onedl-mmsegmentation.readthedocs.io/en/latest/) |
+[🛠️ Installation](https://onedl-mmsegmentation.readthedocs.io/en/latest/get_started.html) |
+[👀 Model Zoo](https://onedl-mmsegmentation.readthedocs.io/en/latest/model_zoo.html) |
+[🆕 Update News](https://onedl-mmsegmentation.readthedocs.io/en/latest/notes/changelog.html) |
+[🚀Ongoing Projects](https://github.com/open-mmlab/mmsegmentation/projects) |
+[🤔 Reporting Issues](https://github.com/VBTI-development/onedl-mmsegmentation/issues/new/choose) |
 
 ## Introduction
 
 MMSegmentation is an open source semantic segmentation toolbox based on PyTorch.
 It is a part of the OpenMMLab project.
 
-The [main](https://github.com/open-mmlab/mmsegmentation/tree/main) branch works with PyTorch 1.6+.
+The [main](https://github.com/open-mmlab/mmsegmentation/tree/main) branch works with PyTorch 2.0+.
 
 ### 🎉 Introducing MMSegmentation v1.0.0 🎉
 
@@ -89,17 +64,16 @@ MMSegmentation v1.x brings remarkable improvements over the 0.x release, offerin
 
 ## What's New
 
-v1.2.0 was released on 10/12/2023, from 1.1.0 to 1.2.0, we have added or updated the following features:
+The VBTI development team is reviving MMLabs code, making it work with
+newer pytorch versions and fixing bugs. We are only a small team, so your help
+is appreciated.
+
+v1.3.0 was released in August 2025, from 1.2.0 to 1.3.0, we have added or updated the following features:
 
 ### Highlights
 
-- Support for the open-vocabulary semantic segmentation algorithm [SAN](configs/san/README.md)
-
-- Support monocular depth estimation task, please refer to [VPD](configs/vpd/README.md) and [Adabins](projects/Adabins/README.md) for more details.
-
-  ![depth estimation](https://github.com/open-mmlab/mmsegmentation/assets/15952744/07afd0e9-8ace-4a00-aa1e-5bf0ca92dcbc)
-
-- Add new projects: open-vocabulary semantic segmentation algorithm [CAT-Seg](projects/CAT-Seg/README.md), real-time semantic segmentation algofithm [PP-MobileSeg](projects/pp_mobileseg/README.md)
+- Disabled tests on RS_inferencer due to difficulties installing gdal
+- Disabled tests on VPD Model due to the latent-diffusion needing to be installed in editable mode. This is not playing nice with uv.
 
 ## Installation
 
@@ -396,25 +370,32 @@ If you find this project useful in your research, please consider cite:
 
 This project is released under the [Apache 2.0 license](LICENSE).
 
-## OpenMMLab Family
+## Projects in VBTI-development
 
-- [MMEngine](https://github.com/open-mmlab/mmengine): OpenMMLab foundational library for training deep learning models.
-- [MMCV](https://github.com/open-mmlab/mmcv): OpenMMLab foundational library for computer vision.
-- [MMPreTrain](https://github.com/open-mmlab/mmpretrain): OpenMMLab pre-training toolbox and benchmark.
+- [MMEngine](https://github.com/vbti-development/onedl-mmengine): OpenMMLab foundational library for training deep learning models.
+- [MMCV](https://github.com/vbti-development/onedl-mmcv): OpenMMLab foundational library for computer vision.
+- [MMPreTrain](https://github.com/vbti-development/onedl-mmpretrain): OpenMMLab pre-training toolbox and benchmark.
+- [MMDetection](https://github.com/vbti-development/onedl-mmdetection): OpenMMLab detection toolbox and benchmark.
+- [MMRotate](https://github.com/vbti-development/onedl-mmrotate): OpenMMLab rotated object detection toolbox and benchmark.
+- [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation): OpenMMLab semantic segmentation toolbox and benchmark.
+- [MMDeploy](https://github.com/vbti-development/onedl-mmdeploy): OpenMMLab model deployment framework.
+- [MIM](https://github.com/vbti-development/onedl-mim): MIM installs OpenMMLab packages.
+
+## Projects in OpenMMLab
+
 - [MMagic](https://github.com/open-mmlab/mmagic): Open**MM**Lab **A**dvanced, **G**enerative and **I**ntelligent **C**reation toolbox.
-- [MMDetection](https://github.com/open-mmlab/mmdetection): OpenMMLab detection toolbox and benchmark.
-- [MMYOLO](https://github.com/open-mmlab/mmyolo): OpenMMLab YOLO series toolbox and benchmark.
 - [MMDetection3D](https://github.com/open-mmlab/mmdetection3d): OpenMMLab's next-generation platform for general 3D object detection.
-- [MMRotate](https://github.com/open-mmlab/mmrotate): OpenMMLab rotated object detection toolbox and benchmark.
-- [MMTracking](https://github.com/open-mmlab/mmtracking): OpenMMLab video perception toolbox and benchmark.
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation): OpenMMLab semantic segmentation toolbox and benchmark.
+- [MMYOLO](https://github.com/open-mmlab/mmyolo): OpenMMLab YOLO series toolbox and benchmark.
 - [MMOCR](https://github.com/open-mmlab/mmocr): OpenMMLab text detection, recognition, and understanding toolbox.
 - [MMPose](https://github.com/open-mmlab/mmpose): OpenMMLab pose estimation toolbox and benchmark.
 - [MMHuman3D](https://github.com/open-mmlab/mmhuman3d): OpenMMLab 3D human parametric model toolbox and benchmark.
+- [MMSelfSup](https://github.com/open-mmlab/mmselfsup): OpenMMLab self-supervised learning toolbox and benchmark.
+- [MMRazor](https://github.com/open-mmlab/mmrazor): OpenMMLab model compression toolbox and benchmark.
 - [MMFewShot](https://github.com/open-mmlab/mmfewshot): OpenMMLab fewshot learning toolbox and benchmark.
 - [MMAction2](https://github.com/open-mmlab/mmaction2): OpenMMLab's next-generation action understanding toolbox and benchmark.
+- [MMTracking](https://github.com/open-mmlab/mmtracking): OpenMMLab video perception toolbox and benchmark.
 - [MMFlow](https://github.com/open-mmlab/mmflow): OpenMMLab optical flow toolbox and benchmark.
-- [MMDeploy](https://github.com/open-mmlab/mmdeploy): OpenMMLab Model Deployment Framework.
-- [MMRazor](https://github.com/open-mmlab/mmrazor): OpenMMLab model compression toolbox and benchmark.
-- [MIM](https://github.com/open-mmlab/mim): MIM installs OpenMMLab packages.
+- [MMEditing](https://github.com/open-mmlab/mmediting): OpenMMLab image and video editing toolbox.
+- [MMGeneration](https://github.com/open-mmlab/mmgeneration): OpenMMLab image and video generative models toolbox.
+- [MMEval](https://github.com/open-mmlab/mmeval): A unified evaluation library for multiple machine learning libraries.
 - [Playground](https://github.com/open-mmlab/playground): A central hub for gathering and showcasing amazing projects built upon OpenMMLab.

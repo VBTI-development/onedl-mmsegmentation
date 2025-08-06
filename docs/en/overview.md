@@ -34,7 +34,7 @@ MMSeg consists of 7 main parts including apis, structures, datasets, models, eng
   - **decode_heads** contains various head components that take feature map as input and predict segmentation results.
   - **losses** contains various loss functions.
 
-- **engine** is a part for runtime components that extends function of [MMEngine](https://github.com/open-mmlab/mmengine).
+- **engine** is a part for runtime components that extends function of [MMEngine](https://github.com/vbti-development/onedl-mmengine).
 
   - **optimizers** provides optimizers and optimizer wrappers.
   - **hooks** provides various hooks of the runner.

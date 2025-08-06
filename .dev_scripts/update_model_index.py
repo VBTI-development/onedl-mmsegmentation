@@ -231,7 +231,7 @@ def get_model_info(md_file: str, config_dir: str,
 
 
 def dump_yaml_and_check_difference(model_info: dict, filename: str) -> bool:
-    """dump yaml file and check difference with the original file.
+    """Dump yaml file and check difference with the original file.
 
     Args:
         model_info (dict): model info dict.
@@ -257,7 +257,7 @@ def dump_yaml_and_check_difference(model_info: dict, filename: str) -> bool:
 
 
 def update_model_index(config_dir_list: List[str]) -> bool:
-    """update model index."""
+    """Update model index."""
     yml_files = [
         osp.join('configs',
                  dir_name.split('/')[-1], 'metafile.yaml')

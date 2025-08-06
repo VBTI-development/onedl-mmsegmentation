@@ -1,17 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from copy import deepcopy
 from os.path import dirname, join
-from unittest import TestCase
+from unittest import TestCase, skipIf
 
 import torch
 from mmengine import Config, ConfigDict
 from mmengine.structures import PixelData
 
 import mmseg
+from mmseg.models.backbones.vpd import has_ldm
 from mmseg.models.segmentors import DepthEstimator
 from mmseg.structures import SegDataSample
 
 
+@skipIf(not has_ldm, 'Not all packages are installed for VPD')
 class TestDepthEstimator(TestCase):
 
     def setUp(self) -> None:

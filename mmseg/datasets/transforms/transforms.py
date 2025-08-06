@@ -248,7 +248,7 @@ class RandomCrop(BaseTransform):
 
     @cache_randomness
     def crop_bbox(self, results: dict) -> tuple:
-        """get a crop bounding box.
+        """Get a crop bounding box.
 
         Args:
             results (dict): Result dict from loading pipeline.
@@ -1594,7 +1594,7 @@ class BioMedical3DRandomCrop(BaseTransform):
         self.keep_foreground = keep_foreground
 
     def random_sample_location(self, seg_map: np.ndarray) -> dict:
-        """sample foreground voxel when keep_foreground is True.
+        """Sample foreground voxel when keep_foreground is True.
 
         Args:
             seg_map (np.ndarray): gt seg map.

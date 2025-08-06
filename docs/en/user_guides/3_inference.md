@@ -96,7 +96,7 @@ The model names can be found in models' metafile (configs/xxx/metafile.yaml), li
 - weights (str, optional) -  Path to the checkpoint. If it is not specified and model is a model name of metafile, the weights will be loaded from metafile. Defaults to None.
 - classes (list, optional) - Input classes for result rendering, as the prediction of segmentation model is a segment map with label indices, `classes` is a list which includes items responding to the label indices. If classes is not defined, visualizer will take `cityscapes` classes by default. Defaults to None.
 - palette (list, optional) - Input palette for result rendering, which is a list of colors responding to the classes. If the palette is not defined, the visualizer will take the palette of `cityscapes` by default. Defaults to None.
-- dataset_name (str, optional) - [Dataset name or alias](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317), visualizer will use the meta information of the dataset i.e. classes and palette, but the `classes` and `palette` have higher priority. Defaults to None.
+- dataset_name (str, optional) - [Dataset name or alias](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/utils/class_names.py#L302-L317), visualizer will use the meta information of the dataset i.e. classes and palette, but the `classes` and `palette` have higher priority. Defaults to None.
 - device (str, optional) - Device to run inference. If None, the available device will be automatically used. Defaults to None.
 - scope (str, optional) - The scope of the model. Defaults to 'mmseg'.
 
@@ -169,7 +169,7 @@ Returns:
 
 - `SegDataSample` or list\[`SegDataSample`\]: If imgs is a list or tuple, the same length list type results will be returned, otherwise return the segmentation results directly.
 
-**Note:** [SegDataSample](https://github.com/open-mmlab/mmsegmentation/blob/1.x/mmseg/structures/seg_data_sample.py) is a data structure interface of MMSegmentation, it is used as interfaces between different components. `SegDataSample` implement the abstract data element `mmengine.structures.BaseDataElement`, please refer to data element [documentation](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/data_element.html) in [MMEngine](https://github.com/open-mmlab/mmengine) for more information.
+**Note:** [SegDataSample](https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/mmseg/structures/seg_data_sample.py) is a data structure interface of MMSegmentation, it is used as interfaces between different components. `SegDataSample` implement the abstract data element `mmengine.structures.BaseDataElement`, please refer to data element [documentation](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/data_element.html) in [MMEngine](https://github.com/vbti-development/onedl-mmengine) for more information.
 
 The attributes in `SegDataSample` are divided into several parts:
 
@@ -177,7 +177,7 @@ The attributes in `SegDataSample` are divided into several parts:
 - `pred_sem_seg` (`PixelData`) - Prediction of semantic segmentation.
 - `seg_logits` (`PixelData`) - Predicted logits of semantic segmentation.
 
-**Note** [PixelData](https://github.com/open-mmlab/mmengine/blob/main/mmengine/structures/pixel_data.py) is the data structure for pixel-level annotations or predictions, please refer to PixelData [documentation](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/data_element.html) in [MMEngine](https://github.com/open-mmlab/mmengine) for more information.
+**Note** [PixelData](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/structures/pixel_data.py) is the data structure for pixel-level annotations or predictions, please refer to PixelData [documentation](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/data_element.html) in [MMEngine](https://github.com/vbti-development/onedl-mmengine) for more information.
 
 Example:
 

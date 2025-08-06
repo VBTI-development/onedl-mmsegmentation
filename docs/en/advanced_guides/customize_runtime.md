@@ -4,7 +4,7 @@
 
 ### Step 1: Implement a new hook
 
-MMEngine has implemented commonly used [hooks](https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/hook.md) for training and test,
+MMEngine has implemented commonly used [hooks](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/hook.md) for training and test,
 When users have requirements for customization, they can follow examples below.
 For example, if some hyper-parameter of the model needs to be changed when model training, we can implement a new hook for it:
 
@@ -61,7 +61,7 @@ custom_imports = dict(imports=['mmseg.engine.hooks.new_hook'], allow_failed_impo
 ### Step 3: Modify config file
 
 Users can set and use customized hooks in training and test followed methods below.
-The execution priority of hooks at the same place of `Runner` can be referred [here](https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/hook.md#built-in-hooks),
+The execution priority of hooks at the same place of `Runner` can be referred [here](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/hook.md#built-in-hooks),
 Default priority of customized hook is `NORMAL`.
 
 ```python
@@ -136,7 +136,7 @@ class LearningRateDecayOptimizerConstructor(DefaultOptimWrapperConstructor):
         return my_optimizer
 ```
 
-Default optimizer constructor is implemented [here](https://github.com/open-mmlab/mmengine/blob/main/mmengine/optim/optimizer/default_constructor.py#L19).
+Default optimizer constructor is implemented [here](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/optim/optimizer/default_constructor.py#L19).
 It can also be used as base class of new optimizer constructor.
 
 ### Step 2: Import a new optimizer constructor

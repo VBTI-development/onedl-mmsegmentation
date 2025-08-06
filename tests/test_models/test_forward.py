@@ -1,5 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-"""pytest tests/test_forward.py."""
+"""Pytest tests/test_forward.py."""
 import copy
 from os.path import dirname, exists, join
 from unittest.mock import patch

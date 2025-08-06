@@ -118,7 +118,7 @@ class CLIPTextEncoder(BaseModule):
         return getattr(self, self.final_name)
 
     def build_attention_mask(self):
-        """lazily create causal attention mask, with full attention between the
+        """Lazily create causal attention mask, with full attention between the
         tokens.
 
         pytorch uses additive attention mask; fill with -inf
@@ -158,7 +158,7 @@ class CLIPTextEncoder(BaseModule):
 
     @torch.no_grad()
     def encode_text(self, text, normalize=False):
-        """encode class token."""
+        """Encode class token."""
 
         embed_device = self.token_embedding.weight.device
         x = self.token_embedding(

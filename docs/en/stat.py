@@ -7,7 +7,8 @@ import re
 
 import numpy as np
 
-url_prefix = 'https://github.com/open-mmlab/mmsegmentation/blob/master/'
+url_prefix = ('https://github.com/vbti-development/'
+              'onedl-mmsegmentation/blob/master/')
 
 files = sorted(glob.glob('../../configs/*/README.md'))
 

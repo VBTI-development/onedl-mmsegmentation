@@ -89,12 +89,13 @@ html_theme_options = {
             'name':
             'Tutorial',
             'url':
-            'https://github.com/open-mmlab/mmsegmentation/blob/master/'
+            'https://github.com/vbti-development/onedl-mmsegmentation'
+            '/blob/master/'
             'demo/MMSegmentation_Tutorial.ipynb'
         },
         {
             'name': 'GitHub',
-            'url': 'https://github.com/open-mmlab/mmsegmentation'
+            'url': 'https://github.com/vbti-development/onedl-mmsegmentation'
         },
         {
             'name':
@@ -102,7 +103,7 @@ html_theme_options = {
             'children': [
                 {
                     'name': 'MMCV',
-                    'url': 'https://github.com/open-mmlab/mmcv',
+                    'url': 'https://github.com/vbti-development/onedl-mmcv',
                     'description': 'Foundational library for computer vision'
                 },
             ]

@@ -210,12 +210,12 @@ class MSCASpatialAttention(BaseModule):
     def forward(self, x):
         """Forward function."""
 
-        shorcut = x.clone()
+        shortcut = x.clone()
         x = self.proj_1(x)
         x = self.activation(x)
         x = self.spatial_gating_unit(x)
         x = self.proj_2(x)
-        x = x + shorcut
+        x = x + shortcut
         return x
 
 

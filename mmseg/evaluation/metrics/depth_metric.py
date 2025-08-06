@@ -128,8 +128,8 @@ class DepthMetric(BaseMetric):
         Returns:
             Tensor: Boolean mask where evaluation should be performed.
         """
-        valid_mask = torch.logical_and(gt_depth > self.min_depth_eval,
-                                       gt_depth < self.max_depth_eval)
+        valid_mask = torch.logical_and(gt_depth > self.min_depth_eval, gt_depth
+                                       < self.max_depth_eval)
 
         if self.crop_type == 'nyu_crop':
             # this implementation is adapted from

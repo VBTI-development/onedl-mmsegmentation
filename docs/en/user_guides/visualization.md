@@ -48,7 +48,7 @@ tensorboard --logdir work_dirs/test_visual/20220810_115248/vis_data
 
 ### Visualizer Data Samples during Model Testing or Validation
 
-MMSegmentation provides `SegVisualizationHook` which is a [hook](https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/hook.md) working to visualize ground truth and prediction of segmentation during model testing and evaluation. Its configuration is in `default_hooks`, please see [Runner tutorial](https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/runner.md) for more details.
+MMSegmentation provides `SegVisualizationHook` which is a [hook](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/hook.md) working to visualize ground truth and prediction of segmentation during model testing and evaluation. Its configuration is in `default_hooks`, please see [Runner tutorial](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/runner.md) for more details.
 
 For example, In `_base_/schedules/schedule_20k.py`, modify the `SegVisualizationHook` configuration, set `draw` to `True` to enable the storage of network inference results, `interval` indicates the sampling interval of the prediction results, and when set to 1, each inference result of the network will be saved. `interval` is set to 50 by default:
 
@@ -82,7 +82,7 @@ tensorboard --logdir work_dirs/test_visual/20220810_115248/vis_data
 
 If you want to visualize a single data sample, we suggest to use `SegLocalVisualizer`.
 
-`SegLocalVisualizer` is child class inherits from `Visualizer` in MMEngine and works for MMSegmentation visualization, for more details about `Visualizer` please refer to [visualization tutorial](https://github.com/open-mmlab/mmengine/blob/main/docs/en/advanced_tutorials/visualization.md) in MMEngine.
+`SegLocalVisualizer` is child class inherits from `Visualizer` in MMEngine and works for MMSegmentation visualization, for more details about `Visualizer` please refer to [visualization tutorial](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/visualization.md) in MMEngine.
 
 Here is an example about `SegLocalVisualizer`, first you may download example data below by following commands:
 
@@ -103,7 +103,7 @@ import os.path as osp
 import torch
 # `PixelData` is data structure for pixel-level annotations or predictions defined in MMEngine.
 # Please refer to below tutorial file of data structures in MMEngine:
-# https://github.com/open-mmlab/mmengine/tree/main/docs/en/advanced_tutorials/data_element.md
+# https://github.com/vbti-development/onedl-mmengine/tree/main/docs/en/advanced_tutorials/data_element.md
 
 from mmengine.structures import PixelData
 
@@ -111,7 +111,7 @@ from mmengine.structures import PixelData
 # defined in MMSegmentation, it includes ground truth, prediction and
 # predicted logits of semantic segmentation.
 # Please refer to below tutorial file of `SegDataSample` for more details:
-# https://github.com/open-mmlab/mmsegmentation/blob/1.x/docs/en/advanced_guides/structures.md
+# https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/docs/en/advanced_guides/structures.md
 
 from mmseg.structures import SegDataSample
 from mmseg.visualization import SegLocalVisualizer
@@ -144,7 +144,7 @@ seg_local_visualizer = SegLocalVisualizer(
 # The meta information of dataset usually includes `classes` for class names and
 # `palette` for visualization color of each foreground.
 # All class names and palettes are defined in the file:
-# https://github.com/open-mmlab/mmsegmentation/blob/1.x/mmseg/utils/class_names.py
+# https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/mmseg/utils/class_names.py
 
 seg_local_visualizer.dataset_meta = dict(
     classes=('road', 'sidewalk', 'building', 'wall', 'fence',

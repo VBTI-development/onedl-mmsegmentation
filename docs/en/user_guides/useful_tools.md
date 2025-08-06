@@ -208,7 +208,7 @@ mmseg-serve:latest
 ### 4. Test deployment
 
 ```shell
-curl -O https://raw.githubusercontent.com/open-mmlab/mmsegmentation/master/resources/3dogs.jpg
+curl -O https://raw.githubusercontent.com/vbti-development/onedl-mmsegmentation/master/resources/3dogs.jpg
 curl http://127.0.0.1:8080/predictions/${MODEL_NAME} -T 3dogs.jpg -o 3dogs_mask.png
 ```
 

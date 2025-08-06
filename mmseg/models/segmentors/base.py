@@ -188,8 +188,8 @@ class BaseSegmentor(BaseModel, metaclass=ABCMeta):
                 i_seg_pred = i_seg_logits.argmax(dim=0, keepdim=True)
             else:
                 i_seg_logits = i_seg_logits.sigmoid()
-                i_seg_pred = (i_seg_logits >
-                              self.decode_head.threshold).to(i_seg_logits)
+                i_seg_pred = (i_seg_logits
+                              > self.decode_head.threshold).to(i_seg_logits)
             data_samples[i].set_data({
                 'seg_logits':
                 PixelData(**{'data': i_seg_logits}),

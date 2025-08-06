@@ -1,0 +1,152 @@
+[project]
+name = "onedl-mmsegmentation"
+version = "1.3.0-rc.0"
+description = "OpenMMLab Semantic Segmentation Toolbox and Benchmark"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "MMSegmentation Contributors"},
+    {name = "VBTI Software Team", email = "oss@vbti.nl"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+keywords = ["computer vision", "semantic segmentation"]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "opencv-python",
+    "Pillow",
+    "prettytable",
+    "packaging",
+    "regex",
+]
+
+[dependency-groups]
+tests = [
+    "codecov",
+    "pytest",
+    "regex",
+    "xdoctest>=0.10.0",
+    "onedl-mmpretrain",
+    "onedl-mmdetection @ git+https://github.com/VBTI-development/onedl-mmdetection.git@lauriebax/update-onedl-mmdetection",
+    "clip @ git+https://github.com/openai/CLIP.git@main",
+]
+docs = [
+    "docutils==0.16.0",
+    "myst-parser",
+    "pytorch_sphinx_theme @ git+https://github.com/VBTI-development/onedl_sphinx_theme.git",
+    "sphinx",
+    "sphinx-copybutton",
+    "sphinx_markdown_tables",
+    "urllib3"
+]
+readthedocs = [
+    "onedl-mmcv",
+    "onedl-mmengine",
+    "prettytable",
+    "scipy",
+    "torch",
+    "torchvision",
+]
+
+[project.optional-dependencies]
+albu = [
+    "albumentations>=0.3.2",
+]
+mminstall = [
+    "onedl-mmcv",
+    "onedl-mmengine>=0.5.0",
+]
+multimodal = [
+    "ftfy",
+]
+optional  = [
+    "cityscapesscripts",
+    "nibabel",
+    # install separately
+    # # for vpd model
+    # "diffusers",
+    # "einops==0.3.0",
+    # "imageio==2.9.0",
+    # "imageio-ffmpeg==0.4.2",
+    # "invisible-watermark",
+    # "kornia==0.6",
+    # "latent-diffusion @ git+https://github.com/CompVis/latent-diffusion",
+    # "omegaconf==2.1.1",
+    # "pudb==2019.2",
+    # "pytorch-lightning==1.4.2",
+    # "streamlit>0.73.1",
+    # "taming-transformers @ git+https://github.com/CompVis/taming-transformers.git@master",
+    # "test-tube>=0.7.5",
+    # "timm",
+    # "torch-fidelity==0.3.0",
+    # "torchmetrics==0.6.0",
+    # "transformers==4.19.2",
+]
+torch = [ "torch<2.6", "torchvision" ]
+
+[project.urls]
+Homepage = "https://github.com/vbti-development/mmsegmentation"
+Repository = "https://github.com/vbti-development/onedl-mmsegmentation"
+Documentation = "https://onedl-mmsegmentation.readthedocs.io/"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["mmseg", "mmseg.*"]
+exclude = ["tests", "docs", "configs", "tools", "demo", "src"]
+namespaces = false
+
+[tool.yapf]
+based_on_style = "pep8"
+blank_line_before_nested_class_or_def = true
+split_before_expression_after_opening_paren = true
+
+[tool.isort]
+line_length = 79
+multi_line_output = 0
+extra_standard_library = ["setuptools"]
+known_first_party = ["mmseg"]
+known_third_party = [
+    "PIL",
+    "cityscapesscripts",
+    "cv2",
+    "detail",
+    "matplotlib",
+    "mmcv",
+    "numpy",
+    "onnxruntime",
+    "packaging",
+    "prettytable",
+    "pytest",
+    "pytorch_sphinx_theme",
+    "requests",
+    "scipy",
+    "seaborn",
+    "torch",
+    "ts"
+]
+no_lines_before = ["STDLIB", "LOCALFOLDER"]
+default_section = "THIRDPARTY"  # codespell:ignore
+
+[tool.codespell]
+skip = "*.po,*.ts,*.ipynb"
+count = true
+quiet-level = 3
+ignore-words-list = "formating,sur,hist,dota,warmup,damon,hsi"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--ignore=src"
+]

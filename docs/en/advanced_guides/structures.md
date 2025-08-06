@@ -3,7 +3,7 @@
 To unify input and output interfaces  between different models and modules, OpenMMLab 2.0 MMEngine defines an abstract data structure,
 it has implemented basic functions of `Create`, `Read`, `Update`, `Delete`, supported data transferring among different types of devices
 and tensor-like or dictionary-like operations such as `.cpu()`, `.cuda()`, `.get()` and `.detach()`.
-More details can be found [here](https://github.com/open-mmlab/mmengine/blob/main/docs/en/advanced_tutorials/data_element.md).
+More details can be found [here](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/data_element.md).
 
 MMSegmentation also follows this interface protocol and defines `SegDataSample` which is used to encapsulate the data of semantic segmentation task.
 
@@ -82,7 +82,7 @@ cpu_gt_segmentations = cuda_gt_segmentations.to('cpu')
 
 ## Customize New Property in SegDataSample
 
-If you want to customize new property in `SegDataSample`, you may follow [SegDataSample](https://github.com/open-mmlab/mmsegmentation/blob/1.x/mmseg/structures/seg_data_sample.py) below:
+If you want to customize new property in `SegDataSample`, you may follow [SegDataSample](https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/mmseg/structures/seg_data_sample.py) below:
 
 ```python
 class SegDataSample(BaseDataElement):

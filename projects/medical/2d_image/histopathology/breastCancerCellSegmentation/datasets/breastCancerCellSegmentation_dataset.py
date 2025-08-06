@@ -4,7 +4,7 @@ from mmseg.registry import DATASETS
 
 @DATASETS.register_module()
 class breastCancerCellSegmentationDataset(BaseSegDataset):
-    """breastCancerCellSegmentationDataset dataset.
+    """BreastCancerCellSegmentationDataset dataset.
 
     In segmentation map annotation for breastCancerCellSegmentationDataset,
     ``reduce_zero_label`` is fixed to False. The ``img_suffix``

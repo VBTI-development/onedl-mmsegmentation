@@ -59,7 +59,7 @@ class TestDepthMetric(TestCase):
         return data_samples
 
     def test_evaluate(self):
-        """Test using the metric in the same way as Evalutor."""
+        """Test using the metric in the same way as Evaluator."""
 
         data_samples = self._demo_mm_inputs()
         data_samples = self._demo_mm_model_output(data_samples)

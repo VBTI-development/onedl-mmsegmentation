@@ -20,7 +20,7 @@ from mmseg.utils import register_all_modules
 
 
 class SemanticSegmentationTarget:
-    """wrap the model.
+    """Wrap the model.
 
     requirement: pip install grad-cam
 

@@ -90,7 +90,7 @@ class TestCityscapesMetric(TestCase):
         return _predictions
 
     def test_evaluate(self):
-        """Test using the metric in the same way as Evalutor."""
+        """Test using the metric in the same way as Evaluator."""
 
         data_batch = self._demo_mm_inputs(2)
         predictions = self._demo_mm_model_output(2)

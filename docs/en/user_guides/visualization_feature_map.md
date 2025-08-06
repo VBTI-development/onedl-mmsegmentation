@@ -21,7 +21,7 @@ vis_backends=[dict(type='LocalVisBackend'),
 
 ## Examining feature map visualization in Wandb
 
-`SegLocalVisualizer` is child class inherits from `Visualizer` in MMEngine and works for MMSegmentation visualization, for more details about `Visualizer` please refer to [visualization tutorial](https://github.com/open-mmlab/mmengine/blob/main/docs/en/advanced_tutorials/visualization.md) in MMEngine.
+`SegLocalVisualizer` is child class inherits from `Visualizer` in MMEngine and works for MMSegmentation visualization, for more details about `Visualizer` please refer to [visualization tutorial](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/visualization.md) in MMEngine.
 
 Here is an example about `SegLocalVisualizer`, first you may download example data below by following commands:
 

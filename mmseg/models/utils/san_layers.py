@@ -378,7 +378,8 @@ class LayerNorm2d(nn.Module):
     wise mean and variance normalization over the channel dimension for inputs
     that have shape (batch_size, channels, height, width).
 
-    https://github.com/facebookresearch/ConvNeXt/blob/d1fa8f6fef0a165b27399986cc2bdacc92777e40/models/convnext.py#L119  # noqa B950
+    https://github.com/facebookresearch/ConvNeXt/blob/d1fa8f6fef0a165b27399986cc2bdacc92777e40/models/convnext.py#L119
+    # noqa B950
     """
 
     def __init__(self, normalized_shape, eps=1e-6):

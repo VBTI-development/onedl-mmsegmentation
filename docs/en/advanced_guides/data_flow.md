@@ -4,7 +4,7 @@ In this chapter, we will introduce the dataflow and data format convention betwe
 
 ## Overview of dataflow
 
-The [Runner](https://github.com/open-mmlab/mmengine/blob/main/docs/en/design/runner.md) is an "integrator" in MMEngine. It covers all aspects of the framework and shoulders the responsibility of organizing and scheduling nearly all modules, that means the dataflow between all modules also controlled by the `Runner`. As illustrated in the [Runner document of MMEngine](https://mmengine.readthedocs.io/en/latest/tutorials/runner.html), the following diagram shows the basic dataflow.
+The [Runner](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/design/runner.md) is an "integrator" in MMEngine. It covers all aspects of the framework and shoulders the responsibility of organizing and scheduling nearly all modules, that means the dataflow between all modules also controlled by the `Runner`. As illustrated in the [Runner document of MMEngine](https://mmengine.readthedocs.io/en/latest/tutorials/runner.html), the following diagram shows the basic dataflow.
 
 ![Basic dataflow](https://user-images.githubusercontent.com/112053249/199228350-5f80699e-7fd2-4b4c-ac32-0b16b1922c2e.png)
 
@@ -26,7 +26,7 @@ From the diagram above, we could see the basic dataflow. In this section, we wou
 
 DataLoader is an essential component in training and testing pipelines of MMEngine. Conceptually, it is derived from and consistent with [PyTorch](https://pytorch.org/). DataLoader loads data from filesystem and the original data passes through data preparation pipeline, then it would be sent to Data Preprocessor.
 
-MMSegmentation defines the default data format at [PackSegInputs](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/datasets/transforms/formatting.py#L12), it's the last component of `train_pipeline` and `test_pipeline`. Please refer to [data transform documentation](./transforms.md) for more information about data transform `pipeline`.
+MMSegmentation defines the default data format at [PackSegInputs](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/datasets/transforms/formatting.py#L12), it's the last component of `train_pipeline` and `test_pipeline`. Please refer to [data transform documentation](./transforms.md) for more information about data transform `pipeline`.
 
 Without any modifications, the return value of PackSegInputs is usually a `dict` and has only two keys, `inputs` and `data_samples`. The following pseudo-code shows the data types of the data loader output in mmseg, which is a batch of fetched data samples from the dataset, and data loader packs them into a dictionary of the list. `inputs` is the list of input tensors to the model and `data_samples` contains a list of input images' meta information and corresponding ground truth.
 
@@ -37,7 +37,7 @@ dict(
 )
 ```
 
-**Note:** [SegDataSample](https://github.com/open-mmlab/mmsegmentation/blob/1.x/mmseg/structures/seg_data_sample.py) is a data structure interface of MMSegmentation, it is used as an interface between different components. `SegDataSample` implements the abstract data element `mmengine.structures.BaseDataElement`, please refer to [the SegDataSample documentation](./structures.md) and [data element documentation](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/data_element.html) in [MMEngine](https://github.com/open-mmlab/mmengine) for more information.
+**Note:** [SegDataSample](https://github.com/vbti-development/onedl-mmsegmentation/blob/1.x/mmseg/structures/seg_data_sample.py) is a data structure interface of MMSegmentation, it is used as an interface between different components. `SegDataSample` implements the abstract data element `mmengine.structures.BaseDataElement`, please refer to [the SegDataSample documentation](./structures.md) and [data element documentation](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/data_element.html) in [MMEngine](https://github.com/vbti-development/onedl-mmengine) for more information.
 
 ### Data Preprocessor to Model
 
@@ -67,13 +67,13 @@ As [model tutorial](./models.md#forward) mentioned 3 kinds of mode forward with 
 
 In `test_step` or `val_step`, the inference results would be transferred to `Evaluator`. You might read the [evaluation document](./evaluation.md) for more information about `Evaluator`.
 
-After inference, the [BaseSegmentor](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/models/segmentors/base.py#L15) in MMSegmentation would do a simple post process to pack inference results, the segmentation logits produced by the neural network, segmentation mask after the `argmax` operation and ground truth(if exists) would be packed into a similar `SegDataSample` instance. The return value of [postprocess_result](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/models/segmentors/base.py#L132) is a **`List` of `SegDataSample`**. Following diagram shows the key properties of these `SegDataSample` instances.
+After inference, the [BaseSegmentor](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/models/segmentors/base.py#L15) in MMSegmentation would do a simple post process to pack inference results, the segmentation logits produced by the neural network, segmentation mask after the `argmax` operation and ground truth(if exists) would be packed into a similar `SegDataSample` instance. The return value of [postprocess_result](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/models/segmentors/base.py#L132) is a **`List` of `SegDataSample`**. Following diagram shows the key properties of these `SegDataSample` instances.
 
 ![SegDataSample](https://user-images.githubusercontent.com/15952744/209912225-ab46a8d9-904a-43cb-8bf1-8bec4938ed29.png)
 
-The same as Data Preprocessor, loss function is also a part of the model, it's a property of [decode head](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/models/decode_heads/decode_head.py#L142).
+The same as Data Preprocessor, loss function is also a part of the model, it's a property of [decode head](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/models/decode_heads/decode_head.py#L142).
 
-In MMSegmentation, the method [loss_by_feat](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/models/decode_heads/decode_head.py#L291) of `decode_head` is an unified interface used to compute loss.
+In MMSegmentation, the method [loss_by_feat](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/models/decode_heads/decode_head.py#L291) of `decode_head` is an unified interface used to compute loss.
 
 Parameters:
 

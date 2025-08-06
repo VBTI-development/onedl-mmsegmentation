@@ -292,8 +292,8 @@ class FocalLoss(nn.Module):
                     else:
                         target = target[:, num_classes]
                 else:
-                    valid_mask = (target.argmax(dim=1) != ignore_index).view(
-                        -1, 1)
+                    valid_mask = (target.argmax(dim=1)
+                                  != ignore_index).view(-1, 1)
                 calculate_loss_func = py_sigmoid_focal_loss
 
             loss_cls = self.loss_weight * calculate_loss_func(

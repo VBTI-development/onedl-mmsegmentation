@@ -1,0 +1,167 @@
+name: pr_stage_test
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+      - "CONTRIBUTING.md"
+      - ".github/**.md"
+      - ".pre-commit-config.yaml"
+      - 'configs/**'
+      - 'docs/**'
+      - 'demo/**'
+      - 'projects/**'
+      - 'resources/**'
+      - 'tools/**'
+      - '.dev_scripts/**'
+      - '.circleci/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_cpu:
+    runs-on: ubuntu-22.04
+    permissions:
+      pull-requests: write
+    env:
+      PIP_PRE: 1 # TODO: until real release
+    strategy:
+      matrix:
+        include:
+          - python-version: '3.10' # minimum version
+            torch: '2.4.1'
+          # - python-version: '3.10'  # maximum version
+          #   torch: '2.5.1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv and set the python version
+        uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          activate-environment: true
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgl1
+          sudo apt-get clean -y
+      - name: Install PyTorch
+        run: |
+          uv pip install --torch-backend=cpu torch==${{ matrix.torch }} torchvision
+      - name: Install mmseg dependencies
+        run: |
+          uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+          mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
+          uv pip install -r pyproject.toml --all-extras
+      - name: Build and install
+        run: uv pip install -e .
+      - name: Install test dependencies
+        run: uv pip install -r pyproject.toml --group tests
+      - name: Run unit tests with coverage
+        run: |
+          set -e
+          uv run coverage run --branch --source mmseg -m pytest tests/ --ignore tests/test_models/test_backbones/test_timm_backbone.py
+          uv run coverage xml
+      - name: Code Coverage Summary Report
+        uses: irongut/CodeCoverageSummary@v1.3.0
+        with:
+          filename: coverage.xml
+          format: markdown
+          output: both
+          hide_branch_rate: false
+      - name: Add Coverage PR Comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: github.event_name == 'pull_request'
+        with:
+          recreate: true
+          path: code-coverage-results.md
+
+  build_gpu:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        include:
+          # - python-version: '3.10' # minimum version
+          #   torch: '2.4.1'
+          #   container: 'nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04'
+          #   cubackend: cu118
+          - python-version: '3.10'  # maximum version
+            torch: '2.5.1'
+            container: 'nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04'
+            cubackend: cu124
+    container:
+      image: ${{ matrix.container }}
+    env:
+        UV_CACHE_DIR: /__w/_uv_cache # set cache to be on same disk to avoid hardlink copies.
+        DEBIAN_FRONTEND: noninteractive
+        TZ: Etc/UTC
+        PIP_PRE: 1 # TODO: until real release
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv and set the python version
+        uses: astral-sh/setup-uv@v6
+        with:
+          activate-environment: true
+          python-version: ${{ matrix.python-version }}
+          cache-local-path: /__w/_uv_cache
+      - name: Fetch GPG keys
+        run: |
+          apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
+          apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/7fa2af80.pub
+      - name: Install system dependencies
+        run: |
+          apt-get update
+          apt-get install -y tzdata ffmpeg libsm6 libxext6 git ninja-build libglib2.0-0 libxrender-dev libc6 libc6-dev
+          apt-get clean -y
+
+      - name: Install torch
+        run: |
+          uv pip install -v --torch-backend=auto torch==${{ matrix.torch }} torchvision
+          uv cache clean
+      - name: Install mmseg dependencies
+        run: |
+          uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+          mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
+          uv pip install -r pyproject.toml --all-extras
+      - name: Build and install
+        run: uv pip install -e .
+      - name: Install test dependencies
+        run: uv pip install -r pyproject.toml --group tests
+      - name: Run unit tests with coverage
+        run: |
+          set -e
+          uv run coverage run --branch --source mmseg -m pytest tests/ --ignore tests/test_models/test_backbones/test_timm_backbone.py
+          uv run coverage xml
+
+
+# disable due to oned-mmcv not being built for windows
+  # build_windows:
+  #   runs-on: windows-2022
+  #   strategy:
+  #     matrix:
+  #       python-version: ['3.10']
+  #       platform: [cpu]
+  #   env:
+  #     PIP_PRE: 1 # TODO: until real release
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Install uv and set the python version
+  #       uses: astral-sh/setup-uv@v6
+  #       with:
+  #         activate-environment: true
+  #         python-version: ${{ matrix.python-version }}
+  #     - name: Install torch
+  #       run: uv pip install -v torch==2.3.1 torchvision
+  #     - name: Install mmdet dependencies
+  #       run: |
+  #         uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+  #         mim install onedl-mmengine onedl-mmcv
+  #         uv pip install -r pyproject.toml
+  #     - name: Build and install
+  #       run: uv pip install .
+  #     - name: Install test dependencies
+  #       run: uv pip install -r pyproject.toml --group tests --extra optional
+  #     - name: Run unittests
+  #       run: |
+  #         uv run pytest tests/ --ignore tests/test_models/test_backbones --ignore tests/test_tools.py

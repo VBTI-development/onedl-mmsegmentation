@@ -5,6 +5,7 @@ from mmseg.registry import MODELS
 @MODELS.register_module()
 class DummyResNet(ResNetV1c):
     """Implements a dummy ResNet wrapper for demonstration purpose.
+
     Args:
         **kwargs: All the arguments are passed to the parent class.
     """

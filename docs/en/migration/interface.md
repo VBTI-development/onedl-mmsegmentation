@@ -10,13 +10,13 @@ MMSegmentation 1.x depends on some new packages, you can prepare a new clean env
 
 Or install the below packages manually.
 
-1. [MMEngine](https://github.com/open-mmlab/mmengine): MMEngine is the core the OpenMMLab 2.0 architecture, and we splited many compentents unrelated to computer vision from MMCV to MMEngine.
+1. [MMEngine](https://github.com/vbti-development/onedl-mmengine): MMEngine is the core the OpenMMLab 2.0 architecture, and we split many compentents unrelated to computer vision from MMCV to MMEngine.
 
-2. [MMCV](https://github.com/open-mmlab/mmcv): The computer vision package of OpenMMLab. This is not a new dependency, but you need to upgrade it to **2.0.0** version or above.
+2. [MMCV](https://github.com/vbti-development/onedl-mmcv): The computer vision package of OpenMMLab. This is not a new dependency, but you need to upgrade it to **2.0.0** version or above.
 
-3. [MMClassification](https://github.com/open-mmlab/mmclassification)(Optional): The image classification toolbox and benchmark of OpenMMLab. This is not a new dependency, but you need to upgrade it to **1.0.0rc6** version.
+3. [MMClassification](https://github.com/vbti-development/onedl-mmclassification)(Optional): The image classification toolbox and benchmark of OpenMMLab. This is not a new dependency, but you need to upgrade it to **1.0.0rc6** version.
 
-4. [MMDetection](https://github.com/open-mmlab/mmdetection)(Optional): The object detection toolbox and benchmark of OpenMMLab. This is not a new dependency, but you need to upgrade it to **3.0.0** version or above.
+4. [MMDetection](https://github.com/vbti-development/onedl-mmdetection)(Optional): The object detection toolbox and benchmark of OpenMMLab. This is not a new dependency, but you need to upgrade it to **3.0.0** version or above.
 
 ## Train launch
 
@@ -429,7 +429,7 @@ test_cfg = dict(type='TestLoop') # Use the default test loop.
 </tr>
 </table>
 
-In fact, in OpenMMLab 2.0, we introduced `Loop` to control the behaviors in training, validation and test. The functionalities of `Runner` are also changed. You can find more details of [runner tutorial](https://github.com/open-mmlab/mmengine/blob/main/docs/en/design/runner.md) in [MMEngine](https://github.com/open-mmlab/mmengine/).
+In fact, in OpenMMLab 2.0, we introduced `Loop` to control the behaviors in training, validation and test. The functionalities of `Runner` are also changed. You can find more details of [runner tutorial](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/design/runner.md) in [MMEngine](https://github.com/vbti-development/onedl-mmengine/).
 
 ### Runtime settings
 
@@ -522,4 +522,4 @@ Changes in **`workflow`**: `workflow` related functionalities are removed.
 
 New field **`visualizer`**: The visualizer is a new design in OpenMMLab 2.0 architecture. We use a visualizer instance in the runner to handle results & log visualization and save to different backends. See the [visualization tutorial](../user_guides/visualization.md) for more details.
 
-New field **`default_scope`**: The start point to search module for all registries. The `default_scope` in MMSegmentation is `mmseg`. See [the registry tutorial](https://github.com/open-mmlab/mmengine/blob/main/docs/en/advanced_tutorials/registry.md) for more details.
+New field **`default_scope`**: The start point to search module for all registries. The `default_scope` in MMSegmentation is `mmseg`. See [the registry tutorial](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/registry.md) for more details.
