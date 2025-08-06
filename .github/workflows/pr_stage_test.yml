@@ -43,9 +43,9 @@ jobs:
           activate-environment: true
       - name: Install system dependencies
         run: |
-          apt-get update
-          apt-get install -y libgl1
-          apt-get clean -y
+          sudo apt-get update
+          sudo apt-get install -y libgl1
+          sudo apt-get clean -y
       - name: Install PyTorch
         run: |
           uv pip install torch==${{ matrix.torch }} torchvision
