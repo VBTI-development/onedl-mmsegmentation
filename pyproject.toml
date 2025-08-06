@@ -35,6 +35,7 @@ tests = [
     "xdoctest>=0.10.0",
     "onedl-mmpretrain",
     "onedl-mmdetection @ git+https://github.com/VBTI-development/onedl-mmdetection.git@lauriebax/update-onedl-mmdetection",
+    "clip @ git+https://github.com/openai/CLIP.git@main",
 ]
 docs = [
     "docutils==0.16.0",
@@ -67,7 +68,8 @@ multimodal = [
 ]
 optional  = [
     "cityscapesscripts",
-    "clip @ git+https://github.com/openai/CLIP.git@main",
+    "nibabel",
+    # install separately
     # # for vpd model
     # "diffusers",
     # "einops==0.3.0",
@@ -76,7 +78,6 @@ optional  = [
     # "invisible-watermark",
     # "kornia==0.6",
     # "latent-diffusion @ git+https://github.com/CompVis/latent-diffusion",
-    # "nibabel",
     # "omegaconf==2.1.1",
     # "pudb==2019.2",
     # "pytorch-lightning==1.4.2",
