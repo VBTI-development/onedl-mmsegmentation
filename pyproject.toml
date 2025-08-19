@@ -35,7 +35,7 @@ tests = [
     "regex",
     "xdoctest>=0.10.0",
     "onedl-mmpretrain",
-    "onedl-mmdetection @ git+https://github.com/VBTI-development/onedl-mmdetection.git@lauriebax/update-onedl-mmdetection",
+    "onedl-mmdetection",
     "clip @ git+https://github.com/openai/CLIP.git@main",
 ]
 docs = [
