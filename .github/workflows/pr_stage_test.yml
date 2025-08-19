@@ -32,8 +32,8 @@ jobs:
         include:
           - python-version: '3.10' # minimum version
             torch: '2.4.1'
-          # - python-version: '3.10'  # maximum version
-          #   torch: '2.5.1'
+          - python-version: '3.10'  # maximum version
+            torch: '2.5.1'
     steps:
       - uses: actions/checkout@v4
       - name: Install uv and set the python version
@@ -51,7 +51,7 @@ jobs:
           uv pip install --torch-backend=cpu torch==${{ matrix.torch }} torchvision
       - name: Install mmseg dependencies
         run: |
-          uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+          uv pip install git+https://github.com/VBTI-development/onedl-mim.git
           mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
           uv pip install -r pyproject.toml --all-extras
       - name: Build and install
@@ -82,10 +82,10 @@ jobs:
     strategy:
       matrix:
         include:
-          # - python-version: '3.10' # minimum version
-          #   torch: '2.4.1'
-          #   container: 'nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04'
-          #   cubackend: cu118
+          - python-version: '3.10' # minimum version
+            torch: '2.4.1'
+            container: 'nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04'
+            cubackend: cu118
           - python-version: '3.10'  # maximum version
             torch: '2.5.1'
             container: 'nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04'
@@ -121,7 +121,7 @@ jobs:
           uv cache clean
       - name: Install mmseg dependencies
         run: |
-          uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+          uv pip install git+https://github.com/VBTI-development/onedl-mim.git
           mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
           uv pip install -r pyproject.toml --all-extras
       - name: Build and install
@@ -155,7 +155,7 @@ jobs:
   #       run: uv pip install -v torch==2.3.1 torchvision
   #     - name: Install mmdet dependencies
   #       run: |
-  #         uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+  #         uv pip install git+https://github.com/VBTI-development/onedl-mim.git
   #         mim install onedl-mmengine onedl-mmcv
   #         uv pip install -r pyproject.toml
   #     - name: Build and install

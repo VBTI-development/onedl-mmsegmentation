@@ -34,7 +34,7 @@ jobs:
             container: 'nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04'
           - python-version: '3.10'  # maximum version
             torch: '2.5.1'
-            container: 'nvidia/cuda:12.8.0-cudnn-devel-ubuntu22.04'
+            container: 'nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04'
     container:
       image: ${{ matrix.container }}
     env:
@@ -66,7 +66,7 @@ jobs:
           uv cache clean
       - name: Install mmseg dependencies
         run: |
-          uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+          uv pip install git+https://github.com/VBTI-development/onedl-mim.git
           mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
           uv pip install -r pyproject.toml --all-extras
       - name: Build and install

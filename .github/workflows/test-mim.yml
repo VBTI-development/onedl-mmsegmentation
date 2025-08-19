@@ -43,7 +43,7 @@ jobs:
         run: |
           uv pip install torch==${{ matrix.torch }} torchvision
       - name: Install openmim
-        run: uv pip install git+https://github.com/VBTI-development/onedl-mim.git@lauriebax/upgrade-mim
+        run: uv pip install git+https://github.com/VBTI-development/onedl-mim.git
       - name: Build and install
         run: |
           mim install .
