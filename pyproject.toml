@@ -17,6 +17,7 @@ classifiers = [
 keywords = ["computer vision", "semantic segmentation"]
 requires-python = ">=3.10"
 dependencies = [
+    "ftfy",
     "numpy",
     "matplotlib",
     "scipy",
@@ -63,9 +64,6 @@ mminstall = [
     "onedl-mmcv",
     "onedl-mmengine>=0.5.0",
 ]
-multimodal = [
-    "ftfy",
-]
 optional  = [
     "cityscapesscripts",
     "nibabel",
@@ -92,7 +90,7 @@ optional  = [
 torch = [ "torch<2.6", "torchvision" ]
 
 [project.urls]
-Homepage = "https://github.com/vbti-development/mmsegmentation"
+Homepage = "https://github.com/vbti-development/onedl-mmsegmentation"
 Repository = "https://github.com/vbti-development/onedl-mmsegmentation"
 Documentation = "https://onedl-mmsegmentation.readthedocs.io/"
 

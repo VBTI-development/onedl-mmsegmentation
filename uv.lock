@@ -1248,6 +1248,7 @@ name = "onedl-mmsegmentation"
 version = "1.3.0rc0"
 source = { editable = "." }
 dependencies = [
+    { name = "ftfy" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "opencv-python" },
@@ -1266,9 +1267,6 @@ albu = [
 mminstall = [
     { name = "onedl-mmcv" },
     { name = "onedl-mmengine" },
-]
-multimodal = [
-    { name = "ftfy" },
 ]
 optional = [
     { name = "cityscapesscripts" },
@@ -1312,7 +1310,7 @@ tests = [
 requires-dist = [
     { name = "albumentations", marker = "extra == 'albu'", specifier = ">=0.3.2" },
     { name = "cityscapesscripts", marker = "extra == 'optional'" },
-    { name = "ftfy", marker = "extra == 'multimodal'" },
+    { name = "ftfy" },
     { name = "matplotlib" },
     { name = "nibabel", marker = "extra == 'optional'" },
     { name = "numpy" },
@@ -1327,7 +1325,7 @@ requires-dist = [
     { name = "torch", marker = "extra == 'torch'", specifier = "<2.6" },
     { name = "torchvision", marker = "extra == 'torch'" },
 ]
-provides-extras = ["albu", "mminstall", "multimodal", "optional", "torch"]
+provides-extras = ["albu", "mminstall", "optional", "torch"]
 
 [package.metadata.requires-dev]
 docs = [

@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 # -- Project information -----------------------------------------------------
 
 project = 'MMSegmentation'
-copyright = '2020-2021, OpenMMLab'
+copyright = '2025, VBTI'
 author = 'MMSegmentation Authors'
 version_file = '../../mmseg/version.py'
 
