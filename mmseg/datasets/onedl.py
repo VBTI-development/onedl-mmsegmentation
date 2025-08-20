@@ -13,6 +13,11 @@ logger = logging.getLogger(__name__)
 
 @DATASETS.register_module()
 class OneDLDataset(BaseSegDataset):
+    """Wrapper for OneDL datasets to mmsegmentation.
+
+    For more information about OneDL datasets, please refer to
+    https://onedl.ai.
+    """
 
     def __init__(self,
                  dataset_name: str,
