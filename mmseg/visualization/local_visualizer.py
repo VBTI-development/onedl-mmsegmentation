@@ -165,17 +165,19 @@ class SegLocalVisualizer(Visualizer):
                 text = classes[classes_id]
                 (label_width, label_height), baseline = cv2.getTextSize(
                     text, font, fontScale, thickness)
-                mask = cv2.rectangle(mask, loc,
-                                     (loc[0] + label_width + baseline,
-                                      loc[1] + label_height + baseline),
-                                     classes_color, -1)
-                mask = cv2.rectangle(mask, loc,
-                                     (loc[0] + label_width + baseline,
-                                      loc[1] + label_height + baseline),
-                                     (0, 0, 0), rectangleThickness)
-                mask = cv2.putText(mask, text, (loc[0], loc[1] + label_height),
-                                   font, fontScale, fontColor, thickness,
-                                   lineType)
+                mask = cv2.rectangle(
+                    np.ascontiguousarray(mask), loc,
+                    (loc[0] + label_width + baseline,
+                     loc[1] + label_height + baseline), classes_color, -1)
+                mask = cv2.rectangle(
+                    np.ascontiguousarray(mask), loc,
+                    (loc[0] + label_width + baseline,
+                     loc[1] + label_height + baseline), (0, 0, 0),
+                    rectangleThickness)
+                mask = cv2.putText(
+                    np.ascontiguousarray(mask), text,
+                    (loc[0], loc[1] + label_height), font, fontScale,
+                    fontColor, thickness, lineType)
         color_seg = (image * (1 - self.alpha) + mask * self.alpha).astype(
             np.uint8)
         self.set_image(color_seg)
@@ -265,7 +267,8 @@ class SegLocalVisualizer(Visualizer):
             # TODO: Supported in mmengine's Viusalizer.
             out_file: Optional[str] = None,
             step: int = 0,
-            with_labels: Optional[bool] = True) -> None:
+            with_labels: Optional[bool] = True,
+            with_image: Optional[bool] = False) -> None:
         """Draw datasample and save to all backends.
 
         - If GT and prediction are plotted at the same time, they are
@@ -339,6 +342,11 @@ class SegLocalVisualizer(Visualizer):
             drawn_img = gt_img_data
         else:
             drawn_img = pred_img_data
+
+        if drawn_img is None:
+            drawn_img = image
+        elif with_image:
+            drawn_img = np.concatenate((image, drawn_img), axis=1)
 
         if show:
             self.show(drawn_img, win_name=name, wait_time=wait_time)
