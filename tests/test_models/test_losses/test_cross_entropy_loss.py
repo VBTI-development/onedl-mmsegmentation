@@ -26,3 +26,29 @@ def test_cross_entropy_loss_class_weights():
 
     assert isinstance(loss, torch.Tensor)
     assert expected_loss == loss
+
+
+def test_cross_entropy_loss_class_weights_ignore_label():
+    loss_class = CrossEntropyLoss
+    pred = torch.rand((1, 10, 4, 4))
+    target = torch.randint(0, 10, (1, 4, 4))
+    class_weight = torch.ones(10)
+
+    target[0, 0] = 255  # Set to ignore index
+    avg_factor = (target != 255).sum()
+
+    cross_entropy_loss = F.cross_entropy(
+        pred, target, weight=class_weight, reduction='none', ignore_index=255)
+
+    expected_loss = weight_reduce_loss(
+        cross_entropy_loss,
+        weight=None,
+        reduction='mean',
+        avg_factor=avg_factor)
+
+    # Test loss forward
+    loss = loss_class(class_weight=class_weight.tolist())(
+        pred, target, ignore_index=255)
+
+    assert isinstance(loss, torch.Tensor)
+    assert expected_loss == loss

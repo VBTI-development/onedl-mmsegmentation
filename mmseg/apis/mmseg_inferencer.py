@@ -358,7 +358,8 @@ class MMSegInferencer(BaseInferencer):
         """
         pipeline_cfg = cfg.test_dataloader.dataset.pipeline
         # Loading annotations is also not applicable
-        for transform in ('LoadAnnotations', 'LoadDepthAnnotation'):
+        for transform in ('LoadAnnotations', 'LoadDepthAnnotation',
+                          'LoadOneDLAnnotations'):
             idx = self._get_transform_idx(pipeline_cfg, transform)
             if idx != -1:
                 del pipeline_cfg[idx]
