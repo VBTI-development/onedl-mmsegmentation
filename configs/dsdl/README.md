@@ -97,7 +97,7 @@ To overcome such difficulties, we develop **Data Set Description Language (DSDL)
 
 ## Test Results
 
-|  Datasets  |                                                                                        Model                                                                                         | mIoU(%) |          Config           |
-| :--------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | :-----------------------: |
+|  Datasets  |                                                                                      Model                                                                                      | mIoU(%) |          Config           |
+| :--------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | :-----------------------: |
 |  voc2012   |    [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/deeplabv3/deeplabv3_r50-d8_512x512_20k_voc12aug/deeplabv3_r50-d8_512x512_20k_voc12aug_20200617_010906-596905ef.pth)    |  76.73  |    [config](./voc.py)     |
 | cityscapes | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/deeplabv3/deeplabv3_r50-d8_512x1024_40k_cityscapes/deeplabv3_r50-d8_512x1024_40k_cityscapes_20200605_022449-acadc2f8.pth) |  79.01  | [config](./cityscapes.py) |

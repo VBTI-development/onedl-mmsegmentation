@@ -25,8 +25,8 @@ Results can be found in [VAN-Segmentation](https://github.com/Visual-Attention-N
 
 We provide evaluation results of the converted weights.
 
-| Method  |   Backbone   | mIoU  |                                                                    Download                                                                    |
-| :-----: | :----------: | :---: | :--------------------------------------------------------------------------------------------------------------------------------------------: |
+| Method  |   Backbone   | mIoU  |                                                                 Download                                                                  |
+| :-----: | :----------: | :---: | :---------------------------------------------------------------------------------------------------------------------------------------: |
 | UPerNet |    VAN-B2    | 49.35 | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/van_3rdparty/van-b2-in1kpre_upernet_3rdparty_512x512-ade20k_20230522-19c58aee.pth)  |
 | UPerNet |    VAN-B3    | 49.71 | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/van_3rdparty/van-b3-in1kpre_upernet_3rdparty_512x512-ade20k_20230522-653bd6b7.pth)  |
 | UPerNet |    VAN-B4    | 51.56 | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/van_3rdparty/van-b4-in1kpre_upernet_3rdparty_512x512-ade20k_20230522-653bd6b7.pth)  |
