@@ -1,4 +1,4 @@
-checkpoint_file = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/swin/swin_small_patch4_window7_224_20220317-7ba6d6dd.pth'  # noqa
+checkpoint_file = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/swin/swin_small_patch4_window7_224_20220317-7ba6d6dd.pth'  # noqa
 _base_ = './maskformer_r50-d32_8xb2-160k_ade20k-512x512.py'
 backbone_norm_cfg = dict(type='LN', requires_grad=True)
 depths = [2, 2, 18, 2]

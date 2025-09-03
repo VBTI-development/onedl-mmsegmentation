@@ -4,7 +4,7 @@ _base_ = [
     '../../../../configs/_base_/default_runtime.py',
 ]
 custom_imports = dict(imports=['projects.van.backbones'])
-ckpt_path = 'https://download.openmmlab.com/mmsegmentation/v0.5/van_3rdparty/van-b2_3rdparty_20230522-636fac93.pth'  # noqa
+ckpt_path = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/van_3rdparty/van-b2_3rdparty_20230522-636fac93.pth'  # noqa
 model = dict(
     type='EncoderDecoder',
     backbone=dict(

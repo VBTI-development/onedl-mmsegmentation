@@ -1,5 +1,5 @@
 _base_ = './van-b2_fpn_8xb4-40k_ade20k-512x512.py'
-ckpt_path = 'https://download.openmmlab.com/mmsegmentation/v0.5/van_3rdparty/van-b0_3rdparty_20230522-956f5e0d.pth'  # noqa
+ckpt_path = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/van_3rdparty/van-b0_3rdparty_20230522-956f5e0d.pth'  # noqa
 model = dict(
     backbone=dict(
         embed_dims=[32, 64, 160, 256],

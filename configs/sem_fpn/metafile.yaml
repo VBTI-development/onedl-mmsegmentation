@@ -29,8 +29,8 @@ Models:
     - FPN
     Training Resources: 4x V100 GPUS
     Memory (GB): 2.8
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x1024_80k_cityscapes/fpn_r50_512x1024_80k_cityscapes_20200717_021437-94018a0d.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x1024_80k_cityscapes/fpn_r50_512x1024_80k_cityscapes-20200717_021437.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x1024_80k_cityscapes/fpn_r50_512x1024_80k_cityscapes_20200717_021437-94018a0d.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x1024_80k_cityscapes/fpn_r50_512x1024_80k_cityscapes-20200717_021437.log.json
   Paper:
     Title: Panoptic Feature Pyramid Networks
     URL: https://arxiv.org/abs/1901.02446
@@ -53,8 +53,8 @@ Models:
     - FPN
     Training Resources: 4x V100 GPUS
     Memory (GB): 3.9
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x1024_80k_cityscapes/fpn_r101_512x1024_80k_cityscapes_20200717_012416-c5800d4c.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x1024_80k_cityscapes/fpn_r101_512x1024_80k_cityscapes-20200717_012416.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x1024_80k_cityscapes/fpn_r101_512x1024_80k_cityscapes_20200717_012416-c5800d4c.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x1024_80k_cityscapes/fpn_r101_512x1024_80k_cityscapes-20200717_012416.log.json
   Paper:
     Title: Panoptic Feature Pyramid Networks
     URL: https://arxiv.org/abs/1901.02446
@@ -77,8 +77,8 @@ Models:
     - FPN
     Training Resources: 4x V100 GPUS
     Memory (GB): 4.9
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x512_160k_ade20k/fpn_r50_512x512_160k_ade20k_20200718_131734-5b5a6ab9.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x512_160k_ade20k/fpn_r50_512x512_160k_ade20k-20200718_131734.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x512_160k_ade20k/fpn_r50_512x512_160k_ade20k_20200718_131734-5b5a6ab9.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r50_512x512_160k_ade20k/fpn_r50_512x512_160k_ade20k-20200718_131734.log.json
   Paper:
     Title: Panoptic Feature Pyramid Networks
     URL: https://arxiv.org/abs/1901.02446
@@ -101,8 +101,8 @@ Models:
     - FPN
     Training Resources: 4x V100 GPUS
     Memory (GB): 5.9
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x512_160k_ade20k/fpn_r101_512x512_160k_ade20k_20200718_131734-306b5004.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x512_160k_ade20k/fpn_r101_512x512_160k_ade20k-20200718_131734.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x512_160k_ade20k/fpn_r101_512x512_160k_ade20k_20200718_131734-306b5004.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/sem_fpn/fpn_r101_512x512_160k_ade20k/fpn_r101_512x512_160k_ade20k-20200718_131734.log.json
   Paper:
     Title: Panoptic Feature Pyramid Networks
     URL: https://arxiv.org/abs/1901.02446

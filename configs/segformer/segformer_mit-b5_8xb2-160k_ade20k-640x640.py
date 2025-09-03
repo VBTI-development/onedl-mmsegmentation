@@ -1,6 +1,6 @@
 _base_ = ['./segformer_mit-b0_8xb2-160k_ade20k-512x512.py']
 
-checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segformer/mit_b5_20220624-658746d9.pth'  # noqa
+checkpoint = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/segformer/mit_b5_20220624-658746d9.pth'  # noqa
 
 # dataset settings
 crop_size = (640, 640)

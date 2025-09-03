@@ -28,8 +28,8 @@ Models:
     - EMANet
     Training Resources: 4x V100 GPUS
     Memory (GB): 5.4
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r50-d8_512x1024_80k_cityscapes/emanet_r50-d8_512x1024_80k_cityscapes_20200901_100301-c43fcef1.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r50-d8_512x1024_80k_cityscapes/emanet_r50-d8_512x1024_80k_cityscapes-20200901_100301.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r50-d8_512x1024_80k_cityscapes/emanet_r50-d8_512x1024_80k_cityscapes_20200901_100301-c43fcef1.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r50-d8_512x1024_80k_cityscapes/emanet_r50-d8_512x1024_80k_cityscapes-20200901_100301.log.json
   Paper:
     Title: Expectation-Maximization Attention Networks for Semantic Segmentation
     URL: https://arxiv.org/abs/1907.13426
@@ -52,8 +52,8 @@ Models:
     - EMANet
     Training Resources: 4x V100 GPUS
     Memory (GB): 6.2
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r101-d8_512x1024_80k_cityscapes/emanet_r101-d8_512x1024_80k_cityscapes_20200901_100301-2d970745.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r101-d8_512x1024_80k_cityscapes/emanet_r101-d8_512x1024_80k_cityscapes-20200901_100301.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r101-d8_512x1024_80k_cityscapes/emanet_r101-d8_512x1024_80k_cityscapes_20200901_100301-2d970745.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r101-d8_512x1024_80k_cityscapes/emanet_r101-d8_512x1024_80k_cityscapes-20200901_100301.log.json
   Paper:
     Title: Expectation-Maximization Attention Networks for Semantic Segmentation
     URL: https://arxiv.org/abs/1907.13426
@@ -76,8 +76,8 @@ Models:
     - EMANet
     Training Resources: 4x V100 GPUS
     Memory (GB): 8.9
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r50-d8_769x769_80k_cityscapes/emanet_r50-d8_769x769_80k_cityscapes_20200901_100301-16f8de52.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r50-d8_769x769_80k_cityscapes/emanet_r50-d8_769x769_80k_cityscapes-20200901_100301.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r50-d8_769x769_80k_cityscapes/emanet_r50-d8_769x769_80k_cityscapes_20200901_100301-16f8de52.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r50-d8_769x769_80k_cityscapes/emanet_r50-d8_769x769_80k_cityscapes-20200901_100301.log.json
   Paper:
     Title: Expectation-Maximization Attention Networks for Semantic Segmentation
     URL: https://arxiv.org/abs/1907.13426
@@ -100,8 +100,8 @@ Models:
     - EMANet
     Training Resources: 4x V100 GPUS
     Memory (GB): 10.1
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r101-d8_769x769_80k_cityscapes/emanet_r101-d8_769x769_80k_cityscapes_20200901_100301-47a324ce.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/emanet/emanet_r101-d8_769x769_80k_cityscapes/emanet_r101-d8_769x769_80k_cityscapes-20200901_100301.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r101-d8_769x769_80k_cityscapes/emanet_r101-d8_769x769_80k_cityscapes_20200901_100301-47a324ce.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/emanet/emanet_r101-d8_769x769_80k_cityscapes/emanet_r101-d8_769x769_80k_cityscapes-20200901_100301.log.json
   Paper:
     Title: Expectation-Maximization Attention Networks for Semantic Segmentation
     URL: https://arxiv.org/abs/1907.13426

@@ -28,8 +28,8 @@ Models:
     - PIDNet
     Training Resources: 2x A100 GPUS
     Memory (GB): 3.38
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/pidnet/pidnet-s_2xb6-120k_1024x1024-cityscapes/pidnet-s_2xb6-120k_1024x1024-cityscapes_20230302_191700-bb8e3bcc.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/pidnet/pidnet-s_2xb6-120k_1024x1024-cityscapes/pidnet-s_2xb6-120k_1024x1024-cityscapes_20230302_191700.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/pidnet/pidnet-s_2xb6-120k_1024x1024-cityscapes/pidnet-s_2xb6-120k_1024x1024-cityscapes_20230302_191700-bb8e3bcc.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/pidnet/pidnet-s_2xb6-120k_1024x1024-cityscapes/pidnet-s_2xb6-120k_1024x1024-cityscapes_20230302_191700.json
   Paper:
     Title: 'PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller'
     URL: https://arxiv.org/pdf/2206.02066.pdf
@@ -52,8 +52,8 @@ Models:
     - PIDNet
     Training Resources: 2x A100 GPUS
     Memory (GB): 5.14
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/pidnet/pidnet-m_2xb6-120k_1024x1024-cityscapes/pidnet-m_2xb6-120k_1024x1024-cityscapes_20230301_143452-f9bcdbf3.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/pidnet/pidnet-m_2xb6-120k_1024x1024-cityscapes/pidnet-m_2xb6-120k_1024x1024-cityscapes_20230301_143452.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/pidnet/pidnet-m_2xb6-120k_1024x1024-cityscapes/pidnet-m_2xb6-120k_1024x1024-cityscapes_20230301_143452-f9bcdbf3.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/pidnet/pidnet-m_2xb6-120k_1024x1024-cityscapes/pidnet-m_2xb6-120k_1024x1024-cityscapes_20230301_143452.json
   Paper:
     Title: 'PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller'
     URL: https://arxiv.org/pdf/2206.02066.pdf
@@ -76,8 +76,8 @@ Models:
     - PIDNet
     Training Resources: 2x A100 GPUS
     Memory (GB): 5.83
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/pidnet/pidnet-l_2xb6-120k_1024x1024-cityscapes/pidnet-l_2xb6-120k_1024x1024-cityscapes_20230303_114514-0783ca6b.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/pidnet/pidnet-l_2xb6-120k_1024x1024-cityscapes/pidnet-l_2xb6-120k_1024x1024-cityscapes_20230303_114514.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/pidnet/pidnet-l_2xb6-120k_1024x1024-cityscapes/pidnet-l_2xb6-120k_1024x1024-cityscapes_20230303_114514-0783ca6b.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/pidnet/pidnet-l_2xb6-120k_1024x1024-cityscapes/pidnet-l_2xb6-120k_1024x1024-cityscapes_20230303_114514.json
   Paper:
     Title: 'PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller'
     URL: https://arxiv.org/pdf/2206.02066.pdf

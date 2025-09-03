@@ -29,8 +29,8 @@ Models:
     - MaskFormer
     Training Resources: 8x 42.20 GPUS
     Memory (GB): 3.29
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_r50-d32_8xb2-160k_ade20k-512x512/maskformer_r50-d32_8xb2-160k_ade20k-512x512_20221030_182724-3a9cfe45.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_r50-d32_8xb2-160k_ade20k-512x512/maskformer_r50-d32_8xb2-160k_ade20k-512x512_20221030_182724.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_r50-d32_8xb2-160k_ade20k-512x512/maskformer_r50-d32_8xb2-160k_ade20k-512x512_20221030_182724-3a9cfe45.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_r50-d32_8xb2-160k_ade20k-512x512/maskformer_r50-d32_8xb2-160k_ade20k-512x512_20221030_182724.json
   Paper:
     Title: 'MaskFormer: Per-Pixel Classification is Not All You Need for Semantic
       Segmentation'
@@ -53,8 +53,8 @@ Models:
     - MaskFormer
     Training Resources: 8x 34.90 GPUS
     Memory (GB): 4.12
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_r101-d32_8xb2-160k_ade20k-512x512/maskformer_r101-d32_8xb2-160k_ade20k-512x512_20221031_223053-84adbfcb.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_r101-d32_8xb2-160k_ade20k-512x512/maskformer_r101-d32_8xb2-160k_ade20k-512x512_20221031_223053.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_r101-d32_8xb2-160k_ade20k-512x512/maskformer_r101-d32_8xb2-160k_ade20k-512x512_20221031_223053-84adbfcb.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_r101-d32_8xb2-160k_ade20k-512x512/maskformer_r101-d32_8xb2-160k_ade20k-512x512_20221031_223053.json
   Paper:
     Title: 'MaskFormer: Per-Pixel Classification is Not All You Need for Semantic
       Segmentation'
@@ -77,8 +77,8 @@ Models:
     - MaskFormer
     Training Resources: 8x 40.53 GPUS
     Memory (GB): 3.73
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512_20221114_232813-f14e7ce0.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512_20221114_232813.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512_20221114_232813-f14e7ce0.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-t_upernet_8xb2-160k_ade20k-512x512_20221114_232813.json
   Paper:
     Title: 'MaskFormer: Per-Pixel Classification is Not All You Need for Semantic
       Segmentation'
@@ -101,8 +101,8 @@ Models:
     - MaskFormer
     Training Resources: 8x 26.98 GPUS
     Memory (GB): 5.33
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512_20221115_114710-723512c7.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/maskformer/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512_20221115_114710.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512_20221115_114710-723512c7.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/maskformer/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512/maskformer_swin-s_upernet_8xb2-160k_ade20k-512x512_20221115_114710.json
   Paper:
     Title: 'MaskFormer: Per-Pixel Classification is Not All You Need for Semantic
       Segmentation'

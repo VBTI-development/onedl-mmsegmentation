@@ -22,7 +22,7 @@ class TestVPD(TestCase):
 
         self.vpd_model = VPD(
             diffusion_cfg=vpd_cfg,
-            class_embed_path='https://download.openmmlab.com/mmsegmentation/'
+            class_embed_path='https://mmassets.onedl.ai/mmsegmentation/'
             'v0.5/vpd/nyu_class_embeddings.pth',
             class_embed_select=True,
             pad_shape=64,

@@ -1,5 +1,5 @@
 _base_ = ['./mask2former_swin-t_8xb2-90k_cityscapes-512x1024.py']
-pretrained = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/swin/swin_base_patch4_window12_384_22k_20220317-e5c09f74.pth'  # noqa
+pretrained = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/swin/swin_base_patch4_window12_384_22k_20220317-e5c09f74.pth'  # noqa
 
 depths = [2, 2, 18, 2]
 model = dict(

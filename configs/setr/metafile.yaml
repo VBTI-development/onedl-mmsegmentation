@@ -31,8 +31,8 @@ Models:
     - Naive
     Training Resources: 8x V100 GPUS
     Memory (GB): 18.4
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_naive_512x512_160k_b16_ade20k/setr_naive_512x512_160k_b16_ade20k_20210619_191258-061f24f5.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_naive_512x512_160k_b16_ade20k/setr_naive_512x512_160k_b16_ade20k_20210619_191258.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_naive_512x512_160k_b16_ade20k/setr_naive_512x512_160k_b16_ade20k_20210619_191258-061f24f5.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_naive_512x512_160k_b16_ade20k/setr_naive_512x512_160k_b16_ade20k_20210619_191258.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers
@@ -57,8 +57,8 @@ Models:
     - PUP
     Training Resources: 8x V100 GPUS
     Memory (GB): 19.54
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_pup_512x512_160k_b16_ade20k/setr_pup_512x512_160k_b16_ade20k_20210619_191343-7e0ce826.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_pup_512x512_160k_b16_ade20k/setr_pup_512x512_160k_b16_ade20k_20210619_191343.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_pup_512x512_160k_b16_ade20k/setr_pup_512x512_160k_b16_ade20k_20210619_191343-7e0ce826.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_pup_512x512_160k_b16_ade20k/setr_pup_512x512_160k_b16_ade20k_20210619_191343.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers
@@ -83,8 +83,8 @@ Models:
     - MLA
     Training Resources: 8x V100 GPUS
     Memory (GB): 10.96
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b8_ade20k/setr_mla_512x512_160k_b8_ade20k_20210619_191118-c6d21df0.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b8_ade20k/setr_mla_512x512_160k_b8_ade20k_20210619_191118.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b8_ade20k/setr_mla_512x512_160k_b8_ade20k_20210619_191118-c6d21df0.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b8_ade20k/setr_mla_512x512_160k_b8_ade20k_20210619_191118.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers
@@ -109,8 +109,8 @@ Models:
     - MLA
     Training Resources: 8x V100 GPUS
     Memory (GB): 17.3
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b16_ade20k/setr_mla_512x512_160k_b16_ade20k_20210619_191057-f9741de7.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b16_ade20k/setr_mla_512x512_160k_b16_ade20k_20210619_191057.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b16_ade20k/setr_mla_512x512_160k_b16_ade20k_20210619_191057-f9741de7.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_mla_512x512_160k_b16_ade20k/setr_mla_512x512_160k_b16_ade20k_20210619_191057.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers
@@ -135,8 +135,8 @@ Models:
     - Naive
     Training Resources: 8x V100 GPUS
     Memory (GB): 24.06
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_naive_vit-large_8x1_768x768_80k_cityscapes/setr_naive_vit-large_8x1_768x768_80k_cityscapes_20211123_000505-20728e80.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_naive_vit-large_8x1_768x768_80k_cityscapes/setr_naive_vit-large_8x1_768x768_80k_cityscapes_20211123_000505.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_naive_vit-large_8x1_768x768_80k_cityscapes/setr_naive_vit-large_8x1_768x768_80k_cityscapes_20211123_000505-20728e80.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_naive_vit-large_8x1_768x768_80k_cityscapes/setr_naive_vit-large_8x1_768x768_80k_cityscapes_20211123_000505.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers
@@ -161,8 +161,8 @@ Models:
     - PUP
     Training Resources: 8x V100 GPUS
     Memory (GB): 27.96
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_pup_vit-large_8x1_768x768_80k_cityscapes/setr_pup_vit-large_8x1_768x768_80k_cityscapes_20211122_155115-f6f37b8f.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_pup_vit-large_8x1_768x768_80k_cityscapes/setr_pup_vit-large_8x1_768x768_80k_cityscapes_20211122_155115.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_pup_vit-large_8x1_768x768_80k_cityscapes/setr_pup_vit-large_8x1_768x768_80k_cityscapes_20211122_155115-f6f37b8f.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_pup_vit-large_8x1_768x768_80k_cityscapes/setr_pup_vit-large_8x1_768x768_80k_cityscapes_20211122_155115.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers
@@ -187,8 +187,8 @@ Models:
     - MLA
     Training Resources: 8x V100 GPUS
     Memory (GB): 24.1
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_mla_vit-large_8x1_768x768_80k_cityscapes/setr_mla_vit-large_8x1_768x768_80k_cityscapes_20211119_101003-7f8dccbe.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/setr/setr_mla_vit-large_8x1_768x768_80k_cityscapes/setr_mla_vit-large_8x1_768x768_80k_cityscapes_20211119_101003.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_mla_vit-large_8x1_768x768_80k_cityscapes/setr_mla_vit-large_8x1_768x768_80k_cityscapes_20211119_101003-7f8dccbe.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/setr/setr_mla_vit-large_8x1_768x768_80k_cityscapes/setr_mla_vit-large_8x1_768x768_80k_cityscapes_20211119_101003.log.json
   Paper:
     Title: Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
       with Transformers

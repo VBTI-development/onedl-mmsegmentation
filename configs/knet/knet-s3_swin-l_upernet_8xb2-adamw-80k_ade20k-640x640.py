@@ -1,6 +1,6 @@
 _base_ = 'knet-s3_swin-t_upernet_8xb2-adamw-80k_ade20k-512x512.py'
 
-checkpoint_file = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/swin/swin_large_patch4_window7_224_22k_20220308-d5bdebaf.pth'  # noqa
+checkpoint_file = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/swin/swin_large_patch4_window7_224_22k_20220308-d5bdebaf.pth'  # noqa
 # model settings
 crop_size = (640, 640)
 data_preprocessor = dict(

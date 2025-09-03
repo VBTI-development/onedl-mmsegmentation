@@ -75,10 +75,10 @@ def main():
                 f'{config_name}_', '')
             # two style of log_json name
             # use '_' to link model_time (will be deprecated)
-            log_json_url_1 = f'https://download.openmmlab.com/mmsegmentation/v0.5/{model_name}/{config_name}/{config_name}_{model_time}.log.json'  # noqa
+            log_json_url_1 = f'https://mmassets.onedl.ai/mmsegmentation/v0.5/{model_name}/{config_name}/{config_name}_{model_time}.log.json'  # noqa
             status_code_1, flag_1 = check_url(log_json_url_1)
             # use '-' to link model_time
-            log_json_url_2 = f'https://download.openmmlab.com/mmsegmentation/v0.5/{model_name}/{config_name}/{config_name}-{model_time}.log.json'  # noqa
+            log_json_url_2 = f'https://mmassets.onedl.ai/mmsegmentation/v0.5/{model_name}/{config_name}/{config_name}-{model_time}.log.json'  # noqa
             status_code_2, flag_2 = check_url(log_json_url_2)
             if flag_1 or flag_2:
                 if flag_1:

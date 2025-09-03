@@ -8,7 +8,7 @@ custom_imports = dict(
         'projects.pp_mobileseg.backbones', 'projects.pp_mobileseg.decode_head'
     ],
     allow_failed_imports=False)
-checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_3rdparty-tiny-e4b35e96.pth'  # noqa
+checkpoint = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_3rdparty-tiny-e4b35e96.pth'  # noqa
 crop_size = (512, 512)
 data_preprocessor = dict(size=crop_size, test_cfg=dict(size_divisor=32))
 norm_cfg = dict(type='SyncBN', requires_grad=True)

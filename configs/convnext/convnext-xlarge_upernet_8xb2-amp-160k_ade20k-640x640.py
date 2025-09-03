@@ -5,7 +5,7 @@ _base_ = [
 ]
 crop_size = (640, 640)
 data_preprocessor = dict(size=crop_size)
-checkpoint_file = 'https://download.openmmlab.com/mmclassification/v0/convnext/downstream/convnext-xlarge_3rdparty_in21k_20220301-08aa5ddc.pth'  # noqa
+checkpoint_file = 'https://mmassets.onedl.ai/mmclassification/v0/convnext/downstream/convnext-xlarge_3rdparty_in21k_20220301-08aa5ddc.pth'  # noqa
 model = dict(
     data_preprocessor=data_preprocessor,
     backbone=dict(

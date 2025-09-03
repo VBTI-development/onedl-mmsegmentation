@@ -29,7 +29,7 @@ train_dataloader = dict(batch_size=8, dataset=dict(pipeline=train_pipeline))
 val_dataloader = dict(batch_size=1, dataset=dict(pipeline=test_pipeline))
 test_dataloader = val_dataloader
 
-pretrained = 'https://download.openmmlab.com/mmsegmentation/v0.5/san/clip_vit-base-patch16-224_3rdparty-d08f8887.pth'  # noqa
+pretrained = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/san/clip_vit-base-patch16-224_3rdparty-d08f8887.pth'  # noqa
 data_preprocessor = dict(
     mean=[122.7709, 116.7460, 104.0937],
     std=[68.5005, 66.6322, 70.3232],

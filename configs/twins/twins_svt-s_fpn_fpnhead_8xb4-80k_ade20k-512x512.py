@@ -4,7 +4,7 @@ _base_ = [
 ]
 crop_size = (512, 512)
 data_preprocessor = dict(size=crop_size)
-checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/twins/alt_gvt_small_20220308-7e1c3695.pth'  # noqa
+checkpoint = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/twins/alt_gvt_small_20220308-7e1c3695.pth'  # noqa
 
 model = dict(
     data_preprocessor=data_preprocessor,

@@ -11,7 +11,7 @@ data_preprocessor = dict(
 stable_diffusion_cfg = dict(
     base_learning_rate=0.0001,
     target='ldm.models.diffusion.ddpm.LatentDiffusion',
-    checkpoint='https://download.openmmlab.com/mmsegmentation/v0.5/'
+    checkpoint='https://mmassets.onedl.ai/mmsegmentation/v0.5/'
     'vpd/stable_diffusion_v1-5_pretrain_third_party.pth',
     params=dict(
         linear_start=0.00085,

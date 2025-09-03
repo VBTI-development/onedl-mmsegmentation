@@ -10,7 +10,7 @@ class_weight = [
     1.0023, 0.9539, 0.9843, 1.1116, 0.9037, 1.0865, 1.0955, 1.0865, 1.1529,
     1.0507
 ]
-checkpoint_file = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/pidnet/pidnet-s_imagenet1k_20230306-715e6273.pth'  # noqa
+checkpoint_file = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/pidnet/pidnet-s_imagenet1k_20230306-715e6273.pth'  # noqa
 crop_size = (1024, 1024)
 data_preprocessor = dict(
     type='SegDataPreProcessor',

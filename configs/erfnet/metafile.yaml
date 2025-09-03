@@ -28,8 +28,8 @@ Models:
     - ERFNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 6.04
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/erfnet/erfnet_fcn_4x4_512x1024_160k_cityscapes/erfnet_fcn_4x4_512x1024_160k_cityscapes_20220704_162145-dc90157a.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/erfnet/erfnet_fcn_4x4_512x1024_160k_cityscapes/erfnet_fcn_4x4_512x1024_160k_cityscapes_20220704_162145.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/erfnet/erfnet_fcn_4x4_512x1024_160k_cityscapes/erfnet_fcn_4x4_512x1024_160k_cityscapes_20220704_162145-dc90157a.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/erfnet/erfnet_fcn_4x4_512x1024_160k_cityscapes/erfnet_fcn_4x4_512x1024_160k_cityscapes_20220704_162145.log.json
   Paper:
     Title: 'ERFNet: Efficient Residual Factorized ConvNet for Real-time Semantic Segmentation'
     URL: http://www.robesafe.uah.es/personal/eduardo.romera/pdfs/Romera17tits.pdf

@@ -30,8 +30,8 @@ Our main contributions are the following:
 
 | Model         | Encoder         | Training epoch | Batchsize | Train Resolution | δ1    | δ2    | δ3    | REL   | RMS   | RMS log | params(M) | Links                                                                                                                   |
 | ------------- | --------------- | -------------- | --------- | ---------------- | ----- | ----- | ----- | ----- | ----- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------- |
-| AdaBins_nyu   | EfficientNet-B5 | 25             | 16        | 416x544          | 0.903 | 0.984 | 0.997 | 0.103 | 0.364 | 0.044   | 78        | [model](https://download.openmmlab.com/mmsegmentation/v0.5/adabins/adabins_efficient_b5_nyu_third-party-f68d6bd3.pth)   |
-| AdaBins_kitti | EfficientNet-B5 | 25             | 16        | 352x764          | 0.964 | 0.995 | 0.999 | 0.058 | 2.360 | 0.088   | 78        | [model](https://download.openmmlab.com/mmsegmentation/v0.5/adabins/adabins_efficient-b5_kitty_third-party-a1aa6f36.pth) |
+| AdaBins_nyu   | EfficientNet-B5 | 25             | 16        | 416x544          | 0.903 | 0.984 | 0.997 | 0.103 | 0.364 | 0.044   | 78        | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/adabins/adabins_efficient_b5_nyu_third-party-f68d6bd3.pth)   |
+| AdaBins_kitti | EfficientNet-B5 | 25             | 16        | 352x764          | 0.964 | 0.995 | 0.999 | 0.058 | 2.360 | 0.088   | 78        | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/adabins/adabins_efficient-b5_kitty_third-party-a1aa6f36.pth) |
 
 ## Citation
 

@@ -1,6 +1,6 @@
 _base_ = ['./san-vit-b16_coco-stuff164k-640x640.py']
 
-pretrained = 'https://download.openmmlab.com/mmsegmentation/v0.5/san/clip_vit-large-patch14-336_3rdparty-0b5df9cb.pth'  # noqa
+pretrained = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/san/clip_vit-large-patch14-336_3rdparty-0b5df9cb.pth'  # noqa
 model = dict(
     type='MultimodalEncoderDecoder',
     pretrained=pretrained,

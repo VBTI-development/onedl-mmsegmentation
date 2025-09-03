@@ -28,8 +28,8 @@ Models:
     - DPT
     Training Resources: 8x V100 GPUS
     Memory (GB): 8.09
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/dpt/dpt_vit-b16_512x512_160k_ade20k/dpt_vit-b16_512x512_160k_ade20k-db31cf52.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/dpt/dpt_vit-b16_512x512_160k_ade20k/dpt_vit-b16_512x512_160k_ade20k-20210809_172025.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/dpt/dpt_vit-b16_512x512_160k_ade20k/dpt_vit-b16_512x512_160k_ade20k-db31cf52.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/dpt/dpt_vit-b16_512x512_160k_ade20k/dpt_vit-b16_512x512_160k_ade20k-20210809_172025.log.json
   Paper:
     Title: Vision Transformer for Dense Prediction
     URL: https://arxiv.org/abs/2103.13413

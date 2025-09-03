@@ -18,7 +18,7 @@ warnings.filterwarnings('ignore')
 
 def download_checkpoint(checkpoint_name, model_name, config_name, collect_dir):
     """Download checkpoint and check if hash code is true."""
-    url = f'https://download.openmmlab.com/mmsegmentation/v0.5/{model_name}/{config_name}/{checkpoint_name}'  # noqa
+    url = f'https://mmassets.onedl.ai/mmsegmentation/v0.5/{model_name}/{config_name}/{checkpoint_name}'  # noqa
 
     r = requests.get(url)
     assert r.status_code != 403, f'{url} Access denied.'

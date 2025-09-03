@@ -42,7 +42,7 @@ mim test mmsegmentation configs/isnet_r50-d8_8xb2-160k_cityscapes-512x1024.py --
 
 | Method | Backbone | Crop Size | Lr schd | Mem (GB) | Inf time (fps) |  mIoU | mIoU(ms+flip) | config                                                          | download                                                                                                                 |
 | ------ | -------- | --------- | ------: | -------- | -------------- | ----: | ------------: | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| ISNet  | R-50-D8  | 512x1024  |       - | -        | -              | 79.32 |         80.88 | [config](configs/isnet_r50-d8_8xb2-160k_cityscapes-512x1024.py) | [model](https://download.openmmlab.com/mmsegmentation/v0.5/isnet/isnet_r50-d8_cityscapes-512x1024_20230104-a7a8ccf2.pth) |
+| ISNet  | R-50-D8  | 512x1024  |       - | -        | -              | 79.32 |         80.88 | [config](configs/isnet_r50-d8_8xb2-160k_cityscapes-512x1024.py) | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/isnet/isnet_r50-d8_cityscapes-512x1024_20230104-a7a8ccf2.pth) |
 
 ## Citation
 

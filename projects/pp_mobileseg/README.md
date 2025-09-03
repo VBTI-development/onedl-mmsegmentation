@@ -32,8 +32,8 @@ Extensive experiments show that PP-MobileSeg achieves a superior params-accuracy
 
 | Model             | Backbone          | Training Iters | Batchsize | Train Resolution | mIoU(%) | latency(ms)\* | params(M) | config                                                                                                                    | Links                                                                                                                                                                                                                                |
 | ----------------- | ----------------- | -------------- | --------- | ---------------- | ------- | ------------- | --------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| PP-MobileSeg-Base | StrideFormer-Base | 80000          | 32        | 512x512          | 41.57%  | 265.5         | 5.62      | [config](https://github.com/Yang-Changhui/mmsegmentation/tree/add_ppmobileseg/projects/pp_mobileseg/configs/pp_mobileseg) | [model](https://download.openmmlab.com/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_2xb16_3rdparty-base_512x512-ade20k-f12b44f3.pth)\|[log](https://bj.bcebos.com/paddleseg/dygraph/ade20k/pp_mobileseg_base/train.log) |
-| PP-MobileSeg-Tiny | StrideFormer-Tiny | 80000          | 32        | 512x512          | 36.39%  | 215.3         | 1.61      | [config](https://github.com/Yang-Changhui/mmsegmentation/tree/add_ppmobileseg/projects/pp_mobileseg/configs/pp_mobileseg) | [model](https://download.openmmlab.com/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_2xb16_3rdparty-tiny_512x512-ade20k-a351ebf5.pth)\|[log](https://bj.bcebos.com/paddleseg/dygraph/ade20k/pp_mobileseg_tiny/train.log) |
+| PP-MobileSeg-Base | StrideFormer-Base | 80000          | 32        | 512x512          | 41.57%  | 265.5         | 5.62      | [config](https://github.com/Yang-Changhui/mmsegmentation/tree/add_ppmobileseg/projects/pp_mobileseg/configs/pp_mobileseg) | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_2xb16_3rdparty-base_512x512-ade20k-f12b44f3.pth)\|[log](https://bj.bcebos.com/paddleseg/dygraph/ade20k/pp_mobileseg_base/train.log) |
+| PP-MobileSeg-Tiny | StrideFormer-Tiny | 80000          | 32        | 512x512          | 36.39%  | 215.3         | 1.61      | [config](https://github.com/Yang-Changhui/mmsegmentation/tree/add_ppmobileseg/projects/pp_mobileseg/configs/pp_mobileseg) | [model](https://mmassets.onedl.ai/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_2xb16_3rdparty-tiny_512x512-ade20k-a351ebf5.pth)\|[log](https://bj.bcebos.com/paddleseg/dygraph/ade20k/pp_mobileseg_tiny/train.log) |
 
 ## Usage
 
@@ -74,7 +74,7 @@ git clone https://github.com/open-mmlab/mmdeploy.git
 - Download pp_mobileseg model.
 
 ```shell
-wget https://download.openmmlab.com/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_2xb16_3rdparty-tiny_512x512-ade20k-a351ebf5.pth
+wget https://mmassets.onedl.ai/mmsegmentation/v0.5/pp_mobileseg/pp_mobileseg_mobilenetv3_2xb16_3rdparty-tiny_512x512-ade20k-a351ebf5.pth
 ```
 
 - Convert model to onnx files.

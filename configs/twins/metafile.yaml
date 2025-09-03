@@ -16,8 +16,8 @@ Models:
     - FPN
     Training Resources: 8x V100 GPUS
     Memory (GB): 6.6
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_204132-41acd132.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_204132.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_204132-41acd132.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_204132.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -40,8 +40,8 @@ Models:
     - UPerNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 9.67
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k_20211201_233537-8e99c07a.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k_20211201_233537.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k_20211201_233537-8e99c07a.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k/twins_pcpvt-s_uperhead_8x4_512x512_160k_ade20k_20211201_233537.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -64,8 +64,8 @@ Models:
     - FPN
     Training Resources: 8x V100 GPUS
     Memory (GB): 8.41
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141019-d396db72.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141019.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141019-d396db72.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141019.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -88,8 +88,8 @@ Models:
     - UPerNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 6.46
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k_20211130_141020-02094ea5.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k_20211130_141020.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k_20211130_141020-02094ea5.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-b_uperhead_8x2_512x512_160k_ade20k_20211130_141020.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -112,8 +112,8 @@ Models:
     - FPN
     Training Resources: 8x V100 GPUS
     Memory (GB): 10.78
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_105226-bc6d61dc.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_105226.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_105226-bc6d61dc.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_pcpvt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_105226.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -136,8 +136,8 @@ Models:
     - UPerNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 7.82
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k_20211201_075053-c6095c07.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k_20211201_075053.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k_20211201_075053-c6095c07.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k/twins_pcpvt-l_uperhead_8x2_512x512_160k_ade20k_20211201_075053.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -160,8 +160,8 @@ Models:
     - FPN
     Training Resources: 8x V100 GPUS
     Memory (GB): 5.8
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141006-0a0d3317.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141006.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141006-0a0d3317.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-s_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141006.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -184,8 +184,8 @@ Models:
     - UPerNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 4.93
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-s_uperhead_8x2_512x512_160k_ade20k/twins_svt-s_uperhead_8x2_512x512_160k_ade20k_20211130_141005-e48a2d94.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-s_uperhead_8x2_512x512_160k_ade20k/twins_svt-s_uperhead_8x2_512x512_160k_ade20k_20211130_141005.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-s_uperhead_8x2_512x512_160k_ade20k/twins_svt-s_uperhead_8x2_512x512_160k_ade20k_20211130_141005-e48a2d94.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-s_uperhead_8x2_512x512_160k_ade20k/twins_svt-s_uperhead_8x2_512x512_160k_ade20k_20211130_141005.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -208,8 +208,8 @@ Models:
     - FPN
     Training Resources: 8x V100 GPUS
     Memory (GB): 8.75
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_113849-88b2907c.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_113849.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_113849-88b2907c.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-b_fpn_fpnhead_8x4_512x512_80k_ade20k_20211201_113849.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -232,8 +232,8 @@ Models:
     - UPerNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 6.77
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-b_uperhead_8x2_512x512_160k_ade20k/twins_svt-b_uperhead_8x2_512x512_160k_ade20k_20211202_040826-0943a1f1.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-b_uperhead_8x2_512x512_160k_ade20k/twins_svt-b_uperhead_8x2_512x512_160k_ade20k_20211202_040826.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-b_uperhead_8x2_512x512_160k_ade20k/twins_svt-b_uperhead_8x2_512x512_160k_ade20k_20211202_040826-0943a1f1.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-b_uperhead_8x2_512x512_160k_ade20k/twins_svt-b_uperhead_8x2_512x512_160k_ade20k_20211202_040826.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -256,8 +256,8 @@ Models:
     - FPN
     Training Resources: 8x V100 GPUS
     Memory (GB): 11.2
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141005-1d59bee2.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141005.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141005-1d59bee2.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k/twins_svt-l_fpn_fpnhead_8x4_512x512_80k_ade20k_20211130_141005.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf
@@ -280,8 +280,8 @@ Models:
     - UPerNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 8.41
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-l_uperhead_8x2_512x512_160k_ade20k/twins_svt-l_uperhead_8x2_512x512_160k_ade20k_20211130_141005-3e2cae61.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/twins/twins_svt-l_uperhead_8x2_512x512_160k_ade20k/twins_svt-l_uperhead_8x2_512x512_160k_ade20k_20211130_141005.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-l_uperhead_8x2_512x512_160k_ade20k/twins_svt-l_uperhead_8x2_512x512_160k_ade20k_20211130_141005-3e2cae61.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/twins/twins_svt-l_uperhead_8x2_512x512_160k_ade20k/twins_svt-l_uperhead_8x2_512x512_160k_ade20k_20211130_141005.log.json
   Paper:
     Title: 'Twins: Revisiting the Design of Spatial Attention in Vision Transformers'
     URL: https://arxiv.org/pdf/2104.13840.pdf

@@ -32,8 +32,8 @@ Models:
     - OCRNet
     Training Resources: 4x A100 GPUS
     Memory (GB): 3.5
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024_20230227_145026-6c052a14.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024_20230227_145026.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024_20230227_145026-6c052a14.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024/ocrnet_hr18s_4xb2-40k_cityscapes-512x1024_20230227_145026.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -56,8 +56,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 4.7
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_40k_cityscapes/ocrnet_hr18_512x1024_40k_cityscapes_20200601_033320-401c5bdd.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_40k_cityscapes/ocrnet_hr18_512x1024_40k_cityscapes_20200601_033320.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_40k_cityscapes/ocrnet_hr18_512x1024_40k_cityscapes_20200601_033320-401c5bdd.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_40k_cityscapes/ocrnet_hr18_512x1024_40k_cityscapes_20200601_033320.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -80,8 +80,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 8.0
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_40k_cityscapes/ocrnet_hr48_512x1024_40k_cityscapes_20200601_033336-55b32491.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_40k_cityscapes/ocrnet_hr48_512x1024_40k_cityscapes_20200601_033336.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_40k_cityscapes/ocrnet_hr48_512x1024_40k_cityscapes_20200601_033336-55b32491.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_40k_cityscapes/ocrnet_hr48_512x1024_40k_cityscapes_20200601_033336.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -103,8 +103,8 @@ Models:
     - HRNetV2p-W18-Small
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_80k_cityscapes/ocrnet_hr18s_512x1024_80k_cityscapes_20200601_222735-55979e63.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_80k_cityscapes/ocrnet_hr18s_512x1024_80k_cityscapes_20200601_222735.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_80k_cityscapes/ocrnet_hr18s_512x1024_80k_cityscapes_20200601_222735-55979e63.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_80k_cityscapes/ocrnet_hr18s_512x1024_80k_cityscapes_20200601_222735.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -126,8 +126,8 @@ Models:
     - HRNetV2p-W18
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_80k_cityscapes/ocrnet_hr18_512x1024_80k_cityscapes_20200614_230521-c2e1dd4a.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_80k_cityscapes/ocrnet_hr18_512x1024_80k_cityscapes_20200614_230521.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_80k_cityscapes/ocrnet_hr18_512x1024_80k_cityscapes_20200614_230521-c2e1dd4a.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_80k_cityscapes/ocrnet_hr18_512x1024_80k_cityscapes_20200614_230521.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -149,8 +149,8 @@ Models:
     - HRNetV2p-W48
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_80k_cityscapes/ocrnet_hr48_512x1024_80k_cityscapes_20200601_222752-9076bcdf.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_80k_cityscapes/ocrnet_hr48_512x1024_80k_cityscapes_20200601_222752.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_80k_cityscapes/ocrnet_hr48_512x1024_80k_cityscapes_20200601_222752-9076bcdf.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_80k_cityscapes/ocrnet_hr48_512x1024_80k_cityscapes_20200601_222752.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -172,8 +172,8 @@ Models:
     - HRNetV2p-W18-Small
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_160k_cityscapes/ocrnet_hr18s_512x1024_160k_cityscapes_20200602_191005-f4a7af28.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_160k_cityscapes/ocrnet_hr18s_512x1024_160k_cityscapes_20200602_191005.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_160k_cityscapes/ocrnet_hr18s_512x1024_160k_cityscapes_20200602_191005-f4a7af28.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x1024_160k_cityscapes/ocrnet_hr18s_512x1024_160k_cityscapes_20200602_191005.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -195,8 +195,8 @@ Models:
     - HRNetV2p-W18
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_160k_cityscapes/ocrnet_hr18_512x1024_160k_cityscapes_20200602_191001-b9172d0c.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_160k_cityscapes/ocrnet_hr18_512x1024_160k_cityscapes_20200602_191001.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_160k_cityscapes/ocrnet_hr18_512x1024_160k_cityscapes_20200602_191001-b9172d0c.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x1024_160k_cityscapes/ocrnet_hr18_512x1024_160k_cityscapes_20200602_191001.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -218,8 +218,8 @@ Models:
     - HRNetV2p-W48
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_160k_cityscapes/ocrnet_hr48_512x1024_160k_cityscapes_20200602_191037-dfbf1b0c.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_160k_cityscapes/ocrnet_hr48_512x1024_160k_cityscapes_20200602_191037.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_160k_cityscapes/ocrnet_hr48_512x1024_160k_cityscapes_20200602_191037-dfbf1b0c.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x1024_160k_cityscapes/ocrnet_hr48_512x1024_160k_cityscapes_20200602_191037.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -240,8 +240,8 @@ Models:
     - R-101-D8
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b8_cityscapes/ocrnet_r101-d8_512x1024_40k_b8_cityscapes_20200717_110721-02ac0f13.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b8_cityscapes/ocrnet_r101-d8_512x1024_40k_b8_cityscapes_20200717_110721.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b8_cityscapes/ocrnet_r101-d8_512x1024_40k_b8_cityscapes_20200717_110721-02ac0f13.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b8_cityscapes/ocrnet_r101-d8_512x1024_40k_b8_cityscapes_20200717_110721.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -263,8 +263,8 @@ Models:
     - OCRNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 8.8
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b16_cityscapes/ocrnet_r101-d8_512x1024_40k_b16_cityscapes_20200723_193726-db500f80.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b16_cityscapes/ocrnet_r101-d8_512x1024_40k_b16_cityscapes_20200723_193726.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b16_cityscapes/ocrnet_r101-d8_512x1024_40k_b16_cityscapes_20200723_193726-db500f80.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_40k_b16_cityscapes/ocrnet_r101-d8_512x1024_40k_b16_cityscapes_20200723_193726.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -286,8 +286,8 @@ Models:
     - OCRNet
     Training Resources: 8x V100 GPUS
     Memory (GB): 8.8
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_80k_b16_cityscapes/ocrnet_r101-d8_512x1024_80k_b16_cityscapes_20200723_192421-78688424.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_80k_b16_cityscapes/ocrnet_r101-d8_512x1024_80k_b16_cityscapes_20200723_192421.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_80k_b16_cityscapes/ocrnet_r101-d8_512x1024_80k_b16_cityscapes_20200723_192421-78688424.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_r101-d8_512x1024_80k_b16_cityscapes/ocrnet_r101-d8_512x1024_80k_b16_cityscapes_20200723_192421.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -310,8 +310,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 6.7
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_80k_ade20k/ocrnet_hr18s_512x512_80k_ade20k_20200615_055600-e80b62af.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_80k_ade20k/ocrnet_hr18s_512x512_80k_ade20k_20200615_055600.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_80k_ade20k/ocrnet_hr18s_512x512_80k_ade20k_20200615_055600-e80b62af.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_80k_ade20k/ocrnet_hr18s_512x512_80k_ade20k_20200615_055600.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -334,8 +334,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 7.9
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_80k_ade20k/ocrnet_hr18_512x512_80k_ade20k_20200615_053157-d173d83b.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_80k_ade20k/ocrnet_hr18_512x512_80k_ade20k_20200615_053157.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_80k_ade20k/ocrnet_hr18_512x512_80k_ade20k_20200615_053157-d173d83b.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_80k_ade20k/ocrnet_hr18_512x512_80k_ade20k_20200615_053157.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -358,8 +358,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 11.2
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_80k_ade20k/ocrnet_hr48_512x512_80k_ade20k_20200615_021518-d168c2d1.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_80k_ade20k/ocrnet_hr48_512x512_80k_ade20k_20200615_021518.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_80k_ade20k/ocrnet_hr48_512x512_80k_ade20k_20200615_021518-d168c2d1.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_80k_ade20k/ocrnet_hr48_512x512_80k_ade20k_20200615_021518.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -381,8 +381,8 @@ Models:
     - HRNetV2p-W18-Small
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_160k_ade20k/ocrnet_hr18s_512x512_160k_ade20k_20200615_184505-8e913058.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_160k_ade20k/ocrnet_hr18s_512x512_160k_ade20k_20200615_184505.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_160k_ade20k/ocrnet_hr18s_512x512_160k_ade20k_20200615_184505-8e913058.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_160k_ade20k/ocrnet_hr18s_512x512_160k_ade20k_20200615_184505.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -404,8 +404,8 @@ Models:
     - HRNetV2p-W18
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_160k_ade20k/ocrnet_hr18_512x512_160k_ade20k_20200615_200940-d8fcd9d1.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_160k_ade20k/ocrnet_hr18_512x512_160k_ade20k_20200615_200940.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_160k_ade20k/ocrnet_hr18_512x512_160k_ade20k_20200615_200940-d8fcd9d1.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_160k_ade20k/ocrnet_hr18_512x512_160k_ade20k_20200615_200940.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -427,8 +427,8 @@ Models:
     - HRNetV2p-W48
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_160k_ade20k/ocrnet_hr48_512x512_160k_ade20k_20200615_184705-a073726d.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_160k_ade20k/ocrnet_hr48_512x512_160k_ade20k_20200615_184705.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_160k_ade20k/ocrnet_hr48_512x512_160k_ade20k_20200615_184705-a073726d.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_160k_ade20k/ocrnet_hr48_512x512_160k_ade20k_20200615_184705.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -451,8 +451,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 3.5
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_20k_voc12aug/ocrnet_hr18s_512x512_20k_voc12aug_20200617_233913-02b04fcb.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_20k_voc12aug/ocrnet_hr18s_512x512_20k_voc12aug_20200617_233913.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_20k_voc12aug/ocrnet_hr18s_512x512_20k_voc12aug_20200617_233913-02b04fcb.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_20k_voc12aug/ocrnet_hr18s_512x512_20k_voc12aug_20200617_233913.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -475,8 +475,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 4.7
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_20k_voc12aug/ocrnet_hr18_512x512_20k_voc12aug_20200617_233932-8954cbb7.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_20k_voc12aug/ocrnet_hr18_512x512_20k_voc12aug_20200617_233932.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_20k_voc12aug/ocrnet_hr18_512x512_20k_voc12aug_20200617_233932-8954cbb7.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_20k_voc12aug/ocrnet_hr18_512x512_20k_voc12aug_20200617_233932.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -499,8 +499,8 @@ Models:
     - OCRNet
     Training Resources: 4x V100 GPUS
     Memory (GB): 8.1
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_20k_voc12aug/ocrnet_hr48_512x512_20k_voc12aug_20200617_233932-9e82080a.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_20k_voc12aug/ocrnet_hr48_512x512_20k_voc12aug_20200617_233932.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_20k_voc12aug/ocrnet_hr48_512x512_20k_voc12aug_20200617_233932-9e82080a.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_20k_voc12aug/ocrnet_hr48_512x512_20k_voc12aug_20200617_233932.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -522,8 +522,8 @@ Models:
     - HRNetV2p-W18-Small
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_40k_voc12aug/ocrnet_hr18s_512x512_40k_voc12aug_20200614_002025-42b587ac.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_40k_voc12aug/ocrnet_hr18s_512x512_40k_voc12aug_20200614_002025.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_40k_voc12aug/ocrnet_hr18s_512x512_40k_voc12aug_20200614_002025-42b587ac.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18s_512x512_40k_voc12aug/ocrnet_hr18s_512x512_40k_voc12aug_20200614_002025.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -545,8 +545,8 @@ Models:
     - HRNetV2p-W18
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_40k_voc12aug/ocrnet_hr18_512x512_40k_voc12aug_20200614_015958-714302be.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_40k_voc12aug/ocrnet_hr18_512x512_40k_voc12aug_20200614_015958.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_40k_voc12aug/ocrnet_hr18_512x512_40k_voc12aug_20200614_015958-714302be.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr18_512x512_40k_voc12aug/ocrnet_hr18_512x512_40k_voc12aug_20200614_015958.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065
@@ -568,8 +568,8 @@ Models:
     - HRNetV2p-W48
     - OCRNet
     Training Resources: 4x V100 GPUS
-  Weights: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_40k_voc12aug/ocrnet_hr48_512x512_40k_voc12aug_20200614_015958-255bc5ce.pth
-  Training log: https://download.openmmlab.com/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_40k_voc12aug/ocrnet_hr48_512x512_40k_voc12aug_20200614_015958.log.json
+  Weights: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_40k_voc12aug/ocrnet_hr48_512x512_40k_voc12aug_20200614_015958-255bc5ce.pth
+  Training log: https://mmassets.onedl.ai/mmsegmentation/v0.5/ocrnet/ocrnet_hr48_512x512_40k_voc12aug/ocrnet_hr48_512x512_40k_voc12aug_20200614_015958.log.json
   Paper:
     Title: Object-Contextual Representations for Semantic Segmentation
     URL: https://arxiv.org/abs/1909.11065

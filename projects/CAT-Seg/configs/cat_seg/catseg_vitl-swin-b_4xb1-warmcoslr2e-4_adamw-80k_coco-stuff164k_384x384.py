@@ -1,6 +1,6 @@
 _base_ = './catseg_vitb-r101_4xb2-warmcoslr2e-4-adamw-80k_coco-stuff164k-384x384.py'  # noqa
 
-pretrained = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/swin/swin_base_patch4_window12_384_20220317-55b0104a.pth'  # noqa
+pretrained = 'https://mmassets.onedl.ai/mmsegmentation/v0.5/pretrain/swin/swin_base_patch4_window12_384_20220317-55b0104a.pth'  # noqa
 crop_size = (384, 384)
 data_preprocessor = dict(size=crop_size)
 model = dict(

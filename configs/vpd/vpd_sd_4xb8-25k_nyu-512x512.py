@@ -9,7 +9,7 @@ model = dict(
     type='DepthEstimator',
     data_preprocessor=dict(size=crop_size),
     backbone=dict(
-        class_embed_path='https://download.openmmlab.com/mmsegmentation/'
+        class_embed_path='https://mmassets.onedl.ai/mmsegmentation/'
         'v0.5/vpd/nyu_class_embeddings.pth',
         class_embed_select=True,
         pad_shape=512,
