@@ -15,6 +15,17 @@ from .transforms import (CLAHE, AdjustGamma, Albu, BioMedical3DPad,
                          ResizeShortestEdge, ResizeToMultiple, RGB2Gray,
                          SegRescale)
 
+try:
+    from .loading_onedl import LoadOneDLAnnotations
+    onedl_types = ['LoadOneDLAnnotations']
+except ImportError:
+    import logging
+
+    from mmengine.logging import print_log
+    print_log('Could not import OneDL', level=logging.DEBUG)
+    onedl_types = []
+
+
 # yapf: enable
 __all__ = [
     'LoadAnnotations', 'RandomCrop', 'BioMedical3DRandomCrop', 'SegRescale',
@@ -27,4 +38,4 @@ __all__ = [
     'RandomRotFlip', 'Albu', 'LoadSingleRSImageFromFile', 'ConcatCDInput',
     'LoadMultipleRSImageFromFile', 'LoadDepthAnnotation', 'RandomDepthMix',
     'RandomFlip', 'Resize'
-]
+] + onedl_types
