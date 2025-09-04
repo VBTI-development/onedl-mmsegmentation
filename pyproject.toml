@@ -36,6 +36,7 @@ tests = [
     "xdoctest>=0.10.0",
     "onedl-mmpretrain",
     "onedl-mmdetection",
+    "faster-coco-eval",
     "clip @ git+https://github.com/openai/CLIP.git@main",
 ]
 docs = [
