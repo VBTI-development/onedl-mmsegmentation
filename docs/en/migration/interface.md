@@ -10,17 +10,17 @@ MMSegmentation 1.x depends on some new packages, you can prepare a new clean env
 
 Or install the below packages manually.
 
-1. [MMEngine](https://github.com/vbti-development/onedl-mmengine): MMEngine is the core the OpenMMLab 2.0 architecture, and we split many compentents unrelated to computer vision from MMCV to MMEngine.
+1. [MMEngine](https://github.com/vbti-development/onedl-mmengine): MMEngine is the core the OneDLLab architecture, and we split many compentents unrelated to computer vision from MMCV to MMEngine.
 
-2. [MMCV](https://github.com/vbti-development/onedl-mmcv): The computer vision package of OpenMMLab. This is not a new dependency, but you need to upgrade it to **2.0.0** version or above.
+2. [MMCV](https://github.com/vbti-development/onedl-mmcv): The computer vision package of OneDLLab. This is not a new dependency, but you need to upgrade it to **2.0.0** version or above.
 
-3. [MMClassification](https://github.com/vbti-development/onedl-mmclassification)(Optional): The image classification toolbox and benchmark of OpenMMLab. This is not a new dependency, but you need to upgrade it to **1.0.0rc6** version.
+3. [MMClassification](https://github.com/vbti-development/onedl-mmclassification)(Optional): The image classification toolbox and benchmark of OneDLLab. This is not a new dependency, but you need to upgrade it to **1.0.0rc6** version.
 
-4. [MMDetection](https://github.com/vbti-development/onedl-mmdetection)(Optional): The object detection toolbox and benchmark of OpenMMLab. This is not a new dependency, but you need to upgrade it to **3.0.0** version or above.
+4. [MMDetection](https://github.com/vbti-development/onedl-mmdetection)(Optional): The object detection toolbox and benchmark of OneDLLab. This is not a new dependency, but you need to upgrade it to **3.0.0** version or above.
 
 ## Train launch
 
-The main improvement of OpenMMLab 2.0 is releasing MMEngine which provides universal and powerful runner for unified interfaces to launch training jobs.
+The main improvement of OneDLLab is releasing MMEngine which provides universal and powerful runner for unified interfaces to launch training jobs.
 
 Compared with MMSeg0.x, MMSeg1.x provides fewer command line arguments in `tools/train.py`
 

@@ -3,7 +3,7 @@
 > A README.md template for releasing a project.
 >
 > All the fields in this README are **mandatory** for others to understand what you have achieved in this implementation.
-> Please read our [Projects FAQ](../faq.md) if you still feel unclear about the requirements, or raise an [issue](https://github.com/open-mmlab/mmsegmentation/issues) to us!
+> Please read our [Projects FAQ](../faq.md) if you still feel unclear about the requirements, or raise an [issue](https://github.com/vbti-development/onedl-mmsegmentation/issues) to us!
 
 ## Description
 
@@ -24,10 +24,10 @@ This project implements a dummy ResNet wrapper, which literally does nothing new
 
 ### Prerequisites
 
-- Python 3.7
-- PyTorch 1.6 or higher
-- [MIM](https://github.com/open-mmlab/mim) v0.33 or higher
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) v1.0.0rc2 or higher
+- Python 3.10
+- PyTorch 2.0 or higher
+- [MIM](https://github.com/vbti-development/onedl-mim)
+- [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation)
 
 All the commands below rely on the correct configuration of `PYTHONPATH`, which should point to the project's directory so that Python can locate the module files. In `example_project/` root directory, run the following line to add the current directory to `PYTHONPATH`:
 
@@ -38,22 +38,22 @@ export PYTHONPATH=`pwd`:$PYTHONPATH
 ### Training commands
 
 ```shell
-mim train mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py --work-dir work_dirs/dummy_resnet
+mim train onedl-mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py --work-dir work_dirs/dummy_resnet
 ```
 
 To train on multiple GPUs, e.g. 8 GPUs, run the following command:
 
 ```shell
-mim train mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py --work-dir work_dirs/dummy_resnet --launcher pytorch --gpus 8
+mim train onedl-mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py --work-dir work_dirs/dummy_resnet --launcher pytorch --gpus 8
 ```
 
 ### Testing commands
 
 ```shell
-mim test mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py --work-dir work_dirs/dummy_resnet --checkpoint ${CHECKPOINT_PATH}
+mim test onedl-mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py --work-dir work_dirs/dummy_resnet --checkpoint ${CHECKPOINT_PATH}
 ```
 
-> List the results as usually done in other model's README. \[Example\](https://github.com/open-mmlab/mmsegmentation/tree/main/configs/fcn#results-and-models
+> List the results as usually done in other model's README. \[Example\](https://github.com/vbti-development/onedl-mmsegmentation/tree/main/configs/fcn#results-and-models
 > You should claim whether this is based on the pre-trained weights, which are converted from the official release; or it's a reproduced result obtained from retraining the model in this project
 
 | Method | Backbone | Crop Size | Lr schd | Mem (GB) | Inf time (fps) |  mIoU | mIoU(ms+flip) | config                                                             | download                                                                                                                                                                                                                                                                                                                 |
@@ -65,11 +65,11 @@ mim test mmsegmentation configs/fcn_dummy-r50-d8_4xb2-40k_cityscapes-512x1024.py
 > You may remove this section if not applicable.
 
 ```bibtex
-@misc{mmseg2020,
-    title={{MMSegmentation}: OpenMMLab Semantic Segmentation Toolbox and Benchmark},
-    author={MMSegmentation Contributors},
-    howpublished = {\url{https://github.com/open-mmlab/mmsegmentation}},
-    year={2020}
+@misc{onedl-mmseg2025,
+    title={{OneDL MMSegmentation}: OneDL Semantic Segmentation Toolbox and Benchmark},
+    author={OneDL MMSegmentation Contributors},
+    howpublished = {\url{https://github.com/vbti-development/onedl-mmsegmentation}},
+    year={2025}
 }
 ```
 
@@ -79,7 +79,7 @@ Here is a checklist illustrating a usual development workflow of a successful pr
 
 > The PIC (person in charge) or contributors of this project should check all the items that they believe have been finished, which will further be verified by codebase maintainers via a PR.
 
-> OpenMMLab's maintainer will review the code to ensure the project's quality. Reaching the first milestone means that this project suffices the minimum requirement of being merged into 'projects/'. But this project is only eligible to become a part of the core package upon attaining the last milestone.
+> OneDLLab's maintainer will review the code to ensure the project's quality. Reaching the first milestone means that this project suffices the minimum requirement of being merged into 'projects/'. But this project is only eligible to become a part of the core package upon attaining the last milestone.
 
 > Note that keeping this section up-to-date is crucial not only for this project's developers but the entire community, since there might be some other contributors joining this project and deciding their starting point from this list. It also helps maintainers accurately estimate time and effort on further code polishing, if needed.
 
@@ -113,11 +113,11 @@ Here is a checklist illustrating a usual development workflow of a successful pr
 
   - [ ] Type hints and docstrings
 
-> Ideally *all* the methods should have [type hints](https://www.pythontutorial.net/python-basics/python-type-hints/) and [docstrings](https://google.github.io/styleguide/pyguide.html#381-docstrings). [Example](https://github.com/open-mmlab/mmsegmentation/blob/main/mmseg/utils/io.py#L9)
+> Ideally *all* the methods should have [type hints](https://www.pythontutorial.net/python-basics/python-type-hints/) and [docstrings](https://google.github.io/styleguide/pyguide.html#381-docstrings). [Example](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/mmseg/utils/io.py#L9)
 
 - [ ] Unit tests
 
-> Unit tests for each module are required. [Example](https://github.com/open-mmlab/mmsegmentation/blob/main/tests/test_utils/test_io.py#L14)
+> Unit tests for each module are required. [Example](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/tests/test_utils/test_io.py#L14)
 
 - [ ] Code polishing
 
@@ -125,10 +125,10 @@ Here is a checklist illustrating a usual development workflow of a successful pr
 
 - [ ] Metafile.yml
 
-> It will be parsed by MIM and Inferencer. [Example](https://github.com/open-mmlab/mmsegmentation/blob/main/configs/fcn/fcn.yml)
+> It will be parsed by MIM and Inferencer. [Example](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/configs/fcn/fcn.yml)
 
 - [ ] Move your modules into the core package following the codebase's file hierarchy structure.
 
-> In particular, you may have to refactor this README into a standard one. [Example](https://github.com/open-mmlab/mmsegmentation/blob/main/configs/fcn/README.md)
+> In particular, you may have to refactor this README into a standard one. [Example](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/configs/fcn/README.md)
 
 - [ ] Refactor your modules into the core package following the codebase's file hierarchy structure.

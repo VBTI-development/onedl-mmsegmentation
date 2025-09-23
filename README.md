@@ -1,5 +1,10 @@
 <div align="center">
-  <img width="600" alt="onedl-mmsegmentation" src="https://raw.githubusercontent.com/VBTI-development/onedl-mmsegmentation/main/resources/onedl-mmseg-logo.png"/>
+  <picture>
+    <!-- User prefers dark mode: -->
+  <source srcset="https://raw.githubusercontent.com/vbti-development/onedl-mmsegmentation/main/docs/en/_static/image/onedl-mmsegmentation-banner-dark.png"  media="(prefers-color-scheme: dark)"/>
+
+  <img src="https://raw.githubusercontent.com/vbti-development/onedl-mmsegmentation/main/docs/en/_static/image/onedl-mmsegmentation-banner.png" alt="OneDL-Segmentation logo" height="200"/>
+  </picture>
   <div>&nbsp;</div>
   <div align="center">
     <a href="https://vbti.ai">
@@ -26,21 +31,22 @@
 [🛠️ Installation](https://onedl-mmsegmentation.readthedocs.io/en/latest/get_started.html) |
 [👀 Model Zoo](https://onedl-mmsegmentation.readthedocs.io/en/latest/model_zoo.html) |
 [🆕 Update News](https://onedl-mmsegmentation.readthedocs.io/en/latest/notes/changelog.html) |
-[🚀Ongoing Projects](https://github.com/open-mmlab/mmsegmentation/projects) |
+[🚀Ongoing Projects](https://github.com/vbti-development/onedl-mmsegmentation/projects) |
 [🤔 Reporting Issues](https://github.com/VBTI-development/onedl-mmsegmentation/issues/new/choose) |
+
+[![Discord Logo](https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e3d80db9971f10a9757c99_Symbol.svg)](https://discord.gg/8DvcVRs5Pm)
 
 ## Introduction
 
 MMSegmentation is an open source semantic segmentation toolbox based on PyTorch.
-It is a part of the OpenMMLab project.
 
-The [main](https://github.com/open-mmlab/mmsegmentation/tree/main) branch works with PyTorch 2.0+.
+The [main](https://github.com/vbti-devleopment/onedl-mmsegmentation/tree/main) branch works with PyTorch 2.0+.
 
 ### 🎉 Introducing MMSegmentation v1.0.0 🎉
 
-We are thrilled to announce the official release of MMSegmentation's latest version! For this new release, the [main](https://github.com/open-mmlab/mmsegmentation/tree/main) branch serves as the primary branch, while the development branch is [dev-1.x](https://github.com/open-mmlab/mmsegmentation/tree/dev-1.x). The stable branch for the previous release remains as the [0.x](https://github.com/open-mmlab/mmsegmentation/tree/0.x) branch. Please note that the [master](https://github.com/open-mmlab/mmsegmentation/tree/master) branch will only be maintained for a limited time before being removed. We encourage you to be mindful of branch selection and updates during use. Thank you for your unwavering support and enthusiasm, and let's work together to make MMSegmentation even more robust and powerful! 💪
+We are thrilled to announce the official release of MMSegmentation's latest version! For this new release, the [main](https://github.com/vbti-development/onedl-mmsegmentation/tree/main) branch serves as the primary branch. Thank you for your unwavering support and enthusiasm, and let's work together to make MMSegmentation even more robust and powerful! 💪
 
-MMSegmentation v1.x brings remarkable improvements over the 0.x release, offering a more flexible and feature-packed experience. To utilize the new features in v1.x, we kindly invite you to consult our detailed [📚 migration guide](https://mmsegmentation.readthedocs.io/en/latest/migration/interface.html), which will help you seamlessly transition your projects. Your support is invaluable, and we eagerly await your feedback!
+MMSegmentation v1.x brings remarkable improvements over the 0.x release, offering a more flexible and feature-packed experience. To utilize the new features in v1.x, we kindly invite you to consult our detailed [📚 migration guide](https://onedl-mmsegmentation.readthedocs.io/en/latest/migration/interface.html), which will help you seamlessly transition your projects. Your support is invaluable, and we eagerly await your feedback!
 
 ![demo image](resources/seg_demo.gif)
 
@@ -293,27 +299,27 @@ Results and models are available in the [model zoo](docs/en/model_zoo.md).
       </td>
       <td>
         <ul>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#cityscapes">Cityscapes</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#pascal-voc">PASCAL VOC</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#ade20k">ADE20K</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#pascal-context">Pascal Context</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#coco-stuff-10k">COCO-Stuff 10k</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#coco-stuff-164k">COCO-Stuff 164k</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#chase-db1">CHASE_DB1</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#drive">DRIVE</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#hrf">HRF</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#stare">STARE</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#dark-zurich">Dark Zurich</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#nighttime-driving">Nighttime Driving</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#loveda">LoveDA</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#isprs-potsdam">Potsdam</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#isprs-vaihingen">Vaihingen</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#isaid">iSAID</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#mapillary-vistas-datasets">Mapillary Vistas</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#levir-cd">LEVIR-CD</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#bdd100K">BDD100K</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#nyu">NYU</a></li>
-          <li><a href="https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#hsi-drive-2.0">HSIDrive20</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#cityscapes">Cityscapes</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#pascal-voc">PASCAL VOC</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#ade20k">ADE20K</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#pascal-context">Pascal Context</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#coco-stuff-10k">COCO-Stuff 10k</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#coco-stuff-164k">COCO-Stuff 164k</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#chase-db1">CHASE_DB1</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#drive">DRIVE</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#hrf">HRF</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#stare">STARE</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#dark-zurich">Dark Zurich</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#nighttime-driving">Nighttime Driving</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#loveda">LoveDA</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#isprs-potsdam">Potsdam</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#isprs-vaihingen">Vaihingen</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#isaid">iSAID</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#mapillary-vistas-datasets">Mapillary Vistas</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#levir-cd">LEVIR-CD</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#bdd100K">BDD100K</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#nyu">NYU</a></li>
+          <li><a href="https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md#hsi-drive-2.0">HSIDrive20</a></li>
         </ul>
       </td>
       <td>
@@ -359,9 +365,9 @@ If you find this project useful in your research, please consider cite:
 
 ```bibtex
 @misc{mmseg2020,
-    title={{MMSegmentation}: OpenMMLab Semantic Segmentation Toolbox and Benchmark},
-    author={MMSegmentation Contributors},
-    howpublished = {\url{https://github.com/open-mmlab/mmsegmentation}},
+    title={{OneDL MMSegmentation}: OneDL Semantic Segmentation Toolbox and Benchmark},
+    author={OneDL-MMSegmentation Contributors},
+    howpublished = {\url{https://github.com/vbti-development/onedl-mmsegmentation}},
     year={2020}
 }
 ```
@@ -372,30 +378,11 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Projects in VBTI-development
 
-- [MMEngine](https://github.com/vbti-development/onedl-mmengine): OpenMMLab foundational library for training deep learning models.
-- [MMCV](https://github.com/vbti-development/onedl-mmcv): OpenMMLab foundational library for computer vision.
-- [MMPreTrain](https://github.com/vbti-development/onedl-mmpretrain): OpenMMLab pre-training toolbox and benchmark.
-- [MMDetection](https://github.com/vbti-development/onedl-mmdetection): OpenMMLab detection toolbox and benchmark.
-- [MMRotate](https://github.com/vbti-development/onedl-mmrotate): OpenMMLab rotated object detection toolbox and benchmark.
-- [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation): OpenMMLab semantic segmentation toolbox and benchmark.
-- [MMDeploy](https://github.com/vbti-development/onedl-mmdeploy): OpenMMLab model deployment framework.
-- [MIM](https://github.com/vbti-development/onedl-mim): MIM installs OpenMMLab packages.
-
-## Projects in OpenMMLab
-
-- [MMagic](https://github.com/open-mmlab/mmagic): Open**MM**Lab **A**dvanced, **G**enerative and **I**ntelligent **C**reation toolbox.
-- [MMDetection3D](https://github.com/open-mmlab/mmdetection3d): OpenMMLab's next-generation platform for general 3D object detection.
-- [MMYOLO](https://github.com/open-mmlab/mmyolo): OpenMMLab YOLO series toolbox and benchmark.
-- [MMOCR](https://github.com/open-mmlab/mmocr): OpenMMLab text detection, recognition, and understanding toolbox.
-- [MMPose](https://github.com/open-mmlab/mmpose): OpenMMLab pose estimation toolbox and benchmark.
-- [MMHuman3D](https://github.com/open-mmlab/mmhuman3d): OpenMMLab 3D human parametric model toolbox and benchmark.
-- [MMSelfSup](https://github.com/open-mmlab/mmselfsup): OpenMMLab self-supervised learning toolbox and benchmark.
-- [MMRazor](https://github.com/open-mmlab/mmrazor): OpenMMLab model compression toolbox and benchmark.
-- [MMFewShot](https://github.com/open-mmlab/mmfewshot): OpenMMLab fewshot learning toolbox and benchmark.
-- [MMAction2](https://github.com/open-mmlab/mmaction2): OpenMMLab's next-generation action understanding toolbox and benchmark.
-- [MMTracking](https://github.com/open-mmlab/mmtracking): OpenMMLab video perception toolbox and benchmark.
-- [MMFlow](https://github.com/open-mmlab/mmflow): OpenMMLab optical flow toolbox and benchmark.
-- [MMEditing](https://github.com/open-mmlab/mmediting): OpenMMLab image and video editing toolbox.
-- [MMGeneration](https://github.com/open-mmlab/mmgeneration): OpenMMLab image and video generative models toolbox.
-- [MMEval](https://github.com/open-mmlab/mmeval): A unified evaluation library for multiple machine learning libraries.
-- [Playground](https://github.com/open-mmlab/playground): A central hub for gathering and showcasing amazing projects built upon OpenMMLab.
+- [MMEngine](https://github.com/vbti-development/onedl-mmengine): Foundational library for training deep learning models.
+- [MMCV](https://github.com/vbti-development/onedl-mmcv): Foundational library for computer vision.
+- [MMPreTrain](https://github.com/vbti-development/onedl-mmpretrain): Pre-training toolbox and benchmark.
+- [MMDetection](https://github.com/vbti-development/onedl-mmdetection): Detection toolbox and benchmark.
+- [MMRotate](https://github.com/vbti-development/onedl-mmrotate): Rotated object detection toolbox and benchmark.
+- [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation): Semantic segmentation toolbox and benchmark.
+- [MMDeploy](https://github.com/vbti-development/onedl-mmdeploy): Model deployment framework.
+- [MIM](https://github.com/vbti-development/onedl-mim): MIM installs VBTI packages.

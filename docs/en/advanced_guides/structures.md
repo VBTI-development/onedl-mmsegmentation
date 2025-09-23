@@ -1,6 +1,6 @@
 # Structures
 
-To unify input and output interfaces  between different models and modules, OpenMMLab 2.0 MMEngine defines an abstract data structure,
+To unify input and output interfaces  between different models and modules, OneDLLab MMEngine defines an abstract data structure,
 it has implemented basic functions of `Create`, `Read`, `Update`, `Delete`, supported data transferring among different types of devices
 and tensor-like or dictionary-like operations such as `.cpu()`, `.cuda()`, `.get()` and `.detach()`.
 More details can be found [here](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/data_element.md).

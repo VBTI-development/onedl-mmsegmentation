@@ -17,13 +17,13 @@
 
 ______________________________________________________________________
 
-[MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation/tree/main), also known as `mmseg`, is an open source semantic segmentation toolbox based on Pytorch. It's a part of the [OpenMMLab](<(https://openmmlab.com/)>) object.
+[MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation/tree/main), also known as `mmseg`, is an open source semantic segmentation toolbox based on Pytorch.
 
 ## Installation
 
 ### Install mmseg
 
-Please follow the [Installation Guide](https://mmsegmentation.readthedocs.io/en/latest/get_started.html).
+Please follow the [Installation Guide](https://onedl-mmsegmentation.readthedocs.io/en/latest/get_started.html).
 
 ### Install mmdeploy
 
@@ -31,7 +31,7 @@ Please follow the [Installation Guide](https://mmsegmentation.readthedocs.io/en/
 
 **Option 1:** Install precompiled package
 
-Please follow the [Installation overview](https://mmdeploy.readthedocs.io/zh_CN/latest/get_started.html#mmdeploy)
+Please follow the [Installation overview](https://onedl-mmdeploy.readthedocs.io/en/latest/get_started.html#mmdeploy)
 
 **Option 2:**  Automatic Installation script
 
@@ -56,8 +56,8 @@ export LD_LIBRARY_PATH=$(pwd)/../mmdeploy-dep/onnxruntime-linux-x64-1.8.1/lib/:$
 1. Use mim to install mmcv
 
 ```shell
-pip install -U openmim
-mim install "mmcv>=2.0.0rc2"
+pip install -U onedl-mim
+mim install "onedl-mmcv"
 ```
 
 2. Install mmdeploy
@@ -79,10 +79,10 @@ If the first three methods aren't suitable, please [Build MMDeploy from source](
 Then convert `unet` to onnx model as follows:
 
 ```shell
-cd mmdeploy
+cd onedl-mmdeploy
 
 # download unet model from mmseg model zoo
-mim download mmsegmentation --config unet-s5-d16_fcn_4xb4-160k_cityscapes-512x1024 --dest .
+mim download onedl-mmsegmentation --config unet-s5-d16_fcn_4xb4-160k_cityscapes-512x1024 --dest .
 
 # convert mmseg model to onnxruntime model with dynamic shape
 python tools/deploy.py \

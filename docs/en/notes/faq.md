@@ -31,11 +31,11 @@ Notes:
 
 - To install MMSegmentation 0.x and master branch, please refer to [the faq 0.x document](https://mmsegmentation.readthedocs.io/en/latest/faq.html#installation) to check compatible versions of MMCV.
 
-- If you have installed an incompatible version of mmcv, please run `pip uninstall mmcv` to uninstall the installed mmcv first. If you have previously installed mmcv-full (which exists in OpenMMLab 1.x), please run `pip uninstall mmcv-full` to uninstall it.
+- If you have installed an incompatible version of mmcv, please run `pip uninstall onedl-mmcv` to uninstall the installed mmcv first.
 
 - If "No module named 'mmcv'" appears, please follow the steps below;
 
-  1. Use `pip uninstall mmcv` to uninstall the existing mmcv in the environment.
+  1. Use `pip uninstall onedl-mmcv` to uninstall the existing mmcv in the environment.
   2. Install the corresponding mmcv according to the [installation instructions](https://mmsegmentation.readthedocs.io/en/dev-1.x/get_started.html#best-practices).
 
 ## How to know the number of GPUs needed to train the model

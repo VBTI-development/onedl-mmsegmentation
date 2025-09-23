@@ -1,11 +1,11 @@
 [project]
 name = "onedl-mmsegmentation"
 version = "1.3.0-rc.1"
-description = "OpenMMLab Semantic Segmentation Toolbox and Benchmark"
+description = "OneDL Semantic Segmentation Toolbox and Benchmark"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [
-    {name = "MMSegmentation Contributors"},
+    {name = "OneDL-MMSegmentation Contributors"},
     {name = "VBTI Software Team", email = "oss@vbti.nl"}
 ]
 classifiers = [

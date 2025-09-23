@@ -1,6 +1,4 @@
 .header-logo {
-    background-image: url("../images/mmsegmentation.png");
-    background-size: 201px 40px;
-    height: 40px;
-    width: 201px;
+    background-image: url("../images/onedl-mmsegmentation-banner.png");
+    background-size: 245px;
 }

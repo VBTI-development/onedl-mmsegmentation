@@ -2,7 +2,7 @@
 
 MMEngine defined some [basic loop controllers](https://github.com/vbti-development/onedl-mmengine/blob/main/mmengine/runner/loops.py) such as epoch-based training loop (`EpochBasedTrainLoop`), iteration-based training loop (`IterBasedTrainLoop`), standard validation loop (`ValLoop`), and standard testing loop (`TestLoop`).
 
-OpenMMLab's algorithm libraries like MMSegmentation abstract model training, testing, and inference as `Runner` to handle. Users can use the default `Runner` in MMEngine directly or modify the `Runner` to meet customized needs. This document mainly introduces how users can configure existing running settings, hooks, and optimizers' basic concepts and usage methods.
+OneDLLab's algorithm libraries like MMSegmentation abstract model training, testing, and inference as `Runner` to handle. Users can use the default `Runner` in MMEngine directly or modify the `Runner` to meet customized needs. This document mainly introduces how users can configure existing running settings, hooks, and optimizers' basic concepts and usage methods.
 
 ## Configuring Runtime Settings
 
@@ -26,7 +26,7 @@ optim_wrapper = dict(
     clip_grad=None)
 ```
 
-OpenMMLab supports all optimizers in PyTorch. For more details, please refer to the [MMEngine optimizer documentation](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/optim_wrapper.md).
+OneDLLab supports all optimizers in PyTorch. For more details, please refer to the [MMEngine optimizer documentation](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/optim_wrapper.md).
 
 It is worth emphasizing that `optim_wrapper` is a variable of `runner`, so when configuring the optimizer, the field to configure is the `optim_wrapper` field. For more information on using optimizers, see the [Optimizer](#Optimizer) section below.
 
@@ -56,7 +56,7 @@ Note: When modifying the `max_iters` in `train_cfg`, make sure the parameters in
 
 ### Introduction
 
-OpenMMLab abstracts the model training and testing process as `Runner`. Inserting hooks can implement the corresponding functionality needed at different training and testing stages (such as "before and after each training iter", "before and after each validation iter", etc.) in `Runner`. For more introduction on hook mechanisms, please refer to [here](https://www.calltutors.com/blog/what-is-hook).
+OneDLLab abstracts the model training and testing process as `Runner`. Inserting hooks can implement the corresponding functionality needed at different training and testing stages (such as "before and after each training iter", "before and after each validation iter", etc.) in `Runner`. For more introduction on hook mechanisms, please refer to [here](https://www.calltutors.com/blog/what-is-hook).
 
 Hooks used in `Runner` are divided into two categories:
 
@@ -193,13 +193,13 @@ In the previous configuration and runtime settings, we provided a simple example
 
 ## Optimizer Wrapper
 
-OpenMMLab 2.0 introduces an optimizer wrapper that supports different training strategies, including mixed-precision training, gradient accumulation, and gradient clipping. Users can choose the appropriate training strategy according to their needs. The optimizer wrapper also defines a standard parameter update process, allowing users to switch between different training strategies within the same code. For more information, please refer to the [MMEngine optimizer wrapper documentation](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/optim_wrapper.md).
+OneDLLab introduces an optimizer wrapper that supports different training strategies, including mixed-precision training, gradient accumulation, and gradient clipping. Users can choose the appropriate training strategy according to their needs. The optimizer wrapper also defines a standard parameter update process, allowing users to switch between different training strategies within the same code. For more information, please refer to the [MMEngine optimizer wrapper documentation](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/optim_wrapper.md).
 
 Here are some common usage methods in MMSegmentation:
 
 #### Configuring PyTorch Supported Optimizers
 
-OpenMMLab 2.0 supports all native PyTorch optimizers, as referenced [here](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/optim_wrapper.md).
+OneDLLab supports all native PyTorch optimizers, as referenced [here](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/tutorials/optim_wrapper.md).
 
 To set the optimizer used by the `Runner` during training in the configuration file, you need to define `optim_wrapper` instead of `optimizer`. Below is an example of configuring an optimizer during training:
 
@@ -276,4 +276,4 @@ optim_wrapper = dict(
     loss_scale='dynamic')
 ```
 
-The purpose of `_delete_=True` is to ignore the inherited configuration in the OpenMMLab Config. In this code snippet, the inherited `optim_wrapper` configuration is ignored. For more information on `_delete_` fields, please refer to the [MMEngine documentation](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/config.md#delete-key-in-dict).
+The purpose of `_delete_=True` is to ignore the inherited configuration in the OneDLLab Config. In this code snippet, the inherited `optim_wrapper` configuration is ignored. For more information on `_delete_` fields, please refer to the [MMEngine documentation](https://github.com/vbti-development/onedl-mmengine/blob/main/docs/en/advanced_tutorials/config.md#delete-key-in-dict).
