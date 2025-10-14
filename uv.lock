@@ -1293,7 +1293,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/d3/29/e8451f7c3ff79ed21
 
 [[package]]
 name = "onedl-mmsegmentation"
-version = "1.3.0rc1"
+version = "1.3.0"
 source = { editable = "." }
 dependencies = [
     { name = "ftfy" },

@@ -76,7 +76,7 @@ then run the script [above](#testing-on-a-single-gpu).
 
 ### Training on multiple GPUs
 
-OpenMMLab2.0 implements **distributed** training with `MMDistributedDataParallel`.
+OneDL Labs implements **distributed** training with `MMDistributedDataParallel`.
 We provide `tools/dist_train.sh` to launch training on multiple GPUs.
 
 The basic usage is as follows:

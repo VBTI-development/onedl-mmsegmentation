@@ -1,6 +1,6 @@
 [project]
 name = "onedl-mmsegmentation"
-version = "1.3.0-rc.1"
+version = "1.3.0"
 description = "OneDL Semantic Segmentation Toolbox and Benchmark"
 readme = "README.md"
 license = {text = "Apache-2.0"}

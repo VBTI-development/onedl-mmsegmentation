@@ -52,7 +52,7 @@ jobs:
       - name: Install mmseg dependencies
         run: |
           uv pip install git+https://github.com/VBTI-development/onedl-mim.git
-          mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
+          mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain --only-binary=onedl-mmcv
           uv pip install -r pyproject.toml --all-extras
       - name: Build and install
         run: uv pip install -e .
@@ -84,11 +84,11 @@ jobs:
         include:
           - python-version: '3.10' # minimum version
             torch: '2.4.1'
-            container: 'nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04'
+            container: 'nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04'
             cubackend: cu118
           - python-version: '3.10'  # maximum version
             torch: '2.8.0'
-            container: 'nvidia/cuda:12.9.1-cudnn-devel-ubuntu22.04'
+            container: 'nvidia/cuda:12.9.1-cudnn-runtime-ubuntu22.04'
             cubackend: cu129
     container:
       image: ${{ matrix.container }}
@@ -122,7 +122,7 @@ jobs:
       - name: Install mmseg dependencies
         run: |
           uv pip install git+https://github.com/VBTI-development/onedl-mim.git
-          mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain
+          mim install onedl-mmengine onedl-mmcv onedl-mmdetection onedl-mmpretrain --only-binary=onedl-mmcv
           uv pip install -r pyproject.toml --all-extras
       - name: Build and install
         run: uv pip install -e .
