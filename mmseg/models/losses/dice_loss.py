@@ -36,7 +36,7 @@ def dice_loss(pred: torch.Tensor,
               reduction: Union[str, None] = 'mean',
               naive_dice: Union[bool, None] = False,
               avg_factor: Union[int, None] = None,
-              ignore_index: Union[int, None] = 255):
+              ignore_index: Union[int, None] = 255) -> torch.Tensor:
     """Calculate dice loss, there are two forms of dice loss is supported:
 
         - the one proposed in `V-Net: Fully Convolutional Neural
