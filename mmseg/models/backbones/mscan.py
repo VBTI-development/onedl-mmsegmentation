@@ -401,7 +401,7 @@ class MSCAN(BaseModule):
 
         for i in range(num_stages):
             if i == 0:
-                patch_embed = StemConv(3, embed_dims[0], norm_cfg=norm_cfg)
+                patch_embed = StemConv(in_channels, embed_dims[0], norm_cfg=norm_cfg)
             else:
                 patch_embed = OverlapPatchEmbed(
                     patch_size=7 if i == 0 else 3,
