@@ -24,6 +24,7 @@
 [![PyPI](https://img.shields.io/pypi/v/onedl-mmsegmentation)](https://pypi.org/project/onedl-mmsegmentation)
 
 [![Build Status](https://github.com/VBTI-development/onedl-mmsegmentation/actions/workflows/merge_stage_test.yml/badge.svg)](https://github.com/VBTI-development/onedl-mmsegmentation/actions/workflows/merge_stage_test.yml)
+[![Docker Image](https://github.com/VBTI-development/onedl-mmsegmentation/actions/workflows/docker.yml/badge.svg)](https://hub.docker.com/r/vbti/onedl-mmsegmentation-cu129-torch280)
 [![open issues](https://isitmaintained.com/badge/open/VBTI-development/onedl-mmsegmentation.svg)](https://github.com/VBTI-development/onedl-mmsegmentation/issues)
 [![issue resolution](https://isitmaintained.com/badge/resolution/VBTI-development/onedl-mmsegmentation.svg)](https://github.com/VBTI-development/onedl-mmsegmentation/issues)
 
