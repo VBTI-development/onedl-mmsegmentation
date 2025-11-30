@@ -202,22 +202,22 @@ class IoUMetric(BaseMetric):
         return area_intersect, area_union, area_pred_label, area_label
 
     @staticmethod
-    def total_area_to_metrics(total_area_intersect: np.ndarray,
-                              total_area_union: np.ndarray,
-                              total_area_pred_label: np.ndarray,
-                              total_area_label: np.ndarray,
+    def total_area_to_metrics(total_area_intersect: torch.Tensor,
+                              total_area_union: torch.Tensor,
+                              total_area_pred_label: torch.Tensor,
+                              total_area_label: torch.Tensor,
                               metrics: List[str] = ['mIoU'],
                               nan_to_num: Optional[int] = None,
                               beta: int = 1):
         """Calculate evaluation metrics
         Args:
-            total_area_intersect (np.ndarray): The intersection of prediction
+            total_area_intersect (torch.Tensor): The intersection of prediction
                 and ground truth histogram on all classes.
-            total_area_union (np.ndarray): The union of prediction and ground
+            total_area_union (torch.Tensor): The union of prediction and ground
                 truth histogram on all classes.
-            total_area_pred_label (np.ndarray): The prediction histogram on
+            total_area_pred_label (torch.Tensor): The prediction histogram on
                 all classes.
-            total_area_label (np.ndarray): The ground truth histogram on
+            total_area_label (torch.Tensor): The ground truth histogram on
                 all classes.
             metrics (List[str] | str): Metrics to be evaluated, 'mIoU' and
                 'mDice'.
