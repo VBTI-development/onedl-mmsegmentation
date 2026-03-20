@@ -63,7 +63,6 @@ class LoadAnnotations(MMCV_LoadAnnotations):
         backend_args (dict): Arguments to instantiate a file backend.
             See https://mmengine.readthedocs.io/en/latest/api/fileio.htm
             for details. Defaults to None.
-            Notes: mmcv>=2.0.0rc4, mmengine>=0.2.0 required.
     """
 
     def __init__(
@@ -212,7 +211,6 @@ class LoadBiomedicalImageFromFile(BaseTransform):
         backend_args (dict, Optional): Arguments to instantiate a file backend.
             See https://mmengine.readthedocs.io/en/latest/api/fileio.htm
             for details. Defaults to None.
-            Notes: mmcv>=2.0.0rc4, mmengine>=0.2.0 required.
     """
 
     def __init__(self,
@@ -302,7 +300,6 @@ class LoadBiomedicalAnnotation(BaseTransform):
         backend_args (dict, Optional): Arguments to instantiate a file backend.
             See :class:`mmengine.fileio` for details.
             Defaults to None.
-            Notes: mmcv>=2.0.0rc4, mmengine>=0.2.0 required.
     """
 
     def __init__(self,
@@ -389,7 +386,6 @@ class LoadBiomedicalData(BaseTransform):
         backend_args (dict, Optional): Arguments to instantiate a file backend.
             See https://mmengine.readthedocs.io/en/latest/api/fileio.htm
             for details. Defaults to None.
-            Notes: mmcv>=2.0.0rc4, mmengine>=0.2.0 required.
     """
 
     def __init__(self,
@@ -662,7 +658,6 @@ class LoadDepthAnnotation(BaseTransform):
         backend_args (dict, Optional): Arguments to instantiate a file backend.
             See :class:`mmengine.fileio` for details.
             Defaults to None.
-            Notes: mmcv>=2.0.0rc4, mmengine>=0.2.0 required.
     """
 
     def __init__(self,
