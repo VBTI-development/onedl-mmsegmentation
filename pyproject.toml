@@ -40,7 +40,7 @@ tests = [
     "clip @ git+https://github.com/openai/CLIP.git@main",
 ]
 docs = [
-    "docutils==0.16.0",
+    "docutils==0.18.1",
     "myst-parser",
     "pytorch_sphinx_theme @ git+https://github.com/VBTI-development/onedl_sphinx_theme.git",
     "sphinx",
@@ -68,6 +68,7 @@ mminstall = [
 optional  = [
     "cityscapesscripts",
     "nibabel",
+    "timm",
     # install separately
     # # for vpd model
     # "diffusers",
@@ -83,7 +84,6 @@ optional  = [
     # "streamlit>0.73.1",
     # "taming-transformers @ git+https://github.com/CompVis/taming-transformers.git@master",
     # "test-tube>=0.7.5",
-    # "timm",
     # "torch-fidelity==0.3.0",
     # "torchmetrics==0.6.0",
     # "transformers==4.19.2",
