@@ -1,6 +1,6 @@
 [project]
 name = "onedl-mmsegmentation"
-version = "1.3.1.post1"
+version = "1.3.2"
 description = "OneDL Semantic Segmentation Toolbox and Benchmark"
 readme = "README.md"
 license = "LicenseRef-Apache-2.0"
@@ -13,12 +13,13 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
 ]
 keywords = ["computer vision", "semantic segmentation"]
 requires-python = ">=3.10"
 dependencies = [
     "ftfy",
-    "numpy",
+    "numpy>2",
     "matplotlib",
     "scipy",
     "opencv-python",
@@ -40,7 +41,7 @@ tests = [
     "clip @ git+https://github.com/openai/CLIP.git@main",
 ]
 docs = [
-    "docutils==0.16.0",
+    "docutils==0.18.1",
     "myst-parser",
     "pytorch_sphinx_theme @ git+https://github.com/VBTI-development/onedl_sphinx_theme.git",
     "sphinx",
@@ -68,6 +69,7 @@ mminstall = [
 optional  = [
     "cityscapesscripts",
     "nibabel",
+    "timm",
     # install separately
     # # for vpd model
     # "diffusers",
@@ -83,7 +85,6 @@ optional  = [
     # "streamlit>0.73.1",
     # "taming-transformers @ git+https://github.com/CompVis/taming-transformers.git@master",
     # "test-tube>=0.7.5",
-    # "timm",
     # "torch-fidelity==0.3.0",
     # "torchmetrics==0.6.0",
     # "transformers==4.19.2",

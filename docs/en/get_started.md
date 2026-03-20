@@ -4,7 +4,7 @@
 
 In this section we demonstrate how to prepare an environment with PyTorch.
 
-MMSegmentation works on Linux, Windows and macOS. It requires Python 3.7+, CUDA 10.2+ and PyTorch 1.8+.
+MMSegmentation works on Linux, Windows and macOS. It requires Python 3.10+, CUDA 11.8+ and PyTorch 2.0+.
 
 **Note:**
 If you are experienced with PyTorch and have already installed it, just skip this part and jump to the [next section](##installation). Otherwise, you can follow these steps for the preparation.
@@ -14,8 +14,8 @@ If you are experienced with PyTorch and have already installed it, just skip thi
 **Step 1.** Create a conda environment and activate it.
 
 ```shell
-conda create --name openmmlab python=3.8 -y
-conda activate openmmlab
+conda create --name onedl-mmlab python=3.10 -y
+conda activate onedl-mmlab
 ```
 
 **Step 2.** Install PyTorch following [official instructions](https://pytorch.org/get-started/locally/), e.g.
@@ -136,10 +136,10 @@ MMCV contains C++ and CUDA extensions, thus depending on PyTorch in a complex wa
 
 To install MMCV with pip instead of MIM, please follow [MMCV installation guides](https://mmcv.readthedocs.io/en/latest/get_started/installation.html). This requires manually specifying a find-url based on PyTorch version and its CUDA version.
 
-For example, the following command install mmcv==2.0.0 built for PyTorch 1.10.x and CUDA 11.3.
+For example, the following command install mmcv==2.3.3 built for PyTorch 2.8.x and CUDA 12.8.
 
 ```shell
-pip install mmcv==2.0.0 -f https://mmassets.onedl.ai/mmcv/dist/cu113/torch1.10/index.html
+pip install mmcv==2.3.3 -f https://mmwheels.onedl.ai/cu128-torch280/simple/
 ```
 
 #### Install on CPU-only platforms
@@ -184,9 +184,9 @@ Within Jupyter, the exclamation mark `!` is used to call external executables an
 We provide a [Dockerfile](https://github.com/vbti-development/onedl-mmsegmentation/blob/main/docker/Dockerfile) to build an image. Ensure that your [docker version](https://docs.docker.com/engine/install/) >=19.03.
 
 ```shell
-# build an image with PyTorch 1.11, CUDA 11.3
-# If you prefer other versions, just modified the Dockerfile
-docker build -t mmsegmentation docker/
+# build an image with PyTorch 2.0, CUDA 11.8
+# If you prefer other versions, just modify the Dockerfile (from onedl-mmsegmentation folder)
+docker build -t mmsegmentation -f docker/Dockerfile .
 ```
 
 Run it with

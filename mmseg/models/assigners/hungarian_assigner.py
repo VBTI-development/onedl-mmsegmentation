@@ -3,9 +3,9 @@ from typing import List, Union
 
 import torch
 from mmengine import ConfigDict
+from mmengine.runner.amp import autocast
 from mmengine.structures import InstanceData
 from scipy.optimize import linear_sum_assignment
-from torch.cuda.amp import autocast
 
 from mmseg.registry import TASK_UTILS
 from .base_assigner import BaseAssigner
@@ -65,7 +65,7 @@ class HungarianAssigner(BaseAssigner):
         """
         # compute weighted cost
         cost_list = []
-        with autocast(enabled=False):
+        with autocast('cuda', enabled=False):
             for match_cost in self.match_costs:
                 cost = match_cost(
                     pred_instances=pred_instances, gt_instances=gt_instances)
