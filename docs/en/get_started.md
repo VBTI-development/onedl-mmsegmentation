@@ -139,7 +139,7 @@ To install MMCV with pip instead of MIM, please follow [MMCV installation guides
 For example, the following command install mmcv==2.3.3 built for PyTorch 2.8.x and CUDA 12.8.
 
 ```shell
-pip install mmcv==2.0.0 -f https://mmwheels.onedl.ai/cu128-torch280/simple/
+pip install mmcv==2.3.3 -f https://mmwheels.onedl.ai/cu128-torch280/simple/
 ```
 
 #### Install on CPU-only platforms
@@ -185,7 +185,7 @@ We provide a [Dockerfile](https://github.com/vbti-development/onedl-mmsegmentati
 
 ```shell
 # build an image with PyTorch 2.0, CUDA 11.8
-# If you prefer other versions, just modified the Dockerfile (from onedl-mmsegmentation folder)
+# If you prefer other versions, just modify the Dockerfile (from onedl-mmsegmentation folder)
 docker build -t mmsegmentation -f docker/Dockerfile .
 ```
 
