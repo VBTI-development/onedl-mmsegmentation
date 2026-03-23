@@ -10,7 +10,7 @@ try:
     from mmdet.models.dense_heads import \
         Mask2FormerHead as MMDET_Mask2FormerHead
 except ModuleNotFoundError:
-    MMDET_Mask2FormerHead = BaseModule
+    MMDET_Mask2FormerHead = None
 
 from mmengine.structures import InstanceData
 from torch import Tensor
@@ -39,6 +39,10 @@ class Mask2FormerHead(MMDET_Mask2FormerHead):
                  align_corners=False,
                  ignore_index=255,
                  **kwargs):
+        if MMDET_Mask2FormerHead is BaseModule:
+            raise ImportError(
+                'Please install onedl-mmdetection to use Mask2FormerHead: '
+                'pip install onedl-mmdetection')
         super().__init__(**kwargs)
 
         self.num_classes = num_classes
