@@ -8,7 +8,7 @@ FROM vbti/onedl-mmpretrain-cu${CU_VERSION}-torch${TORCH_VERSION}:${ONEDL_MMPRETR
 COPY . /onedl/onedl-mmsegmentation
 
 WORKDIR /onedl/onedl-mmsegmentation
-RUN mim install --no-cache-dir -e .[albu,optional] \
+RUN mim install --no-cache-dir -e .[albu,optional] onedl-mmdetection \
     && python -m compileall -q /onedl/onedl-mmsegmentation
 
 # Verify installation
