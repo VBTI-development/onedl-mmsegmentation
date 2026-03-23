@@ -3,22 +3,19 @@ from numbers import Number
 from typing import Any, Dict, List, Optional, Sequence
 
 import torch
-from mmengine.model import BaseDataPreprocessor
+from mmengine.model import ImgDataPreprocessor
 
 from mmseg.registry import MODELS
 from mmseg.utils import stack_batch
 
 
 @MODELS.register_module()
-class SegDataPreProcessor(BaseDataPreprocessor):
+class SegDataPreProcessor(ImgDataPreprocessor):
     """Image pre-processor for segmentation tasks.
 
-    Comparing with the :class:`mmengine.ImgDataPreprocessor`,
-
-    1. It won't do normalization if ``mean`` is not specified.
-    2. It does normalization and color space conversion after stacking batch.
-    3. It supports batch augmentations like mixup and cutmix.
-
+    Inherits from :class:`mmengine.ImgDataPreprocessor` and extends it with
+    segmentation-specific padding for ``gt_sem_seg``, ``gt_edge_map`` and
+    ``gt_depth_map`` ground-truth maps.
 
     It provides the data pre-processing as follows
 
@@ -40,12 +37,9 @@ class SegDataPreProcessor(BaseDataPreprocessor):
         pad_val (float, optional): Padding value. Default: 0.
         seg_pad_val (float, optional): Padding value of segmentation map.
             Default: 255.
-        padding_mode (str): Type of padding. Default: constant.
-            - constant: pads with a constant value, this value is specified
-              with pad_val.
         bgr_to_rgb (bool): whether to convert image from BGR to RGB.
             Defaults to False.
-        rgb_to_bgr (bool): whether to convert image from RGB to RGB.
+        rgb_to_bgr (bool): whether to convert image from RGB to BGR.
             Defaults to False.
         batch_augments (list[dict], optional): Batch-level augmentations
         test_cfg (dict, optional): The padding size config in testing, if not
@@ -66,28 +60,18 @@ class SegDataPreProcessor(BaseDataPreprocessor):
         batch_augments: Optional[List[dict]] = None,
         test_cfg: dict = None,
     ):
-        super().__init__()
+        super().__init__(
+            mean=mean,
+            std=std,
+            pad_size_divisor=size_divisor if size_divisor is not None else 1,
+            pad_value=pad_val,
+            bgr_to_rgb=bgr_to_rgb,
+            rgb_to_bgr=rgb_to_bgr,
+        )
         self.size = size
         self.size_divisor = size_divisor
         self.pad_val = pad_val
         self.seg_pad_val = seg_pad_val
-
-        assert not (bgr_to_rgb and rgb_to_bgr), (
-            '`bgr2rgb` and `rgb2bgr` cannot be set to True at the same time')
-        self.channel_conversion = rgb_to_bgr or bgr_to_rgb
-
-        if mean is not None:
-            assert std is not None, 'To enable the normalization in ' \
-                                    'preprocessing, please specify both ' \
-                                    '`mean` and `std`.'
-            # Enable the normalization in preprocessing.
-            self._enable_normalize = True
-            self.register_buffer('mean',
-                                 torch.tensor(mean).view(-1, 1, 1), False)
-            self.register_buffer('std',
-                                 torch.tensor(std).view(-1, 1, 1), False)
-        else:
-            self._enable_normalize = False
 
         # TODO: support batch augmentations.
         self.batch_augments = batch_augments
@@ -96,8 +80,8 @@ class SegDataPreProcessor(BaseDataPreprocessor):
         self.test_cfg = test_cfg
 
     def forward(self, data: dict, training: bool = False) -> Dict[str, Any]:
-        """Perform normalization、padding and bgr2rgb conversion based on
-        ``BaseDataPreprocessor``.
+        """Perform normalization, padding and bgr2rgb conversion based on
+        ``ImgDataPreprocessor``.
 
         Args:
             data (dict): data sampled from dataloader.
@@ -110,7 +94,7 @@ class SegDataPreProcessor(BaseDataPreprocessor):
         inputs = data['inputs']
         data_samples = data.get('data_samples', None)
         # TODO: whether normalize should be after stack_batch
-        if self.channel_conversion and inputs[0].size(0) == 3:
+        if self._channel_conversion and inputs[0].size(0) == 3:
             inputs = [_input[[2, 1, 0], ...] for _input in inputs]
 
         inputs = [_input.float() for _input in inputs]
@@ -133,7 +117,7 @@ class SegDataPreProcessor(BaseDataPreprocessor):
                     inputs, data_samples)
         else:
             img_size = inputs[0].shape[1:]
-            assert all(input_.shape[1:] == img_size for input_ in inputs),  \
+            assert all(input_.shape[1:] == img_size for input_ in inputs), \
                 'The image size in a batch should be the same.'
             # pad images when testing
             if self.test_cfg:
