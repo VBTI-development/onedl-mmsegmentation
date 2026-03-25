@@ -42,7 +42,7 @@ from .transforms import (CLAHE, AdjustGamma, Albu, BioMedical3DPad,
 from .voc import PascalVOCDataset
 
 try:
-    from .onedl import OneDLDataset, OneDLLineInstancesDatasetAdapter
+    from .onedl import OneDLDataset
     onedl_dataset_types = ['OneDLDataset']
 except ImportError:
     import logging
