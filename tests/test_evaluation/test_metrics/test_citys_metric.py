@@ -6,8 +6,8 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-from packaging.version import parse as parse_version
 from mmengine.structures import PixelData
+from packaging.version import parse as parse_version
 
 from mmseg.evaluation import CityscapesMetric
 from mmseg.structures import SegDataSample
@@ -112,8 +112,8 @@ class TestCityscapesMetric(TestCase):
             self.assertIsInstance(res, dict)
         except Exception as err:
             if parse_version(np.__version__) > parse_version('2.3'):
-                self.skipTest(
-                    f'Cityscapes evaluation failed, please try `numpy<2.3`: {err}')
+                self.skipTest('Cityscapes evaluation failed, '
+                              f'please try `numpy<2.3`: {err}')
             else:
                 raise
 
