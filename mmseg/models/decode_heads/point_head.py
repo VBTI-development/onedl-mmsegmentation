@@ -83,8 +83,10 @@ class PointHead(BaseCascadeDecodeHead):
                 type='Normal', std=0.01, override=dict(name='fc_seg')),
             **kwargs)
         if point_sample is None:
-            raise RuntimeError('Please install mmcv-full for '
-                               'point_sample ops')
+            msg = ('Please install onedl-mmcv for point_sample ops. '
+                   'E.g. with mim install onedl-mmcv --only-binary=onedl-mmcv '
+                   'or build from source.')
+            raise RuntimeError(msg)
 
         self.num_fcs = num_fcs
         self.coarse_pred_each_layer = coarse_pred_each_layer

@@ -1,6 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmcv.ops import point_sample
+
+try:
+    from mmcv.ops import point_sample
+except ModuleNotFoundError:
+    point_sample = None
 from torch import Tensor
 
 

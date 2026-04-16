@@ -81,8 +81,8 @@ v1.3.0 was released in August 2025, from 1.2.0 to 1.3.0, we have added or update
 
 ### Highlights
 
-- Disabled tests on RS_inferencer due to difficulties installing gdal
-- Disabled tests on VPD Model due to the latent-diffusion needing to be installed in editable mode. This is not playing nice with uv.
+- Improved the experience when onedl-mmcv is installed without ops.
+  When your models don't use ops it will still work.
 
 ## Installation
 
@@ -265,7 +265,7 @@ Results and models are available in the [model zoo](docs/en/model_zoo.md).
           <li><a href="mmseg/models/decode_heads/ann_head.py">ANN_Head</li>
           <li><a href="mmseg/models/decode_heads/apc_head.py">APC_Head</li>
           <li><a href="mmseg/models/decode_heads/aspp_head.py">ASPP_Head</li>
-          <li><a href="mmseg/models/decode_heads/cc_head.py">CC_Head</li>
+          <li><a href="mmseg/models/decode_heads/cc_head.py">CC_Head*</a></li>
           <li><a href="mmseg/models/decode_heads/da_head.py">DA_Head</li>
           <li><a href="mmseg/models/decode_heads/ddr_head.py">DDR_Head</li>
           <li><a href="mmseg/models/decode_heads/dm_head.py">DM_Head</li>
@@ -285,10 +285,9 @@ Results and models are available in the [model zoo](docs/en/model_zoo.md).
           <li><a href="mmseg/models/decode_heads/nl_head.py">NL_Head</li>
           <li><a href="mmseg/models/decode_heads/ocr_head.py">OCR_Head</li>
           <li><a href="mmseg/models/decode_heads/pid_head.py">PID_Head</li>
-          <li><a href="mmseg/models/decode_heads/point_head.py">point_Head</li>
-          <li><a href="mmseg/models/decode_heads/psa_head.py">PSA_Head</li>
-          <li><a href="mmseg/models/decode_heads/psp_head.py">PSP_Head</li>
-          <li><a href="mmseg/models/decode_heads/san_head.py">SAN_Head</li>
+          <li><a href="mmseg/models/decode_heads/point_head.py">point_Head*</a></li>
+          <li><a href="mmseg/models/decode_heads/psa_head.py">PSA_Head*</a></li>
+          <li><a href="mmseg/models/decode_heads/san_head.py">SAN_Head*</a></li>
           <li><a href="mmseg/models/decode_heads/segformer_head.py">segformer_Head</li>
           <li><a href="mmseg/models/decode_heads/segmenter_mask_head.py">segmenter_mask_Head</li>
           <li><a href="mmseg/models/decode_heads/sep_aspp_head.py">SepASPP_Head</li>
@@ -345,6 +344,8 @@ Results and models are available in the [model zoo](docs/en/model_zoo.md).
   </tbody>
 </table>
 
+<p><sup>*Requires mmcv.ops (onedl-mmcv with ops). See <a href="https://onedl-mmsegmentation.readthedocs.io/en/latest/notes/faq.html">FAQ: mmcv.ops import errors</a> if you encounter import errors.</sup></p>
+
 Please refer to [FAQ](docs/en/notes/faq.md) for frequently asked questions.
 
 ## Projects
@@ -381,11 +382,11 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Projects in VBTI-development
 
-- [MMEngine](https://github.com/vbti-development/onedl-mmengine): Foundational library for training deep learning models.
-- [MMCV](https://github.com/vbti-development/onedl-mmcv): Foundational library for computer vision.
-- [MMPreTrain](https://github.com/vbti-development/onedl-mmpretrain): Pre-training toolbox and benchmark.
-- [MMDetection](https://github.com/vbti-development/onedl-mmdetection): Detection toolbox and benchmark.
-- [MMRotate](https://github.com/vbti-development/onedl-mmrotate): Rotated object detection toolbox and benchmark.
-- [MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation): Semantic segmentation toolbox and benchmark.
-- [MMDeploy](https://github.com/vbti-development/onedl-mmdeploy): Model deployment framework.
-- [MIM](https://github.com/vbti-development/onedl-mim): MIM installs VBTI packages.
+- [OneDL-MMEngine](https://github.com/vbti-development/onedl-mmengine): Foundational library for training deep learning models.
+- [OneDL-MMCV](https://github.com/vbti-development/onedl-mmcv): Foundational library for computer vision.
+- [OneDL-MMPreTrain](https://github.com/vbti-development/onedl-mmpretrain): Pre-training toolbox and benchmark.
+- [OneDL-MMDetection](https://github.com/vbti-development/onedl-mmdetection): Detection toolbox and benchmark.
+- [OneDL-MMRotate](https://github.com/vbti-development/onedl-mmrotate): Rotated object detection toolbox and benchmark.
+- [OneDL-MMSegmentation](https://github.com/vbti-development/onedl-mmsegmentation): Semantic segmentation toolbox and benchmark.
+- [OneDL-MMDeploy](https://github.com/vbti-development/onedl-mmdeploy): Model deployment framework.
+- [OneDL-MIM](https://github.com/vbti-development/onedl-mim): MIM installs VBTI packages.

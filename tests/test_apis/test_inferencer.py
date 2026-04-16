@@ -4,11 +4,11 @@ import tempfile
 import numpy as np
 import torch
 from mmengine import ConfigDict
-from utils import *  # noqa: F401, F403
 
 from mmseg.apis import MMSegInferencer
 from mmseg.registry import MODELS
 from mmseg.utils import register_all_modules
+from .utils import *  # noqa: F401, F403
 
 
 def test_inferencer():

@@ -6,7 +6,14 @@ import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule, build_norm_layer
 from mmcv.cnn.bricks.transformer import BaseTransformerLayer
-from mmcv.ops import point_sample
+
+try:
+    from mmcv.ops import point_sample
+
+    from ..utils.point_sample import get_uncertain_point_coords_with_randomness
+except ModuleNotFoundError:
+    point_sample = None
+    get_uncertain_point_coords_with_randomness = None
 from mmengine.dist import all_reduce
 from mmengine.model.weight_init import (caffe2_xavier_init, normal_init,
                                         trunc_normal_)
@@ -19,8 +26,7 @@ from mmseg.models.backbones.vit import TransformerEncoderLayer
 from mmseg.registry import MODELS
 from mmseg.utils import (ConfigType, MatchMasks, SampleList,
                          seg_data_to_instance_data)
-from ..utils import (MLP, LayerNorm2d, PatchEmbed, cross_attn_layer,
-                     get_uncertain_point_coords_with_randomness, resize)
+from ..utils import MLP, LayerNorm2d, PatchEmbed, cross_attn_layer, resize
 from .decode_head import BaseDecodeHead
 
 
@@ -39,6 +45,11 @@ class MLPMaskDecoder(nn.Module):
         mlp_num_layers: int = 3,
         rescale_attn_bias: bool = False,
     ):
+        if point_sample is None:
+            msg = ('Please install onedl-mmcv for point_sample ops. '
+                   'E.g. with mim install onedl-mmcv --only-binary=onedl-mmcv '
+                   'or build from source.')
+            raise RuntimeError(msg)
         super().__init__()
         self.total_heads = total_heads
         self.total_layers = total_layers

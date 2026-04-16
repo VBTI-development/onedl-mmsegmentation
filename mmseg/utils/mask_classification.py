@@ -2,7 +2,11 @@
 from typing import List, Tuple
 
 import torch
-from mmcv.ops import point_sample
+
+try:
+    from mmcv.ops import point_sample
+except ModuleNotFoundError:
+    point_sample = None
 from mmengine.structures import InstanceData
 from torch import Tensor
 
@@ -74,6 +78,12 @@ class MatchMasks:
                  num_queries: int,
                  num_classes: int,
                  assigner: ConfigType = None):
+        if point_sample is None:
+            msg = ('Please install onedl-mmcv for MatchMasks ops. '
+                   'E.g. with mim install onedl-mmcv --only-binary=onedl-mmcv '
+                   'or build from source.')
+            raise RuntimeError(msg)
+
         assert assigner is not None, "\'assigner\' in decode_head.train_cfg" \
                                      'cannot be None'
         assert num_points > 0, 'num_points should be a positive integer.'

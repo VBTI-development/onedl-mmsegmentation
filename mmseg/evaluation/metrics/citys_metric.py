@@ -73,7 +73,10 @@ class CityscapesMetric(BaseMetric):
     @master_only
     def __del__(self) -> None:
         """Clean up."""
-        if not self.keep_results:
+        keep_results = getattr(self, 'keep_results', False)
+        output_dir = getattr(self, 'output_dir', None)
+        if not keep_results and output_dir is not None and osp.exists(
+                output_dir):
             shutil.rmtree(self.output_dir)
 
     def process(self, data_batch: dict, data_samples: Sequence[dict]) -> None:
