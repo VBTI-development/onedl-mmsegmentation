@@ -1922,7 +1922,7 @@ requires-dist = [
     { name = "regex" },
     { name = "scipy" },
     { name = "timm", marker = "extra == 'optional'" },
-    { name = "torch", marker = "extra == 'torch'", specifier = "==2.10.0" },
+    { name = "torch", marker = "extra == 'torch'" },
     { name = "torchvision", marker = "extra == 'torch'" },
 ]
 provides-extras = ["albu", "mminstall", "optional", "torch"]
