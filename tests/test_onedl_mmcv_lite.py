@@ -20,7 +20,7 @@ def test_mmseg_import_without_mmcv_ops(monkeypatch):
                     '__spec__'
             }:
                 return super().__getattribute__(name)
-            raise ModuleNotFoundError("No module named 'mmcv._ext'")
+            raise ModuleNotFoundError('No module named "mmcv._ext"')
 
     ops_mock = OpsMock('mmcv.ops')
     monkeypatch.setitem(sys.modules, 'mmcv.ops', ops_mock)
