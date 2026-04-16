@@ -1,11 +1,14 @@
-# Copyright (c) OpenMMLab. All rights reserved.
+# Copyright (c) VBTI. All rights reserved.
 """Tests whether mmseg works when onedl-mmcv without ops is installed."""
 
 import sys
 import traceback
 import types
 
+import pytest
 
+
+@pytest.mark.order(0)
 def test_mmseg_import_without_mmcv_ops(monkeypatch):
     # Simulate mmcv.ops not being present or failing to import
 

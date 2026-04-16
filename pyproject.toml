@@ -33,6 +33,7 @@ dependencies = [
 tests = [
     "codecov",
     "pytest",
+    "pytest-order",
     "regex",
     "xdoctest>=0.10.0",
     "onedl-mmpretrain",

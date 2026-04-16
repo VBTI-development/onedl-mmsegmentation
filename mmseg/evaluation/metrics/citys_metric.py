@@ -77,7 +77,7 @@ class CityscapesMetric(BaseMetric):
         output_dir = getattr(self, 'output_dir', None)
         if not keep_results and output_dir is not None and osp.exists(
                 output_dir):
-            shutil.rmtree(self.output_dir)
+            shutil.rmtree(output_dir)
 
     def process(self, data_batch: dict, data_samples: Sequence[dict]) -> None:
         """Process one batch of data and data_samples.

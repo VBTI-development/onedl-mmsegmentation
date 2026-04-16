@@ -15,6 +15,7 @@ from .up_conv_block import UpConvBlock
 # isort: off
 from .wrappers import Upsample, resize
 from .san_layers import MLP, LayerNorm2d, cross_attn_layer
+from .point_sample import get_uncertain_point_coords_with_randomness
 
 __all__ = [
     'ResLayer',
@@ -39,4 +40,5 @@ __all__ = [
     'cross_attn_layer',
     'LayerNorm2d',
     'MLP',
+    'get_uncertain_point_coords_with_randomness',
 ]

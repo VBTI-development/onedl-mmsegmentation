@@ -262,41 +262,41 @@ Results and models are available in the [model zoo](docs/en/model_zoo.md).
       </td>
       <td>
         <ul>
-          <li><a href="mmseg/models/decode_heads/ann_head.py">ANN_Head</li>
-          <li><a href="mmseg/models/decode_heads/apc_head.py">APC_Head</li>
-          <li><a href="mmseg/models/decode_heads/aspp_head.py">ASPP_Head</li>
+          <li><a href="mmseg/models/decode_heads/ann_head.py">ANN_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/apc_head.py">APC_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/aspp_head.py">ASPP_Head</a></li>
           <li><a href="mmseg/models/decode_heads/cc_head.py">CC_Head*</a></li>
-          <li><a href="mmseg/models/decode_heads/da_head.py">DA_Head</li>
-          <li><a href="mmseg/models/decode_heads/ddr_head.py">DDR_Head</li>
-          <li><a href="mmseg/models/decode_heads/dm_head.py">DM_Head</li>
-          <li><a href="mmseg/models/decode_heads/dnl_head.py">DNL_Head</li>
-          <li><a href="mmseg/models/decode_heads/dpt_head.py">DPT_HEAD</li>
-          <li><a href="mmseg/models/decode_heads/ema_head.py">EMA_Head</li>
-          <li><a href="mmseg/models/decode_heads/enc_head.py">ENC_Head</li>
-          <li><a href="mmseg/models/decode_heads/fcn_head.py">FCN_Head</li>
-          <li><a href="mmseg/models/decode_heads/fpn_head.py">FPN_Head</li>
-          <li><a href="mmseg/models/decode_heads/gc_head.py">GC_Head</li>
-          <li><a href="mmseg/models/decode_heads/ham_head.py">LightHam_Head</li>
-          <li><a href="mmseg/models/decode_heads/isa_head.py">ISA_Head</li>
-          <li><a href="mmseg/models/decode_heads/knet_head.py">Knet_Head</li>
-          <li><a href="mmseg/models/decode_heads/lraspp_head.py">LRASPP_Head</li>
-          <li><a href="mmseg/models/decode_heads/mask2former_head.py">mask2former_Head</li>
-          <li><a href="mmseg/models/decode_heads/maskformer_head.py">maskformer_Head</li>
-          <li><a href="mmseg/models/decode_heads/nl_head.py">NL_Head</li>
-          <li><a href="mmseg/models/decode_heads/ocr_head.py">OCR_Head</li>
-          <li><a href="mmseg/models/decode_heads/pid_head.py">PID_Head</li>
+          <li><a href="mmseg/models/decode_heads/da_head.py">DA_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/ddr_head.py">DDR_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/dm_head.py">DM_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/dnl_head.py">DNL_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/dpt_head.py">DPT_HEAD</a></li>
+          <li><a href="mmseg/models/decode_heads/ema_head.py">EMA_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/enc_head.py">ENC_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/fcn_head.py">FCN_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/fpn_head.py">FPN_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/gc_head.py">GC_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/ham_head.py">LightHam_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/isa_head.py">ISA_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/knet_head.py">Knet_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/lraspp_head.py">LRASPP_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/mask2former_head.py">mask2former_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/maskformer_head.py">maskformer_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/nl_head.py">NL_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/ocr_head.py">OCR_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/pid_head.py">PID_Head</a></li>
           <li><a href="mmseg/models/decode_heads/point_head.py">point_Head*</a></li>
           <li><a href="mmseg/models/decode_heads/psa_head.py">PSA_Head*</a></li>
           <li><a href="mmseg/models/decode_heads/san_head.py">SAN_Head*</a></li>
-          <li><a href="mmseg/models/decode_heads/segformer_head.py">segformer_Head</li>
-          <li><a href="mmseg/models/decode_heads/segmenter_mask_head.py">segmenter_mask_Head</li>
-          <li><a href="mmseg/models/decode_heads/sep_aspp_head.py">SepASPP_Head</li>
-          <li><a href="mmseg/models/decode_heads/sep_fcn_head.py">SepFCN_Head</li>
-          <li><a href="mmseg/models/decode_heads/setr_mla_head.py">SETRMLAHead_Head</li>
-          <li><a href="mmseg/models/decode_heads/setr_up_head.py">SETRUP_Head</li>
-          <li><a href="mmseg/models/decode_heads/stdc_head.py">STDC_Head</li>
-          <li><a href="mmseg/models/decode_heads/uper_head.py">Uper_Head</li>
-          <li><a href="mmseg/models/decode_heads/vpd_depth_head.py">VPDDepth_Head</li>
+          <li><a href="mmseg/models/decode_heads/segformer_head.py">segformer_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/segmenter_mask_head.py">segmenter_mask_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/sep_aspp_head.py">SepASPP_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/sep_fcn_head.py">SepFCN_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/setr_mla_head.py">SETRMLAHead_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/setr_up_head.py">SETRUP_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/stdc_head.py">STDC_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/uper_head.py">Uper_Head</a></li>
+          <li><a href="mmseg/models/decode_heads/vpd_depth_head.py">VPDDepth_Head</a></li>
         </ul>
       </td>
       <td>
