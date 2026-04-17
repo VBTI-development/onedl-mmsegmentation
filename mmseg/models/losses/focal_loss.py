@@ -3,7 +3,11 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.ops import sigmoid_focal_loss as _sigmoid_focal_loss
+
+try:
+    from mmcv.ops import sigmoid_focal_loss as _sigmoid_focal_loss
+except ModuleNotFoundError:
+    _sigmoid_focal_loss = None
 
 from mmseg.registry import MODELS
 from .utils import weight_reduce_loss
@@ -172,6 +176,13 @@ class FocalLoss(nn.Module):
                 loss item to be included into the backward graph, `loss_` must
                 be the prefix of the name. Defaults to 'loss_focal'.
         """
+        if (_sigmoid_focal_loss is None and use_sigmoid
+                and torch.cuda.is_available()):
+            msg = ('Please install onedl-mmcv for sigmoid_focal_loss ops. '
+                   'E.g. with mim install onedl-mmcv --only-binary=onedl-mmcv '
+                   'or build from source.')
+            raise RuntimeError(msg)
+
         super().__init__()
         assert use_sigmoid is True, \
             'AssertionError: Only sigmoid focal loss supported now.'

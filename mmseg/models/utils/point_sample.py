@@ -1,6 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmcv.ops import point_sample
+
+try:
+    from mmcv.ops import point_sample
+except ModuleNotFoundError:
+    point_sample = None
 from torch import Tensor
 
 
@@ -55,6 +59,11 @@ def get_uncertain_point_coords_with_randomness(
         point_coords (Tensor): A tensor of shape (num_rois, num_points, 2)
             that contains the coordinates sampled points.
     """
+    if point_sample is None:
+        raise RuntimeError(
+            'point_sample requires mmcv.ops or onedl-mmcv with ops support. '
+            'Please install mmcv/onedl-mmcv with compiled ops to use this '
+            'function.')
     assert oversample_ratio >= 1
     assert 0 <= importance_sample_ratio <= 1
     batch_size = mask_preds.shape[0]

@@ -42,7 +42,10 @@ class PSAHead(BaseDecodeHead):
                  psa_softmax=True,
                  **kwargs):
         if PSAMask is None:
-            raise RuntimeError('Please install mmcv-full for PSAMask ops')
+            msg = ('Please install onedl-mmcv for PSAMask ops. '
+                   'E.g. with mim install onedl-mmcv --only-binary=onedl-mmcv '
+                   'or build from source.')
+            raise RuntimeError(msg)
         super().__init__(**kwargs)
         assert psa_type in ['collect', 'distribute', 'bi-direction']
         self.psa_type = psa_type

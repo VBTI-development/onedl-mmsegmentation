@@ -38,6 +38,32 @@ Notes:
   1. Use `pip uninstall onedl-mmcv` to uninstall the existing mmcv in the environment.
   2. Install the corresponding mmcv according to the [installation instructions](https://mmsegmentation.readthedocs.io/en/dev-1.x/get_started.html#best-practices).
 
+## What should I do if I get `mmcv._ext` or `mmcv.ops` import errors?
+
+These errors usually mean that the required custom CUDA/C++ operators from MMCV (or onedl-mmcv) are not available in your environment. This can happen if:
+
+- You installed the lightweight (pure Python) version of MMCV/onedl-mmcv, which does not include the compiled ops.
+- The compiled ops are not compatible with your PyTorch/CUDA version.
+- There was an installation or build error.
+
+**How to fix:**
+
+1. Uninstall the current MMCV/onedl-mmcv:
+   ```bash
+   pip uninstall mmcv mmcv-full onedl-mmcv
+   ```
+2. Install the full version of onedl-mmcv (with ops) that matches your CUDA and PyTorch version. See the official instructions:
+   https://onedl-mmcv.readthedocs.io/en/latest/faq.html
+3. If you are using a CPU-only environment, make sure to install the correct CPU-only wheel.
+4. If you built from source, ensure the build completed successfully and matches your environment.
+
+**Reference:**
+
+- [onedl-mmcv FAQ: ImportError: cannot import name 'get_compiler_version' / 'get_cuda_version'](https://onedl-mmcv.readthedocs.io/en/latest/faq.html)
+- [onedl-mmcv Installation Guide](https://onedl-mmcv.readthedocs.io/en/latest/get_started/installation.html)
+
+If you still encounter issues, check your CUDA and PyTorch versions, and consult the official FAQ for troubleshooting tips.
+
 ## How to know the number of GPUs needed to train the model
 
 - Infer from the name of the config file of the model. You can refer to the `Config Name Style` part of [Learn about Configs](../user_guides/1_config.md). For example, for config file with name `segformer_mit-b0_8xb1-160k_cityscapes-1024x1024.py`, `8xb1` means training the model corresponding to it needs 8 GPUs, and the batch size of each GPU is 1.

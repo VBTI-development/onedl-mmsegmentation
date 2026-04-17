@@ -24,8 +24,10 @@ class CCHead(FCNHead):
 
     def __init__(self, recurrence=2, **kwargs):
         if CrissCrossAttention is None:
-            raise RuntimeError('Please install mmcv-full for '
-                               'CrissCrossAttention ops')
+            msg = ('Please install onedl-mmcv for CrissCrossAttention ops. '
+                   'E.g. with mim install onedl-mmcv --only-binary=onedl-mmcv '
+                   'or build from source.')
+            raise RuntimeError(msg)
         super().__init__(num_convs=2, **kwargs)
         self.recurrence = recurrence
         self.cca = CrissCrossAttention(self.channels)

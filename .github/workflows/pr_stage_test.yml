@@ -31,7 +31,7 @@ jobs:
           - python-version: '3.12'  # maximum version
             torch: '2.10.0'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install uv and set the python version
         uses: astral-sh/setup-uv@v6
         with:
@@ -87,7 +87,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
         TZ: Etc/UTC
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install uv and set the python version
         uses: astral-sh/setup-uv@v6
         with:
@@ -132,7 +132,7 @@ jobs:
   #       python-version: ['3.10']
   #       platform: [cpu]
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@v5
   #     - name: Install uv and set the python version
   #       uses: astral-sh/setup-uv@v6
   #       with:
