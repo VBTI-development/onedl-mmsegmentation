@@ -66,7 +66,15 @@ def calculate_confusion_matrix(dataset, results):
             .gt_sem_seg.data.squeeze().numpy().astype(np.uint8)
         gt_segm, res_segm = gt_segm.flatten(), res_segm.flatten()
         if reduce_zero_label:
-            gt_segm = gt_segm - 1
+            # https://github.com/VBTI-development/onedl-mmsegmentation/issues/24
+            # gt_segm should not be processed by reduce_zero_label,
+            # because it has already been handled when loaded from
+            # the dataset.
+            # However, res_segm still needs additional processing.
+            # Since reduce_zero_label is also applied by default
+            # when saving res_segm, the class indices in res_segm
+            # start from 1.
+            res_segm = res_segm - 1
         to_ignore = gt_segm == ignore_index
 
         gt_segm, res_segm = gt_segm[~to_ignore], res_segm[~to_ignore]
