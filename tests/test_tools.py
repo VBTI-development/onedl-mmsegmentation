@@ -41,4 +41,6 @@ class TestConfusionMatrix(TestCase):
             'test_dataloader.dataset.data_prefix.img_path=img_dir',
             'test_dataloader.dataset.data_prefix.seg_map_path=ann_dir',
         ]
-        Popen(command, cwd=MMPRE_ROOT, stdout=PIPE).wait()
+        returncode = Popen(command, cwd=MMPRE_ROOT, stdout=PIPE).wait()
+        self.assertEqual(returncode, 0)
+        self.assertTrue((self.result_dir / 'confusion_matrix.png').is_file())
